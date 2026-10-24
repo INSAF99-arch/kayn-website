@@ -1,0 +1,7 @@
+# Local preview tooling and the separate Instagram agent project
+.claude/
+kayn-instagram-agent/
+
+# Secrets and logs
+.env
+*.log

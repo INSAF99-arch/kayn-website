@@ -1,0 +1,36 @@
+/* KAYN design tokens — single source for colour, type, spacing, borders. */
+:root {
+  /* Brand palette (official) */
+  --olive: #2F3A2E;
+  --black: #0B0B0B;
+  --beige: #D9D0C2;
+  --offwhite: #F6F4EE;
+
+  /* Functional tints derived from the palette (text/hairlines only) */
+  --muted: #5A5A53;          /* secondary text on light, 6:1 on off-white */
+  --muted-on-dark: #BDB8AC;  /* secondary text on black/olive */
+  --line: rgba(11, 11, 11, .16);
+  --line-on-dark: rgba(246, 244, 238, .22);
+  --error: #8A2A1F;          /* validation only, always paired with text + icon */
+
+  /* Typography */
+  --font-head: "Jost", "Century Gothic", "Futura", "Segoe UI", sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-ar-head: "Noto Kufi Arabic", "Segoe UI", Tahoma, sans-serif;
+  --font-ar-body: "Noto Naskh Arabic", "Segoe UI", Tahoma, sans-serif;
+  --track-wide: .22em;
+  --track-label: .16em;
+
+  /* Spacing scale */
+  --s-1: .25rem; --s-2: .5rem; --s-3: .75rem; --s-4: 1rem; --s-5: 1.5rem;
+  --s-6: 2rem; --s-7: 3rem; --s-8: 4.5rem; --s-9: 7rem;
+  --section-y: clamp(4rem, 9vw, 8rem);
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --max: 1280px;
+
+  /* Borders / motion */
+  --radius: 2px;
+  --border: 1px solid var(--line);
+  --ease: cubic-bezier(.2, .6, .2, 1);
+  --header-h: 68px;
+}
