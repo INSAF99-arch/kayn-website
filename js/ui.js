@@ -80,9 +80,8 @@ window.KAYN = window.KAYN || {};
   };
 
   K.header = function () {
-    var links = [["#/collection", "nav.collection"], ["#/story", "nav.story"]];
-    var nav = links.map(function (l) { return '<a class="nav__link" href="' + l[0] + '" data-route="' + l[0] + '">' + esc(t(l[1])) + "</a>"; }).join("") +
-      '<a class="nav__link" href="' + esc(K.site.instagramUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(t("footer.instagram")) + "</a>";
+    var links = [["#/collection", "nav.collection"], ["#/story", "nav.story"], ["#/track", "nav.track"]];
+    var nav = links.map(function (l) { return '<a class="nav__link" href="' + l[0] + '" data-route="' + l[0] + '">' + esc(t(l[1])) + "</a>"; }).join("");
     return '<header class="header"><div class="header__inner">' +
       '<a class="header__logo" href="#/" aria-label="KAYN">' + K.logo("light", 112) + "</a>" +
       '<nav class="nav nav--desktop" aria-label="' + esc(t("nav.main")) + '">' + nav + "</nav>" +
@@ -95,11 +94,14 @@ window.KAYN = window.KAYN || {};
   K.footer = function () {
     var s = K.site;
     return '<footer class="footer"><div class="wrap footer__grid">' +
-      '<div class="footer__brand">' + K.logo("dark", 150) + '<p class="tagline">' + esc(t("brandTagline")) + "</p></div>" +
+      '<div class="footer__brand">' + K.logo("dark", 150) + '<p class="tagline">' + esc(t("brandTagline")) + "</p>" +
+      '<a class="social" href="' + esc(s.instagramUrl) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc(t("footer.instagram")) + '">' +
+      '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+      '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a></div>' +
       '<nav class="footer__nav" aria-label="' + esc(t("footer.nav")) + '">' +
       '<a href="#/collection">' + esc(t("nav.collection")) + "</a>" +
       '<a href="#/story">' + esc(t("nav.story")) + "</a>" +
-      '<a href="' + esc(s.instagramUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(t("footer.instagram")) + "</a></nav>" +
+      '<a href="#/track">' + esc(t("nav.track")) + "</a></nav>" +
       '<div class="footer__legal"><a href="#/privacy">' + esc(t("footer.privacy")) + '</a><a href="#/terms">' + esc(t("footer.terms")) + "</a></div>" +
       "</div>" +
       '<div class="wrap footer__bottom"><span>© ' + new Date().getFullYear() + " KAYN. " + esc(t("footer.rights")) + "</span></div></footer>";

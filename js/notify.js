@@ -34,6 +34,32 @@ window.KAYN = window.KAYN || {};
       '<p class="nform__status" data-status role="status" hidden></p></form>';
   };
 
+  /* "Track package" form (frontend demo only): validates, shows a short loading state, then says that
+     tracking is not available yet. Nothing is looked up, stored or sent. */
+  K.handleTrackSubmit = function (form) {
+    var t = K.t, status = form.querySelector("[data-status]"), btn = form.querySelector('button[type="submit"]');
+    var order = form.elements.order, email = form.elements.email, first = null;
+    status.hidden = true; status.className = "nform__status"; status.textContent = "";
+    var show = function (input, key) {
+      var err = document.getElementById(input.id + "-err");
+      if (key) { err.textContent = "⚠ " + t(key); err.hidden = false; input.setAttribute("aria-invalid", "true"); first = first || input; }
+      else { err.hidden = true; input.removeAttribute("aria-invalid"); }
+    };
+    show(order, order.value.trim() ? null : "track.errOrder");
+    show(email, K.validateEmail(email.value));
+    if (first) { first.focus(); return; }
+    var label = btn.textContent;
+    btn.disabled = true; btn.setAttribute("aria-busy", "true"); btn.textContent = t("avail.checking");
+    setTimeout(function () {
+      form.reset();                                   // never keep what was entered
+      status.textContent = "ℹ " + t("track.result");
+      status.className = "nform__status";
+      status.hidden = false;
+      btn.disabled = false; btn.removeAttribute("aria-busy"); btn.textContent = label;
+      status.focus();
+    }, 900);
+  };
+
   /* Result of the (demo) availability check: always "currently unavailable", plus the email form. */
   K.availabilityResultHtml = function (p, color) {
     var t = K.t, esc = K.esc;

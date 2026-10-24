@@ -140,6 +140,22 @@ window.KAYN = window.KAYN || {};
     };
   }
 
+  function track() {
+    return {
+      title: t("meta.track"), desc: t("meta.trackDesc"),
+      html: '<section class="section page-top"><div class="wrap wrap--narrow story">' +
+        '<h1 class="h1">' + esc(t("track.title")) + '</h1><p class="lead">' + esc(t("track.copy")) + "</p>" +
+        '<form class="nform track" data-track-form novalidate>' +
+        '<div class="field"><label for="trk-order">' + esc(t("track.order")) + '</label>' +
+        '<input id="trk-order" name="order" type="text" autocomplete="off" required aria-describedby="trk-order-err"><p class="field__err" id="trk-order-err" hidden></p></div>' +
+        '<div class="field"><label for="trk-email">' + esc(t("form.email")) + '</label>' +
+        '<input id="trk-email" name="email" type="email" inputmode="email" autocomplete="off" required aria-describedby="trk-email-err"><p class="field__err" id="trk-email-err" hidden></p></div>' +
+        '<p class="nform__privacy">' + esc(t("form.privacy")) + "</p>" +
+        '<button type="submit" class="btn btn--solid btn--block">' + esc(t("track.submit")) + "</button>" +
+        '<p class="nform__status" data-status role="status" tabindex="-1" hidden></p></form></div></section>'
+    };
+  }
+
   function legal(kind) {
     return {
       title: t("legal." + kind) + " — KAYN", desc: t("meta.legal"),
@@ -155,5 +171,5 @@ window.KAYN = window.KAYN || {};
     };
   }
 
-  K.pages = { home: home, collection: collection, product: product, story: story, legal: legal, notFound: notFound };
+  K.pages = { home: home, collection: collection, product: product, story: story, track: track, legal: legal, notFound: notFound };
 })(window.KAYN);

@@ -302,6 +302,52 @@ html[dir="rtl"] .insta__tile .crop { transform: translateX(50%); }
 @media (max-width: 480px) {
   .specs > div, .dl > div { grid-template-columns: 1fr; gap: var(--s-1); }
 }
+/* Footer social icon */
+.social { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin-top: var(--s-5); margin-inline-start: -10px; color: var(--offwhite); border-radius: 50%; transition: transform .3s var(--ease), color .3s var(--ease); }
+.social:hover { transform: translateY(-2px) scale(1.08); color: var(--beige); }
+
+/* Track package */
+.track { width: 100%; max-width: 480px; margin-top: var(--s-6); }
+.nform__status:focus { outline: none; }
+
+/* Animations ------------------------------------------------------------ */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+@keyframes fadeDown { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: none; } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes heroZoom { from { transform: scale(1.07); } to { transform: scale(1); } }
+@keyframes menuIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+
+.header { animation: fadeDown .7s var(--ease) both; }
+main.page-in { animation: fadeIn .55s var(--ease) both; }
+
+/* Hero: staggered text, slow settle on the photograph */
+.hero__title { animation: fadeUp 1s var(--ease) .15s both; }
+.hero__copy { animation: fadeUp 1s var(--ease) .35s both; }
+.hero__cta { animation: fadeUp 1s var(--ease) .55s both; }
+.hero__media .crop { overflow: hidden; }
+.hero__media .crop img { animation: heroZoom 2.2s var(--ease) both; transform-origin: 60% 50%; }
+
+/* Scroll reveal: elements get .reveal from JS and .is-in when they enter the viewport */
+.js-anim .reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s var(--ease), transform .8s var(--ease); transition-delay: var(--d, 0s); }
+.js-anim .reveal.is-in { opacity: 1; transform: none; }
+
+/* Interactions */
+.btn { transition: background .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease), transform .25s var(--ease); }
+.btn:not([disabled]):hover { transform: translateY(-1px); }
+.btn:not([disabled]):active { transform: translateY(0); }
+.card__title a, .nav__link { transition: border-color .25s var(--ease), color .25s var(--ease); }
+.colors__btn { transition: border-color .25s var(--ease), box-shadow .25s var(--ease), transform .25s var(--ease); }
+.colors__btn:hover { transform: translateY(-1px); }
+.review { transition: transform .4s var(--ease), border-color .4s var(--ease); }
+.review:hover { transform: translateY(-3px); border-color: var(--black); }
+.insta__tile .crop img { transition: transform .8s var(--ease); }
+.insta__tile:hover .crop img { transform: scale(1.06); }
+.gallery__slide:not([hidden]) { animation: fadeIn .5s var(--ease) both; }
+.nav--mobile:not([hidden]) { animation: menuIn .3s var(--ease) both; }
+.avail__panel:not([hidden]) { animation: fadeUp .6s var(--ease) both; }
+.nform__status:not([hidden]) { animation: fadeIn .4s var(--ease) both; }
+
 @media (prefers-reduced-motion: reduce) {
+  .js-anim .reveal { opacity: 1 !important; transform: none !important; }
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }

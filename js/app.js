@@ -20,6 +20,7 @@
       return P.product(parts[1]);
     }
     if (parts[0] === "story") return P.story();
+    if (parts[0] === "track") return P.track();
     if (parts[0] === "privacy" || parts[0] === "terms") return P.legal(parts[0]);
     return P.notFound();
   }
@@ -46,10 +47,45 @@
     document.querySelector(".skip-link").textContent = K.t("skip");
   }
 
+  /* Scroll-reveal: mark blocks with .reveal (staggered inside grids) and show them as they enter the viewport. */
+  var REVEAL = ".section__head, .card, .review, .insta__tile, .statement__inner > *, .detail__inner > *, .wait__inner > *, " +
+    ".story > *, .story__block, .gallery, .pdp__info > *, .also, .crumbs";
+  function revealNow(el) {
+    el.classList.add("is-in");
+    if (io) io.unobserve(el);
+    setTimeout(function () {                                // entrance done: hand the element back to its normal styles
+      el.classList.remove("reveal", "is-in"); el.style.removeProperty("--d");
+    }, 1500);
+  }
+  K.revealNow = revealNow;
+  var io = ("IntersectionObserver" in window) ? new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      // reveal when visible, or when already scrolled past (e.g. a jump scroll) so nothing stays hidden
+      if (!en.isIntersecting && en.boundingClientRect.top >= 0) return;
+      revealNow(en.target);
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" }) : null;
+
+  function initReveal() {
+    if (!io) return;
+    document.documentElement.classList.add("js-anim");
+    var seen = new Map();
+    main.querySelectorAll(REVEAL).forEach(function (el) {
+      if (el.closest(".hero")) return;                       // hero has its own entrance animation
+      var parent = el.parentElement, n = seen.get(parent) || 0;
+      seen.set(parent, n + 1);
+      el.style.setProperty("--d", Math.min(n, 5) * 0.09 + "s"); // stagger siblings
+      el.classList.add("reveal");
+      io.observe(el);
+    });
+  }
+
   function render(opts) {
     opts = opts || {};
     var page = route();
     main.innerHTML = page.html;
+    initReveal();                                           // mark reveal targets before any style flush, so they never flash visible
+    main.classList.remove("page-in"); void main.offsetWidth; main.classList.add("page-in");
     setMeta(page);
     markActiveNav();
     if (opts.navigated) {
@@ -141,7 +177,9 @@
 
   document.addEventListener("submit", function (e) {
     var form = e.target.closest("[data-notify-form]");
-    if (form) { e.preventDefault(); K.handleNotifySubmit(form); }
+    if (form) { e.preventDefault(); K.handleNotifySubmit(form); return; }
+    var trk = e.target.closest("[data-track-form]");
+    if (trk) { e.preventDefault(); K.handleTrackSubmit(trk); }
   });
 
   document.addEventListener("keydown", function (e) {
