@@ -277,41 +277,41 @@ KAYN.products = [
    { en, fr, ar }. `product` is a product slug. */
 KAYN.reviews = [
   { name: "Salma K.", product: "the-signature", rating: 5, sample: true, text: {
-    en: "I bought it as a gift for my husband and he hasn't taken it off since. Exactly his style: understated and elegant.",
-    fr: "Je l'ai offert à mon mari et il ne l'a plus quitté depuis. Exactement son style : discret et élégant.",
-    ar: "اشتريته هدية لزوجي ولم يخلعه منذ ذلك الحين. تماماً مثل ذوقه: هادئ وأنيق." } },
+    en: "Bought it for my husband, he was so happy.",
+    fr: "Je l'ai acheté pour mon mari, il était super content.",
+    ar: "اشتريته لزوجي وكان سعيداً جداً." } },
   { name: "Youssef B.", product: "the-minimalist", rating: 5, sample: true, text: {
-    en: "Exactly what I wanted: simple, light, and I forget I'm wearing it. The diamond catches the light just enough.",
-    fr: "Exactement ce que je voulais : simple, léger, et j'oublie que je le porte. Le diamant capte juste assez la lumière.",
-    ar: "هو بالضبط ما أردته: بسيط وخفيف، وأنسى أنني أرتديه. الألماسة تلتقط الضوء بالقدر المناسب." } },
+    en: "Very light, I forget I'm wearing it. Love it.",
+    fr: "Très léger, j'oublie que je le porte. Je l'adore.",
+    ar: "خفيف جداً، أنسى أنني ألبسه. أحببته." } },
   { name: "Karim L.", product: "the-signature", rating: 5, sample: true, text: {
-    en: "The setting is beautifully made. It looks sharp with a shirt and just as good with a T-shirt.",
-    fr: "Le sertissage est magnifiquement réalisé. Il est élégant avec une chemise et tout aussi beau avec un t-shirt.",
-    ar: "التصميم مصنوع ببراعة. يبدو أنيقاً مع القميص وبنفس الجمال مع التيشيرت." } },
+    en: "Very chic, great customer service. I recommend.",
+    fr: "Très chic, super service client. Je recommande.",
+    ar: "أنيق جداً وخدمة عملاء ممتازة. أنصح به." } },
   { name: "Amine R.", product: "solis", rating: 5, sample: true, text: {
-    en: "Delicate without looking fragile. I chose the yellow gold and I get compliments every week.",
-    fr: "Délicat sans paraître fragile. J'ai pris l'or jaune et je reçois des compliments chaque semaine.",
-    ar: "رقيق دون أن يبدو هشاً. اخترت الذهب الأصفر وأتلقى المجاملات كل أسبوع." } },
+    en: "Got the yellow gold, I get compliments all the time.",
+    fr: "J'ai pris l'or jaune, on me fait des compliments tout le temps.",
+    ar: "اخترت الذهب الأصفر وأتلقى المجاملات دائماً." } },
   { name: "Nadia A.", product: "the-line", rating: 5, sample: true, text: {
-    en: "I gave it to my fiancé for his birthday. He loved it, and honestly so did I. The packaging made the moment feel special.",
-    fr: "Je l'ai offert à mon fiancé pour son anniversaire. Il l'a adoré, et moi aussi. L'emballage a rendu le moment vraiment spécial.",
-    ar: "قدّمته لخطيبي في عيد ميلاده. أحبّه كثيراً وأنا أيضاً. جعلت العلبة اللحظة مميزة حقاً." } },
+    en: "Gift for my fiancé's birthday. He loved it!",
+    fr: "Cadeau pour l'anniversaire de mon fiancé. Il a adoré !",
+    ar: "هدية لعيد ميلاد خطيبي. أحبّها كثيراً!" } },
   { name: "Omar S.", product: "the-line", rating: 5, sample: true, text: {
-    en: "Clean, modern and different from anything else I own. The two stones are a subtle touch.",
-    fr: "Épuré, moderne et différent de tout ce que je possède. Les deux pierres apportent une touche subtile.",
-    ar: "نقي وعصري ومختلف عن كل ما أملك. الألماستان تضيفان لمسة خفية." } },
+    en: "Different from everything else I have. Really nice.",
+    fr: "Différent de tout ce que j'ai. Vraiment beau.",
+    ar: "مختلف عن كل ما أملك. جميل فعلاً." } },
   { name: "Mehdi T.", product: "the-minimalist", rating: 5, sample: true, text: {
-    en: "I've worn it every day since the first week and it already feels like part of me. The packaging was lovely too.",
-    fr: "Porté tous les jours dès la première semaine, il fait désormais partie de moi. L'emballage était superbe aussi.",
-    ar: "ارتديته كل يوم منذ الأسبوع الأول وأصبح جزءاً مني. كانت العلبة جميلة أيضاً." } },
+    en: "I wear it every day. Nice box too.",
+    fr: "Je le porte tous les jours. Le coffret est beau aussi.",
+    ar: "ألبسه كل يوم. والعلبة جميلة أيضاً." } },
   { name: "Imane Z.", product: "solis", rating: 5, sample: true, text: {
-    en: "I chose SOLIS for our wedding anniversary. He wears it every day and gets compliments. Best gift I've given him.",
-    fr: "J'ai choisi SOLIS pour notre anniversaire de mariage. Il le porte tous les jours et reçoit des compliments. Le plus beau cadeau que je lui aie fait.",
-    ar: "اخترت SOLIS هدية لذكرى زواجنا. يرتديه كل يوم ويتلقى المجاملات. أفضل هدية قدمتها له." } },
+    en: "Anniversary gift for my husband. He never takes it off.",
+    fr: "Cadeau d'anniversaire de mariage pour mon mari. Il ne l'enlève plus.",
+    ar: "هدية ذكرى زواجنا لزوجي. لا يخلعه أبداً." } },
   { name: "Reda H.", product: "solis", rating: 5, sample: true, text: {
-    en: "A gift for my brother. He never takes it off. Understated and elegant, exactly his style.",
-    fr: "Un cadeau pour mon frère. Il ne l'enlève plus. Discret et élégant, tout à fait son style.",
-    ar: "هدية لأخي. لا يخلعه أبداً. هادئ وأنيق، تماماً مثل ذوقه." } }
+    en: "Bought it for my brother, he wears it every day.",
+    fr: "Je l'ai pris pour mon frère, il le porte tous les jours.",
+    ar: "اشتريته لأخي وهو يلبسه كل يوم." } }
 ];
 
 KAYN.getProduct = function (slug) {

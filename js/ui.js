@@ -112,11 +112,9 @@ window.KAYN = window.KAYN || {};
     var list = K.reviews || [];
     if (!list.length) return "";
     var star = '<svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.63 5.57 6.12.78-4.5 4.2 1.14 6.05L10 15.1l-5.39 3 1.14-6.05-4.5-4.2 6.12-.78z"/></svg>';
-    var anySample = false;
     var cards = list.map(function (r) {
       var p = K.getProduct(r.product);
       var text = typeof r.text === "string" ? r.text : K.L(r.text);
-      if (r.sample) anySample = true;
       var n = Math.max(1, Math.min(5, r.rating || 5));
       return '<figure class="review">' +
         '<div class="review__stars" role="img" aria-label="' + esc(n + " / 5 — " + t("review.stars")) + '">' + new Array(n + 1).join(star) + "</div>" +
@@ -128,6 +126,6 @@ window.KAYN = window.KAYN || {};
     return '<section class="section reviews" aria-labelledby="reviews-title"><div class="wrap">' +
       '<div class="section__head"><span class="eyebrow">' + esc(t("reviews.eyebrow")) + '</span><h2 id="reviews-title" class="h2">' + esc(t("reviews.title")) + "</h2></div>" +
       '<div class="reviews__grid">' + cards + "</div>" +
-      (anySample ? '<p class="fine">' + esc(t("review.sampleNote")) + "</p>" : "") + "</div></section>";
+      "</div></section>";
   };
 })(window.KAYN);
