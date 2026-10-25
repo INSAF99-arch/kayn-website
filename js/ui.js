@@ -63,7 +63,7 @@ window.KAYN = window.KAYN || {};
     return '<article class="card">' +
       '<a class="card__media" href="' + href + '" aria-label="' + esc(K.L(p.name)) + '">' + K.productImage(p, 0) + "</a>" +
       '<div class="card__body">' +
-      '<div class="card__row"><h3 class="card__title"><a href="' + href + '">' + esc(K.L(p.name)) + "</a></h3>" + K.priceHtml(p) + "</div>" +
+      '<div class="card__row"><h3 class="card__title"><a href="' + href + '">' + esc(K.L(p.name)) + "</a></h3></div>" +
       '<p class="card__text">' + esc(K.L(p.card || p.short)) + "</p>" +
       '<span class="card__swatches" aria-hidden="true">' + p.colors.map(function (c) { return '<span class="swatch swatch--sm" style="background:' + c.hex + '"></span>'; }).join("") + "</span>" +
       '<a class="btn btn--outline btn--block" href="' + href + '">' + esc(t("card.view")) + '<span class="sr-only"> ' + esc(K.L(p.name)) + "</span></a>" +

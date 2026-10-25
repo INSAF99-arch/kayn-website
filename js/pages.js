@@ -104,7 +104,7 @@ window.KAYN = window.KAYN || {};
       specRow(t("pd.count"), p.diamond.count) + specRow(t("pd.dim"), p.dimensions) +
       (p.extraSpecs || []).map(function (s) { return specRow(K.L(s.label), s.value); }).join("");
     var others = K.products.filter(function (o) { return o.id !== p.id; }).map(function (o) {
-      return '<a class="mini" href="#/collection/' + o.slug + '"><span class="mini__media">' + K.productImage(o, 0) + '</span><span class="mini__body"><span class="mini__name">' + esc(K.L(o.name)) + "</span>" + K.priceHtml(o) + "</span></a>";
+      return '<a class="mini" href="#/collection/' + o.slug + '"><span class="mini__media">' + K.productImage(o, 0) + '</span><span class="mini__body"><span class="mini__name">' + esc(K.L(o.name)) + "</span></span></a>";
     }).join("");
 
     return {
