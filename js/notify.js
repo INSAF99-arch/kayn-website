@@ -7,8 +7,17 @@ window.KAYN = window.KAYN || {};
 
   /* DEMO ONLY: resolves after a short delay and discards the payload.
      Replace the body with a real request when a provider is chosen. */
-  K.submitInterest = function (/* payload: { email, firstName, productId } */) {
+  K.submitInterest = function (/* payload: { email, fullName, productId, colorId } */) {
     return new Promise(function (resolve) { setTimeout(resolve, 900); });
+  };
+
+  /* Full name: required, at least 2 characters and at least one letter (any alphabet, including Arabic). */
+  K.validateName = function (v) {
+    v = (v || "").trim();
+    if (!v) return "form.errName";
+    var hasLetter = true;
+    try { hasLetter = new RegExp("\\p{L}", "u").test(v); } catch (e) { /* old browser: skip the letter check */ }
+    return v.length < 2 || !hasLetter ? "form.errName" : null;
   };
 
   K.validateEmail = function (v) {
@@ -22,11 +31,12 @@ window.KAYN = window.KAYN || {};
   K.notifyFormHtml = function (productId, colorId, uid, onDark) {
     var t = K.t, esc = K.esc;
     return '<form class="nform' + (onDark ? " nform--dark" : "") + '" data-notify-form data-product="' + esc(productId) + '" novalidate>' +
+      '<div class="field"><label for="' + uid + '-name">' + esc(t("form.name")) + '</label>' +
+      '<input id="' + uid + '-name" name="fullName" type="text" autocomplete="off" required aria-describedby="' + uid + '-name-err">' +
+      '<p class="field__err" id="' + uid + '-name-err" hidden></p></div>' +
       '<div class="field"><label for="' + uid + '-email">' + esc(t("form.email")) + '</label>' +
       '<input id="' + uid + '-email" name="email" type="email" inputmode="email" autocomplete="off" required aria-describedby="' + uid + '-err">' +
       '<p class="field__err" id="' + uid + '-err" hidden></p></div>' +
-      '<div class="field"><label for="' + uid + '-name">' + esc(t("form.name")) + '</label>' +
-      '<input id="' + uid + '-name" name="firstName" type="text" autocomplete="off"></div>' +
       '<input type="hidden" name="productId" value="' + esc(productId) + '">' +
       '<input type="hidden" name="colorId" value="' + esc(colorId) + '">' +
       '<p class="nform__privacy">' + esc(t("form.privacy")) + "</p>" +
@@ -72,21 +82,21 @@ window.KAYN = window.KAYN || {};
 
   K.handleNotifySubmit = function (form) {
     var t = K.t;
-    var email = form.elements.email, errEl = form.querySelector(".field__err");
+    var email = form.elements.email, name = form.elements.fullName, first = null;
     var status = form.querySelector("[data-status]"), btn = form.querySelector('button[type="submit"]');
-    var errKey = K.validateEmail(email.value);
 
     status.hidden = true; status.className = "nform__status"; status.textContent = "";
-    if (errKey) {
-      errEl.textContent = "⚠ " + t(errKey);
-      errEl.hidden = false;
-      email.setAttribute("aria-invalid", "true");
-      email.focus();
-      return;
-    }
-    errEl.hidden = true; email.removeAttribute("aria-invalid");
+    // Full name and email are both required.
+    var show = function (input, key) {
+      var err = document.getElementById(input.getAttribute("aria-describedby"));
+      if (key) { err.textContent = "⚠ " + t(key); err.hidden = false; input.setAttribute("aria-invalid", "true"); first = first || input; }
+      else { err.hidden = true; input.removeAttribute("aria-invalid"); }
+    };
+    show(name, K.validateName(name.value));
+    show(email, K.validateEmail(email.value));
+    if (first) { first.focus(); return; }
 
-    var payload = { email: email.value.trim(), firstName: form.elements.firstName.value.trim(), productId: form.elements.productId.value, colorId: form.elements.colorId.value };
+    var payload = { email: email.value.trim(), fullName: name.value.trim(), productId: form.elements.productId.value, colorId: form.elements.colorId.value };
     var label = btn.textContent;
     btn.disabled = true; btn.setAttribute("aria-busy", "true"); btn.textContent = t("form.sending");
 
