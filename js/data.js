@@ -40,6 +40,7 @@ KAYN.placeholderColors = function () {
 };
 
 /* All KAYN diamonds are lab-grown (confirmed by the brand owner). */
+KAYN.carat010 = { en: "0.10 ct", fr: "0,10 ct", ar: "0.10 قيراط" };
 KAYN.labGrown = { en: "Lab-grown diamond", fr: "Diamant de laboratoire", ar: "ألماسة مصنّعة في المختبر" };
 
 /* The Minimalist colour options (selector only; photos live in KAYN.oneGallery below). */
@@ -64,7 +65,7 @@ KAYN.oneColors = function () {
 KAYN.oneGallery = function () {
   var P = "assets/";
   var alt = function (en, fr, ar) { return { en: en, fr: fr, ar: ar }; };
-  var worn = function (en, fr, ar) { return alt("The Minimalist " + en, "The Minimalist " + fr, "The Minimalist " + ar); };
+  var worn = function (en, fr, ar) { return alt("The Minimalist: " + en, "The Minimalist : " + fr, "The Minimalist: " + ar); };
   return [
     { src: P + "one-olive-wrist.webp", alt: worn("olive cord bracelet with a single diamond, worn on the wrist", "bracelet à cordon olive et un diamant unique, porté au poignet", "سوار بخيط زيتوني وألماسة واحدة على المعصم") },
     { src: P + "one-grey-sunset.webp", alt: worn("grey cord bracelet with a single diamond, worn at sunset", "bracelet à cordon gris et un diamant unique, porté au coucher du soleil", "سوار بخيط رمادي وألماسة واحدة عند الغروب") },
@@ -78,7 +79,7 @@ KAYN.oneGallery = function () {
 /* The Signature: photos after the main image (assets/essential-main.jpg), in display order. */
 KAYN.signatureGallery = function () {
   var P = "assets/";
-  var a = function (en, fr, ar) { return { en: "The Signature " + en, fr: "The Signature " + fr, ar: "The Signature " + ar }; };
+  var a = function (en, fr, ar) { return { en: "The Signature: " + en, fr: "The Signature : " + fr, ar: "The Signature: " + ar }; };
   return [
     { src: P + "essential-2.webp", alt: a("bracelets in black, olive and burgundy, worn together on the wrist", "bracelets en noir, olive et bordeaux, portés ensemble au poignet", "أساور بالأسود والزيتوني والعنابي على المعصم") },
     { src: P + "essential-3.webp", alt: a("in black, olive and burgundy on a stone surface", "en noir, olive et bordeaux sur une pierre", "بالأسود والزيتوني والعنابي على سطح حجري") },
@@ -91,7 +92,7 @@ KAYN.signatureGallery = function () {
 /* The Line: photos after the main image (assets/line-5.webp), in display order. */
 KAYN.lineGallery = function () {
   var P = "assets/";
-  var a = function (en, fr, ar) { return { en: "The Line " + en, fr: "The Line " + fr, ar: "The Line " + ar }; };
+  var a = function (en, fr, ar) { return { en: "The Line: " + en, fr: "The Line : " + fr, ar: "The Line: " + ar }; };
   return [
     { src: P + "line-main.webp", alt: a("black cord bracelet with a slim white gold bar and diamond accents, worn on the wrist", "bracelet à cordon noir avec une fine barre en or blanc et des touches de diamant, porté au poignet", "سوار بخيط أسود وقضيب رفيع من الذهب الأبيض ولمسات ألماس، على المعصم") },
     { src: P + "line-2.webp", alt: a("black cord bracelet with a slim white gold bar and two diamonds, on stone", "bracelet à cordon noir, fine barre en or blanc et deux diamants, sur une pierre", "سوار بخيط أسود وقضيب رفيع من الذهب الأبيض وألماستان على الحجر") },
@@ -126,7 +127,7 @@ KAYN.products = [
     gallery: KAYN.oneGallery(),
     colors: KAYN.oneColors(),
     metal: { setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, hardware: null },                // setting confirmed by brief; other hardware unconfirmed
-    diamond: { type: KAYN.labGrown, origin: null, carat: "0.10 ct", clarity: "VVS2", certification: "IGI", count: "1" },
+    diamond: { type: KAYN.labGrown, origin: null, carat: KAYN.carat010, clarity: "VVS2", certification: "IGI", count: "1" },
     dimensions: null,
     care: {
       en: ["Wipe gently with a soft, dry cloth.", "Store in the KAYN box when not worn.", "Keep away from perfume and harsh chemicals."],
@@ -171,7 +172,7 @@ KAYN.products = [
       setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" },
       hardware: { en: "White-gold-tone loops and detailing", fr: "Anneaux et détails de ton or blanc", ar: "حلقات وتفاصيل بلون الذهب الأبيض" }
     },
-    diamond: { type: KAYN.labGrown, origin: null, carat: "0.10 ct", clarity: "VVS2", certification: "IGI", count: "1" },
+    diamond: { type: KAYN.labGrown, origin: null, carat: KAYN.carat010, clarity: "VVS2", certification: "IGI", count: "1" },
     extraSpecs: [   // shown after the standard rows
       { label: { en: "Design", fr: "Conception", ar: "الخيط" }, value: { en: "Double-strand adjustable cord", fr: "Cordon double brin ajustable", ar: "خيط مزدوج قابل للتعديل" } },
       { label: { en: "Setting style", fr: "Style de sertissage", ar: "نمط التصميم" }, value: { en: "Geometric centrepiece with a round diamond", fr: "Pièce centrale géométrique avec un diamant rond", ar: "قطعة مركزية هندسية مع ألماسة مستديرة" } },
@@ -276,39 +277,39 @@ KAYN.products = [
    `sample: true` from each real one. `text` may be a string (shown as-is in every language) or
    { en, fr, ar }. `product` is a product slug. */
 KAYN.reviews = [
-  { name: "Salma K.", product: "the-signature", rating: 5, sample: true, text: {
+  { name: { en: "Salma K.", fr: "Salma K.", ar: "سلمى ك." }, product: "the-signature", rating: 5, sample: true, text: {
     en: "Bought it for my husband, he was so happy.",
     fr: "Je l'ai acheté pour mon mari, il était super content.",
     ar: "اشتريته لزوجي وكان سعيداً جداً." } },
-  { name: "Youssef B.", product: "the-minimalist", rating: 5, sample: true, text: {
+  { name: { en: "Youssef B.", fr: "Youssef B.", ar: "يوسف ب." }, product: "the-minimalist", rating: 5, sample: true, text: {
     en: "Very light, I forget I'm wearing it. Love it.",
     fr: "Très léger, j'oublie que je le porte. Je l'adore.",
     ar: "خفيف جداً، أنسى أنني ألبسه. أحببته." } },
-  { name: "Karim L.", product: "the-signature", rating: 5, sample: true, text: {
+  { name: { en: "Karim L.", fr: "Karim L.", ar: "كريم ل." }, product: "the-signature", rating: 5, sample: true, text: {
     en: "Very chic, great customer service. I recommend.",
     fr: "Très chic, super service client. Je recommande.",
     ar: "أنيق جداً وخدمة عملاء ممتازة. أنصح به." } },
-  { name: "Amine R.", product: "solis", rating: 5, sample: true, text: {
+  { name: { en: "Amine R.", fr: "Amine R.", ar: "أمين ر." }, product: "solis", rating: 5, sample: true, text: {
     en: "Got the yellow gold, I get compliments all the time.",
     fr: "J'ai pris l'or jaune, on me fait des compliments tout le temps.",
     ar: "اخترت الذهب الأصفر وأتلقى المجاملات دائماً." } },
-  { name: "Nadia A.", product: "the-line", rating: 5, sample: true, text: {
+  { name: { en: "Nadia A.", fr: "Nadia A.", ar: "نادية أ." }, product: "the-line", rating: 5, sample: true, text: {
     en: "Gift for my fiancé's birthday. He loved it!",
     fr: "Cadeau pour l'anniversaire de mon fiancé. Il a adoré !",
     ar: "هدية لعيد ميلاد خطيبي. أحبّها كثيراً!" } },
-  { name: "Omar S.", product: "the-line", rating: 5, sample: true, text: {
+  { name: { en: "Omar S.", fr: "Omar S.", ar: "عمر س." }, product: "the-line", rating: 5, sample: true, text: {
     en: "Different from everything else I have. Really nice.",
     fr: "Différent de tout ce que j'ai. Vraiment beau.",
     ar: "مختلف عن كل ما أملك. جميل فعلاً." } },
-  { name: "Mehdi T.", product: "the-minimalist", rating: 5, sample: true, text: {
+  { name: { en: "Mehdi T.", fr: "Mehdi T.", ar: "مهدي ت." }, product: "the-minimalist", rating: 5, sample: true, text: {
     en: "I wear it every day. Nice box too.",
     fr: "Je le porte tous les jours. Le coffret est beau aussi.",
     ar: "ألبسه كل يوم. والعلبة جميلة أيضاً." } },
-  { name: "Imane Z.", product: "solis", rating: 5, sample: true, text: {
+  { name: { en: "Imane Z.", fr: "Imane Z.", ar: "إيمان ز." }, product: "solis", rating: 5, sample: true, text: {
     en: "Anniversary gift for my husband. He never takes it off.",
     fr: "Cadeau d'anniversaire de mariage pour mon mari. Il ne l'enlève plus.",
     ar: "هدية ذكرى زواجنا لزوجي. لا يخلعه أبداً." } },
-  { name: "Reda H.", product: "solis", rating: 5, sample: true, text: {
+  { name: { en: "Reda H.", fr: "Reda H.", ar: "رضا ه." }, product: "solis", rating: 5, sample: true, text: {
     en: "Bought it for my brother, he wears it every day.",
     fr: "Je l'ai pris pour mon frère, il le porte tous les jours.",
     ar: "اشتريته لأخي وهو يلبسه كل يوم." } }

@@ -119,7 +119,7 @@ window.KAYN = window.KAYN || {};
       return '<figure class="review">' +
         '<div class="review__stars" role="img" aria-label="' + esc(n + " / 5 — " + t("review.stars")) + '">' + new Array(n + 1).join(star) + "</div>" +
         "<blockquote><p>" + esc(text) + "</p></blockquote>" +
-        '<figcaption><span class="review__name">' + esc(r.name) + "</span>" +
+        '<figcaption><span class="review__name">' + esc(typeof r.name === "string" ? r.name : K.L(r.name)) + "</span>" +
         (p ? '<a class="review__product" href="#/collection/' + p.slug + '">' + esc(K.L(p.name)) + "</a>" : "") +
         (r.sample ? '<span class="review__sample">' + esc(t("review.sample")) + "</span>" : "") + "</figcaption></figure>";
     }).join("");

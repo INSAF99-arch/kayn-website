@@ -10,7 +10,7 @@ html[lang="ar"] body { font-family: var(--font-ar-body); font-size: 1.0625rem; l
 html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] .btn, html[lang="ar"] .eyebrow,
 html[lang="ar"] .nav__link, html[lang="ar"] .badge, html[lang="ar"] label, html[lang="ar"] dt { font-family: var(--font-ar-head); }
 /* letter-spacing breaks Arabic letter joining */
-html[lang="ar"] body *:not(.tagline):not(.statement__title) { letter-spacing: 0 !important; }
+html[lang="ar"] body * { letter-spacing: 0 !important; }
 img { max-width: 100%; display: block; }
 a { color: inherit; text-underline-offset: .2em; }
 h1, h2, h3, p, dl, dd, ul { margin: 0; }
@@ -265,6 +265,13 @@ html[dir="rtl"] .insta__tile .crop { transform: translateX(50%); }
 .mini__body { display: flex; flex-direction: column; gap: var(--s-1); }
 .mini .slot { font-size: 0; padding: 0; }
 .mini__name { font: 400 1.1rem var(--font-head); }
+
+/* Legal pages */
+.legal__date { margin-top: var(--s-3); }
+.legal__sec { margin-top: var(--s-5); max-width: 68ch; }
+.legal__sec .h3 { margin-block: var(--s-5) var(--s-2); }
+.legal__sec p, .legal__sec .list { color: #2b2b27; margin-top: var(--s-2); }
+.legal__sec .list li { padding-block: var(--s-1); }
 
 /* Story, contact */
 .story { display: flex; flex-direction: column; align-items: flex-start; }

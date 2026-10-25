@@ -110,7 +110,7 @@ window.KAYN = window.KAYN || {};
     return {
       title: name + " — KAYN", desc: K.L(p.short),
       html: '<section class="section page-top"><div class="wrap">' +
-        '<nav class="crumbs" aria-label="Breadcrumb"><a href="#/collection">' + esc(t("pd.back")) + '</a><span aria-hidden="true">/</span><span aria-current="page">' + esc(name) + "</span></nav>" +
+        '<nav class="crumbs" aria-label="' + esc(t("pd.breadcrumb")) + '"><a href="#/collection">' + esc(t("pd.back")) + '</a><span aria-hidden="true">/</span><span aria-current="page">' + esc(name) + "</span></nav>" +
         '<div class="pdp"><div class="gallery">' + sets + "</div>" +
         '<div class="pdp__info" data-product="' + esc(p.id) + '"><h1 class="h1">' + esc(name) + "</h1>" +
         '<p class="pdp__price">' + K.priceHtml(p, true) + "</p>" +
@@ -157,9 +157,18 @@ window.KAYN = window.KAYN || {};
   }
 
   function legal(kind) {
+    var doc = K.legal[kind], title = K.L(doc.title);
+    var fill = function (s) { return esc(s).replace("{insta}", esc(K.site.instagramHandle)); };
+    var body = doc.sections.map(function (sec, i) {
+      return '<section class="legal__sec"><h2 class="h3">' + (i + 1) + ". " + esc(K.L(sec.h)) + "</h2>" + sec.body.map(function (b) {
+        return b.t === "ul"
+          ? '<ul class="list">' + b.v.map(function (li) { return "<li>" + fill(K.L(li)) + "</li>"; }).join("") + "</ul>"
+          : "<p>" + fill(K.L(b.v)) + "</p>";
+      }).join("") + "</section>";
+    }).join("");
     return {
-      title: t("legal." + kind) + " — KAYN", desc: t("meta.legal"),
-      html: '<section class="section page-top"><div class="wrap wrap--narrow"><h1 class="h1">' + esc(t("legal." + kind)) + '</h1><p class="lead">' + esc(t("legal.body")) + "</p></div></section>"
+      title: title + " — KAYN", desc: title + " — KAYN",
+      html: '<section class="section page-top"><div class="wrap wrap--narrow legal"><h1 class="h1">' + esc(title) + '</h1><p class="fine legal__date">' + esc(K.L(K.legalUpdated)) + "</p>" + body + "</div></section>"
     };
   }
 
