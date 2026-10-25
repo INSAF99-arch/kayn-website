@@ -200,7 +200,7 @@ KAYN.products = [
       fr: "Une déclaration discrète. Une présence indéniable. Conçu pour ceux qui apprécient les détails, SOLIS associe une chaîne raffinée à une unique pierre brillante sertie clos. Sa silhouette épurée et sa finition polie créent un équilibre entre simplicité et sophistication, pour un port quotidien comme pour les occasions plus élégantes. À porter seul pour une touche discrète de distinction, ou avec votre montre préférée pour un style réfléchi et sans effort. Moins, mais mieux.",
       ar: "لمسة هادئة. حضور لا يُنسى. صُمّم لمن يقدّرون التفاصيل، يجمع SOLIS بين سلسلة أنيقة وحجر لامع واحد مثبّت في إطار دائري. يخلق شكله النقي ولمسته المصقولة توازناً بين البساطة والرقيّ، فيناسب الاستخدام اليومي كما المناسبات الأرقى. ارتدِه وحده للمسة تميّز هادئة، أو مع ساعتك المفضلة لإطلالة مدروسة بلا تكلف. الأقل، لكن الأفضل."
     },
-    priceMAD: 3100, pricePlaceholder: false,
+    priceMAD: 3090, pricePlaceholder: false,
     gallery: [
       { src: "assets/solis-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn on the wrist", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté au poignet", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة في إطار دائري، على المعصم" } },
       { src: "assets/solis-2.webp", alt: { en: "Three SOLIS chain bracelets with a diamond, a green stone and a pink stone, worn together on the wrist", fr: "Trois bracelets chaîne SOLIS avec un diamant, une pierre verte et une pierre rose, portés ensemble au poignet", ar: "ثلاثة أساور سلسلة SOLIS بألماسة وحجر أخضر وحجر وردي، على المعصم" } },
@@ -250,7 +250,7 @@ KAYN.products = [
       fr: "Des lignes pures, d'une précision discrète. The Line associe un cordon noir à une fine barre en or blanc 14 carats poli, rehaussée de diamants de laboratoire. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention.",
       ar: "خطوط نقية بدقة هادئة. يجمع The Line بين خيط أسود وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، تزينه ألماسات مصنّعة في المختبر. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه."
     },
-    priceMAD: 3900, pricePlaceholder: false,
+    priceMAD: 3890, pricePlaceholder: false,
     gallery: [{
       src: "assets/line-5.webp",
       alt: {
@@ -299,7 +299,19 @@ KAYN.reviews = [
   { name: "Reda H.", product: "solis", rating: 5, sample: true, text: {
     en: "A gift for my brother. He never takes it off. Understated and elegant, exactly his style.",
     fr: "Un cadeau pour mon frère. Il ne l'enlève plus. Discret et élégant, tout à fait son style.",
-    ar: "هدية لأخي. لا يخلعه أبداً. هادئ وأنيق، تماماً مثل ذوقه." } }
+    ar: "هدية لأخي. لا يخلعه أبداً. هادئ وأنيق، تماماً مثل ذوقه." } },
+  { name: "Salma K.", product: "the-signature", rating: 5, sample: true, text: {
+    en: "I bought it as a gift for my husband and he hasn't taken it off since. Exactly his style: understated and elegant.",
+    fr: "Je l'ai offert à mon mari et il ne l'a plus quitté depuis. Exactement son style : discret et élégant.",
+    ar: "اشتريته هدية لزوجي ولم يخلعه منذ ذلك الحين. تماماً مثل ذوقه: هادئ وأنيق." } },
+  { name: "Nadia A.", product: "the-line", rating: 5, sample: true, text: {
+    en: "I gave it to my fiancé for his birthday. He loved it, and honestly so did I. The packaging made the moment feel special.",
+    fr: "Je l'ai offert à mon fiancé pour son anniversaire. Il l'a adoré, et moi aussi. L'emballage a rendu le moment vraiment spécial.",
+    ar: "قدّمته لخطيبي في عيد ميلاده. أحبّه كثيراً وأنا أيضاً. جعلت العلبة اللحظة مميزة حقاً." } },
+  { name: "Imane Z.", product: "solis", rating: 5, sample: true, text: {
+    en: "I chose SOLIS for our wedding anniversary. He wears it every day and gets compliments. Best gift I've given him.",
+    fr: "J'ai choisi SOLIS pour notre anniversaire de mariage. Il le porte tous les jours et reçoit des compliments. Le plus beau cadeau que je lui aie fait.",
+    ar: "اخترت SOLIS هدية لذكرى زواجنا. يرتديه كل يوم ويتلقى المجاملات. أفضل هدية قدمتها له." } }
 ];
 
 KAYN.getProduct = function (slug) {

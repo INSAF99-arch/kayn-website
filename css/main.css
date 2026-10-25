@@ -268,6 +268,8 @@ html[dir="rtl"] .insta__tile .crop { transform: translateX(50%); }
 
 /* Story, contact */
 .story { display: flex; flex-direction: column; align-items: flex-start; }
+.story .lead { font: 400 clamp(1.45rem, 3.2vw, 2.1rem)/1.3 var(--font-head); color: var(--black); max-width: 28ch; }
+html[lang="ar"] .story .lead { font-family: var(--font-ar-head); line-height: 1.6; }
 .story__block { margin-top: var(--s-6); max-width: 60ch; }
 .story .btn { margin-top: var(--s-7); }
 .contact { display: grid; gap: var(--s-8); }
