@@ -109,19 +109,19 @@ KAYN.products = [
     slug: "the-minimalist",
     name: { en: "The Minimalist", fr: "The Minimalist", ar: "The Minimalist" },
     card: {   // text on the home and collection cards
-      en: "Lab-grown diamond and 14K white gold, in an understated essential designed to make an impression without asking for attention. Refined, effortless, and made to feel like your own.",
-      fr: "Diamant de laboratoire et or blanc 14 carats, dans un essentiel discret conçu pour marquer sans chercher à attirer l'attention. Raffiné, sans effort, et fait pour devenir le vôtre.",
-      ar: "ألماس مصنّع في المختبر وذهب أبيض عيار 14، في قطعة أساسية هادئة صُمّمت لتترك أثراً دون أن تطلب الانتباه. أنيقة وسلسة، ومصنوعة لتشعر أنها لك."
+      en: "Diamond and 14K white gold, in an understated essential designed to make an impression without asking for attention. Refined, effortless, and made to feel like your own.",
+      fr: "Diamant et or blanc 14 carats, dans un essentiel discret conçu pour marquer sans chercher à attirer l'attention. Raffiné, sans effort, et fait pour devenir le vôtre.",
+      ar: "ألماس وذهب أبيض عيار 14، في قطعة أساسية هادئة صُمّمت لتترك أثراً دون أن تطلب الانتباه. أنيقة وسلسة، ومصنوعة لتشعر أنها لك."
     },
     short: {
-      en: "0.10 carat lab-grown diamond · 14K white gold. Understated by design.",
-      fr: "Diamant de laboratoire de 0,10 carat · or blanc 14 carats. Discret par nature.",
-      ar: "ألماسة مصنّعة في المختبر 0.10 قيراط · ذهب أبيض عيار 14. أناقة هادئة."
+      en: "0.10 carat diamond · 14K white gold. Understated by design.",
+      fr: "Diamant de 0,10 carat · or blanc 14 carats. Discret par nature.",
+      ar: "ألماسة 0.10 قيراط · ذهب أبيض عيار 14. أناقة هادئة."
     },
     long: {
-      en: "Understated by design. A refined cord bracelet, elevated by a 0.10 carat lab-grown diamond set in polished 14K white gold. Clean lines, premium materials, and a discreet touch of brilliance. Delivered with an IGI certificate. Wear it alone. Make it yours.",
-      fr: "Discret par nature. Un bracelet sur cordon raffiné, sublimé par un diamant de laboratoire de 0,10 carat serti dans de l'or blanc 14 carats poli. Des lignes épurées, des matériaux premium et une touche discrète d'éclat. Livré avec un certificat IGI. À porter seul. À faire vôtre.",
-      ar: "أناقة هادئة. سوار أنيق بخيط راقٍ، يزينه ألماسة مصنّعة في المختبر بوزن 0.10 قيراط مثبتة في ذهب أبيض عيار 14 مصقول. خطوط نقية، وخامات فاخرة، ولمسة خفية من البريق. يأتي مع شهادة IGI. ارتدِه وحده. واجعله لك."
+      en: "Understated by design. A refined cord bracelet, elevated by a 0.10 carat diamond set in polished 14K white gold. Clean lines, premium materials, and a discreet touch of brilliance. Delivered with an IGI certificate. Wear it alone. Make it yours.",
+      fr: "Discret par nature. Un bracelet sur cordon raffiné, sublimé par un diamant de 0,10 carat serti dans de l'or blanc 14 carats poli. Des lignes épurées, des matériaux premium et une touche discrète d'éclat. Livré avec un certificat IGI. À porter seul. À faire vôtre.",
+      ar: "أناقة هادئة. سوار أنيق بخيط راقٍ، يزينه ألماسة بوزن 0.10 قيراط مثبتة في ذهب أبيض عيار 14 مصقول. خطوط نقية، وخامات فاخرة، ولمسة خفية من البريق. يأتي مع شهادة IGI. ارتدِه وحده. واجعله لك."
     },
     priceMAD: 1590, pricePlaceholder: false,
     gallery: KAYN.oneGallery(),
@@ -140,9 +140,9 @@ KAYN.products = [
     slug: "the-signature",
     name: { en: "The Signature", fr: "The Signature", ar: "The Signature" },
     card: {
-      en: "A defining detail in 14K white gold and lab-grown diamond, for those who appreciate individuality. Confident in character and considered in every line, it brings a subtle edge to everyday style.",
-      fr: "Un détail distinctif en or blanc 14 carats et diamant de laboratoire, pour ceux qui apprécient l'individualité. Affirmé de caractère et réfléchi dans chaque ligne, il apporte une touche subtile de caractère au style du quotidien.",
-      ar: "تفصيل مميّز من الذهب الأبيض عيار 14 والألماس المصنّع في المختبر، لمن يقدّرون التفرّد. واثق في طابعه ومدروس في كل خط، يضفي لمسة خفية من الحدّة على أسلوبك اليومي."
+      en: "A defining detail in 14K white gold and diamond, for those who appreciate individuality. Confident in character and considered in every line, it brings a subtle edge to everyday style.",
+      fr: "Un détail distinctif en or blanc 14 carats et diamant, pour ceux qui apprécient l'individualité. Affirmé de caractère et réfléchi dans chaque ligne, il apporte une touche subtile de caractère au style du quotidien.",
+      ar: "تفصيل مميّز من الذهب الأبيض عيار 14 والألماس، لمن يقدّرون التفرّد. واثق في طابعه ومدروس في كل خط، يضفي لمسة خفية من الحدّة على أسلوبك اليومي."
     },
     short: {
       en: "Olive-green cord, geometric 14K white gold setting, 0.10 carat diamond.",
@@ -187,9 +187,9 @@ KAYN.products = [
     name: { en: "SOLIS", fr: "SOLIS", ar: "SOLIS" },
     optionLabel: { en: "Choose your metal", fr: "Choisissez votre métal", ar: "اختر المعدن" },
     card: {
-      en: "Fine 14K white or yellow gold set with a brilliant lab-grown diamond. Clean lines and a quiet brilliance give this piece its character. Elegant without excess, SOLIS brings a refined finishing touch to any look.",
-      fr: "De l'or blanc ou jaune 14 carats serti d'un brillant diamant de laboratoire. Des lignes épurées et un éclat discret donnent à cette pièce son caractère. Élégant sans excès, SOLIS apporte une touche finale raffinée à toutes les tenues.",
-      ar: "ذهب أبيض أو أصفر عيار 14 مرصّع بألماسة مصنّعة في المختبر لامعة. خطوط نقية وبريق هادئ يمنحان هذه القطعة طابعها. أنيق دون مبالغة، يضيف SOLIS لمسة أخيرة راقية إلى أي إطلالة."
+      en: "Fine 14K white or yellow gold set with a brilliant diamond. Clean lines and a quiet brilliance give this piece its character. Elegant without excess, SOLIS brings a refined finishing touch to any look.",
+      fr: "De l'or blanc ou jaune 14 carats serti d'un brillant diamant. Des lignes épurées et un éclat discret donnent à cette pièce son caractère. Élégant sans excès, SOLIS apporte une touche finale raffinée à toutes les tenues.",
+      ar: "ذهب أبيض أو أصفر عيار 14 مرصّع بألماسة لامعة. خطوط نقية وبريق هادئ يمنحان هذه القطعة طابعها. أنيق دون مبالغة، يضيف SOLIS لمسة أخيرة راقية إلى أي إطلالة."
     },
     short: {
       en: "Fine chain with a single bezel-set diamond, in 14K white or yellow gold.",
@@ -237,9 +237,9 @@ KAYN.products = [
     slug: "the-line",
     name: { en: "The Line", fr: "The Line", ar: "The Line" },
     card: {
-      en: "A slim bar of 14K white gold set with two lab-grown diamonds. Defined by balance and clean geometry, this piece makes simplicity its signature. Modern, composed, and designed to stand apart without saying too much.",
-      fr: "Une fine barre en or blanc 14 carats sertie de deux diamants de laboratoire. Défini par l'équilibre et une géométrie épurée, ce bijou fait de la simplicité sa signature. Moderne, maîtrisé, et conçu pour se démarquer sans en dire trop.",
-      ar: "قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بألماستين مصنّعتين في المختبر. يتميّز بالتوازن والهندسة النقية، وتصبح البساطة توقيع هذه القطعة. عصرية ومتزنة، وصُمّمت لتتميّز دون أن تقول الكثير."
+      en: "A slim bar of 14K white gold set with two diamonds. Defined by balance and clean geometry, this piece makes simplicity its signature. Modern, composed, and designed to stand apart without saying too much.",
+      fr: "Une fine barre en or blanc 14 carats sertie de deux diamants. Défini par l'équilibre et une géométrie épurée, ce bijou fait de la simplicité sa signature. Moderne, maîtrisé, et conçu pour se démarquer sans en dire trop.",
+      ar: "قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بألماستين. يتميّز بالتوازن والهندسة النقية، وتصبح البساطة توقيع هذه القطعة. عصرية ومتزنة، وصُمّمت لتتميّز دون أن تقول الكثير."
     },
     short: {
       en: "Black cord, slim polished 14K white gold bar, diamond accents.",
@@ -247,9 +247,9 @@ KAYN.products = [
       ar: "خيط أسود، وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، ولمسات من الألماس."
     },
     long: {
-      en: "Pure lines, quietly precise. The Line pairs a black cord with a slim bar of polished 14K white gold, accented with lab-grown diamonds. Designed for everyday wear, it adds a discreet touch of brilliance without demanding attention.",
-      fr: "Des lignes pures, d'une précision discrète. The Line associe un cordon noir à une fine barre en or blanc 14 carats poli, rehaussée de diamants de laboratoire. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention.",
-      ar: "خطوط نقية بدقة هادئة. يجمع The Line بين خيط أسود وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، تزينه ألماسات مصنّعة في المختبر. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه."
+      en: "Pure lines, quietly precise. The Line pairs a black cord with a slim bar of polished 14K white gold, accented with diamonds. Designed for everyday wear, it adds a discreet touch of brilliance without demanding attention.",
+      fr: "Des lignes pures, d'une précision discrète. The Line associe un cordon noir à une fine barre en or blanc 14 carats poli, rehaussée de diamants. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention.",
+      ar: "خطوط نقية بدقة هادئة. يجمع The Line بين خيط أسود وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، تزينه ألماسات. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه."
     },
     priceMAD: 3890, pricePlaceholder: false,
     gallery: [{
