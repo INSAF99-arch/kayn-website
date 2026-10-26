@@ -25,7 +25,7 @@ window.KAYN = window.KAYN || {};
           '<a class="btn btn--ghost" href="#/story">' + esc(t("hero.cta2")) + "</a></div></div>" +
           '<div class="hero__media">' + K.cropRaw("assets/one-olive-wrist.webp", 1254, { x: 0, y: 0, w: 1254, h: 1254 }, t("hero.alt"), { eager: true }) + "</div></div></section>" +
 
-        '<section class="section" aria-labelledby="coll-title"><div class="wrap">' +
+        '<section class="section section--tint" aria-labelledby="coll-title"><div class="wrap">' +
           '<div class="section__head"><span class="eyebrow">' + esc(t("coll.eyebrow")) + '</span><h2 id="coll-title" class="h2">' + esc(t("coll.title")) + "</h2></div>" +
           grid() + priceNote() + "</div></section>" +
 
@@ -56,7 +56,7 @@ window.KAYN = window.KAYN || {};
   function collection() {
     return {
       title: t("meta.collection"), desc: t("meta.collectionDesc"),
-      html: '<section class="section page-top"><div class="wrap"><div class="section__head"><span class="eyebrow">' + esc(t("coll.eyebrow")) + '</span>' +
+      html: '<section class="section section--tint page-top"><div class="wrap"><div class="section__head"><span class="eyebrow">' + esc(t("coll.eyebrow")) + '</span>' +
         '<h1 class="h1">' + esc(t("coll.title")) + '</h1><p class="lead">' + esc(t("coll.intro")) + "</p></div>" +
         grid() + priceNote() + "</div></section>"
     };

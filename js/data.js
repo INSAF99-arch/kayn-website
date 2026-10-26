@@ -108,7 +108,12 @@ KAYN.products = [
     id: "the-minimalist",
     slug: "the-minimalist",
     name: { en: "The Minimalist", fr: "The Minimalist", ar: "The Minimalist" },
-    card: {   // text on the home and collection cards
+    listing: {   // one-line description shown on the home and collection cards (price sits underneath)
+      en: "The Minimalist Cord Bracelet, 0.10 ct Diamond, 14K White Gold",
+      fr: "Bracelet cordon The Minimalist, diamant 0,10 ct, or blanc 14 carats",
+      ar: "سوار The Minimalist بخيط، ألماسة 0.10 قيراط، ذهب أبيض عيار 14"
+    },
+    card: {   // longer marketing text (not shown on the cards at the moment)
       en: "Diamond and 14K white gold, in an understated essential designed to make an impression without asking for attention. Refined, effortless, and made to feel like your own.",
       fr: "Diamant et or blanc 14 carats, dans un essentiel discret conçu pour marquer sans chercher à attirer l'attention. Raffiné, sans effort, et fait pour devenir le vôtre.",
       ar: "ألماس وذهب أبيض عيار 14، في قطعة أساسية هادئة صُمّمت لتترك أثراً دون أن تطلب الانتباه. أنيقة وسلسة، ومصنوعة لتشعر أنها لك."
@@ -139,6 +144,11 @@ KAYN.products = [
     id: "the-signature",
     slug: "the-signature",
     name: { en: "The Signature", fr: "The Signature", ar: "The Signature" },
+    listing: {
+      en: "The Signature Cord Bracelet, 0.10 ct Diamond, Geometric 14K White Gold Setting",
+      fr: "Bracelet cordon The Signature, diamant 0,10 ct, sertissage géométrique en or blanc 14 carats",
+      ar: "سوار The Signature بخيط، ألماسة 0.10 قيراط، تصميم هندسي من الذهب الأبيض عيار 14"
+    },
     card: {
       en: "A defining detail in 14K white gold and diamond, for those who appreciate individuality. Confident in character and considered in every line, it brings a subtle edge to everyday style.",
       fr: "Un détail distinctif en or blanc 14 carats et diamant, pour ceux qui apprécient l'individualité. Affirmé de caractère et réfléchi dans chaque ligne, il apporte une touche subtile de caractère au style du quotidien.",
@@ -186,6 +196,11 @@ KAYN.products = [
     slug: "solis",
     name: { en: "SOLIS", fr: "SOLIS", ar: "SOLIS" },
     optionLabel: { en: "Choose your metal", fr: "Choisissez votre métal", ar: "اختر المعدن" },
+    listing: {
+      en: "SOLIS Chain Bracelet, 0.10 ct Diamond, 14K White or Yellow Gold",
+      fr: "Bracelet chaîne SOLIS, diamant 0,10 ct, or blanc ou jaune 14 carats",
+      ar: "سوار سلسلة SOLIS، ألماسة 0.10 قيراط، ذهب أبيض أو أصفر عيار 14"
+    },
     card: {
       en: "Fine 14K white or yellow gold set with a brilliant diamond. Clean lines and a quiet brilliance give this piece its character. Elegant without excess, SOLIS brings a refined finishing touch to any look.",
       fr: "De l'or blanc ou jaune 14 carats serti d'un brillant diamant. Des lignes épurées et un éclat discret donnent à cette pièce son caractère. Élégant sans excès, SOLIS apporte une touche finale raffinée à toutes les tenues.",
@@ -236,6 +251,11 @@ KAYN.products = [
     id: "the-line",
     slug: "the-line",
     name: { en: "The Line", fr: "The Line", ar: "The Line" },
+    listing: {
+      en: "The Line Cord Bracelet, Two 0.10 ct Diamonds, 14K White Gold Bar",
+      fr: "Bracelet cordon The Line, deux diamants de 0,10 ct, barre en or blanc 14 carats",
+      ar: "سوار The Line بخيط، ألماستان 0.10 قيراط لكل منهما، قضيب من الذهب الأبيض عيار 14"
+    },
     card: {
       en: "A slim bar of 14K white gold set with two diamonds. Defined by balance and clean geometry, this piece makes simplicity its signature. Modern, composed, and designed to stand apart without saying too much.",
       fr: "Une fine barre en or blanc 14 carats sertie de deux diamants. Défini par l'équilibre et une géométrie épurée, ce bijou fait de la simplicité sa signature. Moderne, maîtrisé, et conçu pour se démarquer sans en dire trop.",

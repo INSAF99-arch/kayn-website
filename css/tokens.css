@@ -6,6 +6,10 @@
   --beige: #D9D0C2;
   --offwhite: #F6F4EE;
 
+  /* Soft surfaces: Beige mixed into Off-white (35% and 20%), used behind product photography */
+  --tint: #ECE7DF;
+  --tint-soft: #F0EDE5;
+
   /* Functional tints derived from the palette (text/hairlines only) */
   --muted: #5A5A53;          /* secondary text on light, 6:1 on off-white */
   --muted-on-dark: #BDB8AC;  /* secondary text on black/olive */

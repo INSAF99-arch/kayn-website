@@ -193,6 +193,39 @@ main:focus { outline: none; }
 html[lang="ar"] .dialog__title { font-family: var(--font-ar-head); }
 .dialog__close { position: absolute; top: var(--s-3); inset-inline-end: var(--s-3); width: 44px; height: 44px; background: none; border: 0; font-size: 1.8rem; line-height: 1; cursor: pointer; }
 
+/* Product card text: one-line description, price underneath */
+.card__body { gap: var(--s-2); padding-top: var(--s-4); }
+.card__listing { margin: 0; font: 400 .98rem/1.5 var(--font-body); letter-spacing: 0; }
+html[lang="ar"] .card__listing { font-family: var(--font-ar-body); line-height: 1.8; }
+.card__listing a { text-decoration: none; }
+.card__listing a:hover { text-decoration: underline; text-underline-offset: .25em; }
+.card__price { margin: auto 0 0; padding-top: var(--s-2); font: 400 .98rem/1.4 var(--font-body); color: var(--black); }
+html[lang="ar"] .card__price { font-family: var(--font-ar-body); }
+
+/* Hover: the second photo fades in over the first (devices with a pointer only) */
+.card__media { position: relative; }
+.card__img { display: block; transition: opacity .55s var(--ease); }
+.card__img--alt { position: absolute; inset: var(--s-4); opacity: 0; pointer-events: none; }
+@media (hover: hover) {
+  .card__media:hover .card__img--alt, .card__media:focus-visible .card__img--alt { opacity: 1; }
+  .card__media:hover .card__img--main, .card__media:focus-visible .card__img--main { opacity: 0; }
+}
+
+/* Soft product photography: tinted surfaces and faded photo edges ------------------ */
+.section--tint { background: var(--tint); }
+.card__media { background: var(--tint-soft); padding: var(--s-4); }
+.gallery__main { background: var(--tint-soft); padding: var(--s-5); }
+.detail__media .crop, .card__media .crop, .gallery__main .crop {
+  background: transparent;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%), linear-gradient(to bottom, transparent 0, #000 6%, #000 94%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%), linear-gradient(to bottom, transparent 0, #000 6%, #000 94%, transparent 100%);
+  mask-composite: intersect;
+}
+.card .slot, .gallery__main .slot { background: var(--tint-soft); border-color: transparent; }
+/* Slimmer dark banner so black blocks don't dominate the product area */
+.section--black.wait { padding-block: clamp(2.5rem, 5vw, 4.5rem); }
+
 /* Colour selector & availability */
 .swatch { display: inline-block; width: 22px; height: 22px; border-radius: 50%; border: 1px solid rgba(11,11,11,.35); flex: none; }
 .swatch--sm { width: 14px; height: 14px; }
