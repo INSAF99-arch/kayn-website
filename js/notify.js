@@ -70,14 +70,40 @@ window.KAYN = window.KAYN || {};
     }, 900);
   };
 
-  /* Result of the (demo) availability check: always "currently unavailable", plus the email form. */
-  K.availabilityResultHtml = function (p, color) {
-    var t = K.t, esc = K.esc;
-    return '<span class="eyebrow">' + esc(t("form.demoBadge")) + "</span>" +
-      '<h3 class="avail__title">' + esc(t("avail.title")) + "</h3>" +
-      '<p class="avail__piece">' + esc(K.L(p.name) + " — " + K.L(color.name)) + "</p>" +
-      "<p>" + esc(t("avail.msg")) + "</p><p>" + esc(t("avail.invite")) + "</p>" +
-      K.notifyFormHtml(p.id, color.id, "avail");
+  /* The options currently chosen on a product page (colour/metal and, if the product has them, stone),
+     combined into one { id, name } selection. Falls back to the first option of each group. */
+  K.selectionOf = function (p, root) {
+    var btns = root ? [].slice.call(root.querySelectorAll('.colors__btn[aria-pressed="true"]')) : [];
+    var chosen = btns.length ? btns.map(function (b) {
+      var list = b.getAttribute("data-group") === "stone" ? p.stones : p.colors;
+      return list.filter(function (c) { return c.id === b.getAttribute("data-color"); })[0];
+    }) : [p.colors[0]].concat(p.stones ? [p.stones[0]] : []);
+    var sel = { id: chosen.map(function (c) { return c.id; }).join("+"), name: {} };
+    Object.keys(K.langs).forEach(function (code) {
+      sel.name[code] = chosen.map(function (c) { return c.name[code] || c.name.en; }).join(" · ");
+    });
+    return sel;
+  };
+
+  /* Out-of-stock block shown directly on the product page: message plus the notification form.
+     FRONTEND DEMO: every product is shown as out of stock; there is no stock service behind it. */
+  K.outOfStockHtml = function (p) {
+    var t = K.t, esc = K.esc, sel = K.selectionOf(p, null);
+    return '<div class="avail" id="avail"><div class="avail__panel">' +
+      '<h2 class="avail__title">' + esc(t("oos.title")) + "</h2>" +
+      '<p class="avail__piece" id="avail-piece">' + esc(K.L(p.name) + " — " + K.L(sel.name)) + "</p>" +
+      '<p class="avail__copy">' + esc(t("oos.copy")) + "</p>" +
+      K.notifyFormHtml(p.id, sel.id, "avail") + "</div></div>";
+  };
+
+  /* Keep the "which piece" line and the hidden option field in step with the chosen colour/stone. */
+  K.updateAvailability = function (p) {
+    var info = document.querySelector(".pdp__info"), piece = document.getElementById("avail-piece");
+    if (!info || !piece) return;
+    var sel = K.selectionOf(p, info);
+    piece.textContent = K.L(p.name) + " — " + K.L(sel.name);
+    var hidden = document.querySelector("#avail input[name=colorId]");
+    if (hidden) hidden.value = sel.id;
   };
 
   K.handleNotifySubmit = function (form) {

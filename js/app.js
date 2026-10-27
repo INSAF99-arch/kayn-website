@@ -3,10 +3,6 @@
   var main = document.getElementById("main");
   var announcer = document.getElementById("announcer");
 
-  function resetAvailability() {
-    var panel = document.getElementById("avail-panel");
-    if (panel) { panel.hidden = true; panel.innerHTML = ""; }
-  }
 
   function route() {
     K.pdpSlug = null;
@@ -137,29 +133,7 @@
         var thumb = shared.querySelectorAll(".gallery__thumb")[show];
         if (thumb) thumb.click();
       }
-      resetAvailability();                       // a new colour needs a new check
-    },
-    check: function (el) {
-      var info = el.closest(".pdp__info"), p = K.getProduct(K.pdpSlug);
-      // Selected options (colour/metal and, if the product has them, stone) form one choice.
-      var chosen = [].slice.call(info.querySelectorAll(".colors__btn[aria-pressed=\"true\"]")).map(function (b) {
-        var list = b.getAttribute("data-group") === "stone" ? p.stones : p.colors;
-        return list.filter(function (c) { return c.id === b.getAttribute("data-color"); })[0];
-      });
-      var color = { id: chosen.map(function (c) { return c.id; }).join("+"), name: {} };
-      Object.keys(K.langs).forEach(function (code) {
-        color.name[code] = chosen.map(function (c) { return c.name[code] || c.name.en; }).join(" · ");
-      });
-      var panel = document.getElementById("avail-panel"), label = el.textContent;
-      el.disabled = true; el.setAttribute("aria-busy", "true"); el.textContent = K.t("avail.checking");
-      panel.hidden = true;
-      // DEMO ONLY: no stock service exists, so every check resolves to "currently unavailable".
-      setTimeout(function () {
-        el.disabled = false; el.removeAttribute("aria-busy"); el.textContent = label;
-        panel.innerHTML = K.availabilityResultHtml(p, color);
-        panel.hidden = false;
-        panel.focus();
-      }, 900);
+      K.updateAvailability(p);                   // the notification form follows the chosen option
     },
     gallery: function (el) {
       var i = el.getAttribute("data-index"), set = el.closest(".gallery__set");

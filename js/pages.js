@@ -103,6 +103,12 @@ window.KAYN = window.KAYN || {};
       specRow(t("pd.type"), p.diamond.type) + specRow(t("pd.origin"), p.diamond.origin) + specRow(t("pd.carat"), p.diamond.carat) + specRow(t("pd.clarity"), p.diamond.clarity) + specRow(t("pd.cert"), p.diamond.certification) +
       specRow(t("pd.count"), p.diamond.count) + specRow(t("pd.dim"), p.dimensions) +
       (p.extraSpecs || []).map(function (s) { return specRow(K.L(s.label), s.value); }).join("");
+    /* Three short sections that describe the piece in more depth. */
+    var detailSections = p.details ? '<section class="pdetails" aria-label="' + esc(t("pd.more")) + '"><div class="pdetails__grid">' + [
+      [t("pd.s1t"), K.L(p.details.design)],
+      [t("pd.s2t"), K.L(p.details.materials)],
+      [t("pd.s3t"), t("pd.s3")]
+    ].map(function (s) { return '<div class="pdetails__item"><h2 class="h3">' + esc(s[0]) + "</h2><p>" + esc(s[1]) + "</p></div>"; }).join("") + "</div></section>" : "";
     var others = K.products.filter(function (o) { return o.id !== p.id; }).map(function (o) {
       return '<a class="mini" href="#/collection/' + o.slug + '"><span class="mini__media">' + K.productImage(o, 0) + '</span><span class="mini__body"><span class="mini__name">' + esc(K.L(o.name)) + "</span></span></a>";
     }).join("");
@@ -114,14 +120,15 @@ window.KAYN = window.KAYN || {};
         '<div class="pdp"><div class="gallery">' + sets + "</div>" +
         '<div class="pdp__info" data-product="' + esc(p.id) + '"><h1 class="h1">' + esc(name) + "</h1>" +
         '<p class="pdp__price">' + K.priceHtml(p, true) + "</p>" +
+        '<p class="pdp__stock"><span class="badge badge--out"><span class="badge__dot" aria-hidden="true"></span>' + esc(t("oos.status")) + "</span></p>" +
         '<p class="lead">' + esc(K.L(p.short)) + "</p>" +
         colors +
+        K.outOfStockHtml(p) +
         '<h2 class="h3">' + esc(t("pd.desc")) + "</h2><p>" + esc(K.L(p.long)) + "</p>" +
         (specs ? '<h2 class="h3">' + esc(t("pd.material")) + '</h2><dl class="specs">' + specs + "</dl>" : "") +
         (care ? '<h2 class="h3">' + esc(t("pd.care")) + "</h2>" + care : "") +
-        '<div class="avail"><p class="avail__hint">' + esc(t("avail.hint")) + "</p>" +
-        '<button type="button" class="btn btn--solid btn--block" data-action="check">' + esc(t("avail.check")) + "</button>" +
-        '<div class="avail__panel" id="avail-panel" tabindex="-1" hidden></div></div></div></div>' +
+        "</div></div>" +
+        detailSections +
         '<div class="also"><h2 class="h3">' + esc(t("coll.also")) + '</h2><div class="also__grid">' + others + "</div></div>" +
         "</div></section>"
     };
