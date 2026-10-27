@@ -77,7 +77,7 @@ KAYN.oneGallery = function () {
   ];
 };
 
-/* The Signature: photos after the main image (assets/essential-main.jpg), in display order. */
+/* The Signature: photos after the main image (assets/essential-main.webp), in display order. */
 KAYN.signatureGallery = function () {
   var P = "assets/";
   var a = function (en, fr, ar) { return { en: "The Signature: " + en, fr: "The Signature : " + fr, ar: "The Signature: " + ar }; };
@@ -189,7 +189,7 @@ KAYN.products = [
     },
     priceMAD: 2290, pricePlaceholder: false,
     gallery: [{
-      src: "assets/essential-main.jpg",
+      src: "assets/essential-main.webp",
       alt: {
         en: "The Signature bracelet: geometric setting with a round diamond on a double olive cord, worn on the wrist",
         fr: "Bracelet The Signature : sertissage géométrique avec diamant rond sur un double cordon olive, porté au poignet",
