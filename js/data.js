@@ -53,9 +53,9 @@ KAYN.oneColors = function () {
   };
   return [
     { id: "olive", hex: "#4B5232", name: N.olive, show: 0, images: [] },
-    { id: "black", hex: "#0B0B0B", name: N.black, show: 4, images: [] },
-    { id: "grey", hex: "#A9A9A9", name: N.grey, show: 1, images: [] },
-    { id: "red", hex: "#D8261D", name: N.red, show: 2, images: [] }
+    { id: "black", hex: "#0B0B0B", name: N.black, show: 5, images: [] },
+    { id: "grey", hex: "#A9A9A9", name: N.grey, show: 2, images: [] },
+    { id: "red", hex: "#D8261D", name: N.red, show: 3, images: [] }
   ];
 };
 
@@ -67,6 +67,7 @@ KAYN.oneGallery = function () {
   var alt = function (en, fr, ar) { return { en: en, fr: fr, ar: ar }; };
   var worn = function (en, fr, ar) { return alt("The Minimalist: " + en, "The Minimalist : " + fr, "The Minimalist: " + ar); };
   return [
+    { src: P + "one-olive-main.webp", alt: worn("olive cord bracelet with a single diamond, worn on the wrist in the sun", "bracelet à cordon olive et un diamant unique, porté au poignet au soleil", "سوار بخيط زيتوني وألماسة واحدة على المعصم تحت الشمس") },
     { src: P + "one-olive-wrist.webp", alt: worn("olive cord bracelet with a single diamond, worn on the wrist", "bracelet à cordon olive et un diamant unique, porté au poignet", "سوار بخيط زيتوني وألماسة واحدة على المعصم") },
     { src: P + "one-grey-sunset.webp", alt: worn("grey cord bracelet with a single diamond, worn at sunset", "bracelet à cordon gris et un diamant unique, porté au coucher du soleil", "سوار بخيط رمادي وألماسة واحدة عند الغروب") },
     { src: P + "one-red-wrist.webp", alt: worn("red cord bracelet with a single diamond, worn on the wrist", "bracelet à cordon rouge et un diamant unique, porté au poignet", "سوار بخيط أحمر وألماسة واحدة على المعصم") },
