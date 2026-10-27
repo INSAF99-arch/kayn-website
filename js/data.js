@@ -349,9 +349,9 @@ KAYN.products = [
         ar: "قضيب رفيع من الذهب الأبيض، مرصّع من طرفه إلى طرفه بألماسات دقيقة، يمتد على المعصم فوق خيط ناعم. هندسي ودقيق: خط واحد واثق."
       },
       materials: {
-        en: "The bar is crafted in 14K white gold and pavé-set with diamonds totalling 1 carat. Available on a bronze or blue cord.",
-        fr: "La barre est réalisée en or blanc 14 carats et sertie en pavé de diamants totalisant 1 carat. Disponible sur cordon bronze ou bleu.",
-        ar: "صُنع القضيب من الذهب الأبيض عيار 14 ومرصّع بالألماس بوزن إجمالي 1 قيراط. متوفر بخيط برونزي أو أزرق."
+        en: "The bar is crafted in 14K white gold and pavé-set with 20 diamonds totalling 1 carat, delivered with an IGI certificate. Available on a bronze or blue cord.",
+        fr: "La barre est réalisée en or blanc 14 carats et sertie en pavé de 20 diamants totalisant 1 carat, livrés avec un certificat IGI. Disponible sur cordon bronze ou bleu.",
+        ar: "صُنع القضيب من الذهب الأبيض عيار 14 ومرصّع بـ 20 ألماسة بوزن إجمالي 1 قيراط، وتأتي مع شهادة IGI. متوفر بخيط برونزي أو أزرق."
       }
     },
     card: {
@@ -383,7 +383,7 @@ KAYN.products = [
       { id: "blue", hex: "#1F3A5F", name: { en: "Blue", fr: "Bleu", ar: "أزرق" }, show: null, images: [] }
     ],
     metal: { setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, hardware: null },
-    diamond: { type: KAYN.labGrown, origin: null, carat: { en: "1 ct total", fr: "1 ct au total", ar: "1 قيراط إجمالاً" }, clarity: null, certification: null, count: null },
+    diamond: { type: KAYN.labGrown, origin: null, carat: { en: "1 ct total", fr: "1 ct au total", ar: "1 قيراط إجمالاً" }, clarity: null, certification: "IGI", count: "20" },
     dimensions: null,
     care: null
   }
