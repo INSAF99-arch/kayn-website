@@ -333,6 +333,59 @@ KAYN.products = [
     diamond: { type: KAYN.labGrown, origin: null, carat: { en: "0.10 ct each", fr: "0,10 ct chacun", ar: "0.10 قيراط لكل ألماسة" }, clarity: "VVS2", certification: "IGI", count: "2" },
     dimensions: null,
     care: null
+  },
+  {
+    id: "vector",
+    slug: "vector",
+    name: { en: "Vector", fr: "Vector", ar: "Vector" },
+    listing: {
+      title: { en: "Vector Cord Bracelet", fr: "Bracelet cordon Vector", ar: "سوار Vector بخيط" },
+      details: { en: "1ct Black Diamonds, 14K White Gold Bar", fr: "Diamants noirs 1ct, barre en or blanc 14 carats", ar: "ألماس أسود 1 قيراط، قضيب من الذهب الأبيض عيار 14" }
+    },
+    details: {
+      design: {
+        en: "A slender bar of white gold, paved from end to end with fine black stones and drawn across the wrist on a soft cord. Dark, graphic and precise: a single confident line.",
+        fr: "Une fine barre en or blanc, entièrement pavée de petites pierres noires et posée sur un cordon souple. Sombre, graphique et précis : une seule ligne, pleine d'assurance.",
+        ar: "قضيب رفيع من الذهب الأبيض، مرصّع من طرفه إلى طرفه بأحجار سوداء دقيقة، يمتد على المعصم فوق خيط ناعم. داكن وهندسي ودقيق: خط واحد واثق."
+      },
+      materials: {
+        en: "The bar is crafted in 14K white gold and pavé-set with black diamonds totalling 1 carat. Available on a bronze or blue cord.",
+        fr: "La barre est réalisée en or blanc 14 carats et sertie en pavé de diamants noirs totalisant 1 carat. Disponible sur cordon bronze ou bleu.",
+        ar: "صُنع القضيب من الذهب الأبيض عيار 14 ومرصّع بألماس أسود بوزن إجمالي 1 قيراط. متوفر بخيط برونزي أو أزرق."
+      }
+    },
+    card: {
+      en: "A slim bar of 14K white gold paved with black diamonds. Dark, graphic and precise, it draws a single confident line across the wrist.",
+      fr: "Une fine barre en or blanc 14 carats pavée de diamants noirs. Sombre, graphique et précise, elle trace une seule ligne pleine d'assurance sur le poignet.",
+      ar: "قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بالألماس الأسود. داكن وهندسي ودقيق، يرسم خطاً واحداً واثقاً على المعصم."
+    },
+    short: {
+      en: "Slim 14K white gold bar paved with black diamonds, on a soft cord.",
+      fr: "Fine barre en or blanc 14 carats pavée de diamants noirs, sur cordon souple.",
+      ar: "قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بالألماس الأسود، على خيط ناعم."
+    },
+    long: {
+      en: "One line, drawn in black and white gold. Vector sets a slim 14K white gold bar with black diamonds on a soft cord. Designed for everyday wear, it brings a dark, discreet brilliance without demanding attention.",
+      fr: "Une seule ligne, tracée en noir et or blanc. Vector associe une fine barre en or blanc 14 carats sertie de diamants noirs à un cordon souple. Conçu pour le quotidien, il apporte un éclat sombre et discret sans chercher à attirer l'attention.",
+      ar: "خط واحد يرسمه الأسود والذهب الأبيض. يجمع Vector بين قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بالألماس الأسود وخيط ناعم. صُمّم للاستخدام اليومي، ويمنح بريقاً داكناً وهادئاً دون أن يلفت الانتباه."
+    },
+    priceMAD: 4290, pricePlaceholder: false,   // price not yet supplied: replace with the real one
+    gallery: [{
+      src: "assets/vector-main.webp",
+      alt: {
+        en: "Vector bracelet: black cord with a slim white gold bar paved with black diamonds, worn on the wrist",
+        fr: "Bracelet Vector : cordon noir avec une fine barre en or blanc pavée de diamants noirs, porté au poignet",
+        ar: "سوار Vector: خيط أسود مع قضيب رفيع من الذهب الأبيض مرصّع بالألماس الأسود، على المعصم"
+      }
+    }],
+    colors: [
+      { id: "bronze", hex: "#8C6239", name: { en: "Bronze", fr: "Bronze", ar: "برونزي" }, show: null, images: [] },
+      { id: "blue", hex: "#1F3A5F", name: { en: "Blue", fr: "Bleu", ar: "أزرق" }, show: null, images: [] }
+    ],
+    metal: { setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, hardware: null },
+    diamond: { type: { en: "Black diamonds", fr: "Diamants noirs", ar: "ألماس أسود" }, origin: null, carat: { en: "1 ct total", fr: "1 ct au total", ar: "1 قيراط إجمالاً" }, clarity: null, certification: null, count: null },
+    dimensions: null,
+    care: null
   }
 ];
 
