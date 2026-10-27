@@ -69,11 +69,11 @@ KAYN.oneGallery = function () {
   return [
     { src: P + "one-olive-main.webp", alt: worn("olive cord bracelet with a single diamond, worn on the wrist in the sun", "bracelet à cordon olive et un diamant unique, porté au poignet au soleil", "سوار بخيط زيتوني وألماسة واحدة على المعصم تحت الشمس") },
     { src: P + "one-olive-wrist.webp", alt: worn("olive cord bracelet with a single diamond, worn on the wrist", "bracelet à cordon olive et un diamant unique, porté au poignet", "سوار بخيط زيتوني وألماسة واحدة على المعصم") },
-    { src: P + "one-grey-sunset.webp", alt: worn("grey cord bracelet with a single diamond, worn at sunset", "bracelet à cordon gris et un diamant unique, porté au coucher du soleil", "سوار بخيط رمادي وألماسة واحدة عند الغروب") },
+    { src: P + "one-grey-wrist.webp", alt: worn("grey cord bracelet with a single diamond, worn on the wrist", "bracelet à cordon gris et un diamant unique, porté au poignet", "سوار بخيط رمادي وألماسة واحدة على المعصم") },
     { src: P + "one-red-wrist.webp", alt: worn("red cord bracelet with a single diamond, worn on the wrist", "bracelet à cordon rouge et un diamant unique, porté au poignet", "سوار بخيط أحمر وألماسة واحدة على المعصم") },
     { src: P + "one-olive-wrist-2.webp", alt: worn("olive cord bracelet with a single diamond, worn with a linen shirt", "bracelet à cordon olive et un diamant unique, porté avec une chemise en lin", "سوار بخيط زيتوني وألماسة واحدة مع قميص من الكتان") },
-    { src: P + "one-black-flat.webp", alt: worn("black cord bracelet with a single diamond in a round bezel", "bracelet à cordon noir et un diamant unique en serti clos rond", "سوار بخيط أسود وألماسة واحدة في إطار دائري") },
-    { src: P + "one-colours-stone.webp", alt: worn("in red, olive, black and grey on a stone surface", "en rouge, olive, noir et gris sur une pierre", "بألوان الأحمر والزيتوني والأسود والرمادي على سطح حجري") }
+    { src: P + "one-black-stone.webp", alt: worn("black cord bracelet with a single diamond in a round bezel, on a stone surface", "bracelet à cordon noir et un diamant unique en serti clos rond, sur une pierre", "سوار بخيط أسود وألماسة واحدة في إطار دائري على سطح حجري") },
+    { src: P + "one-four-colours.webp", alt: worn("in red, olive, black and grey on a stone surface", "en rouge, olive, noir et gris sur une pierre", "بألوان الأحمر والزيتوني والأسود والرمادي على سطح حجري") }
   ];
 };
 
