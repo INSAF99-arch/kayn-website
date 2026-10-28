@@ -163,6 +163,9 @@ main:focus { outline: none; }
 /* Detail */
 .detail__inner { display: grid; gap: var(--s-7); align-items: center; }
 .detail__text > p { color: var(--muted-on-dark); margin-top: var(--s-4); max-width: 52ch; }
+.detail__text > p.detail__name { margin-top: var(--s-5); color: var(--offwhite); font: 600 clamp(1.6rem, 2.6vw, 2.15rem)/1.15 var(--font-head); letter-spacing: 0; }
+.detail__text > p.detail__name + p { margin-top: var(--s-2); }
+html[lang="ar"] .detail__text > p.detail__name { font-family: var(--font-ar-head); line-height: 1.5; }
 .dl { margin-top: var(--s-6); border-top: 1px solid var(--line-on-dark); }
 .dl > div { display: grid; grid-template-columns: 8rem 1fr; gap: var(--s-4); padding-block: var(--s-4); border-bottom: 1px solid var(--line-on-dark); }
 .dl dt { font: 500 .75rem/1.6 var(--font-head); letter-spacing: var(--track-label); text-transform: uppercase; color: var(--muted-on-dark); }
@@ -202,7 +205,7 @@ html[lang="ar"] .dialog__title { font-family: var(--font-ar-head); }
 
 /* Product card text: one-line description, price underneath */
 .card__body { gap: var(--s-2); padding-top: var(--s-4); }
-.card__listing { margin: 0; font: 400 clamp(1.15rem, 1.6vw, 1.35rem)/1.25 var(--font-head); letter-spacing: 0; }
+.card__listing { margin: 0; font: 600 clamp(1.15rem, 1.6vw, 1.35rem)/1.25 var(--font-head); letter-spacing: 0; }
 html[lang="ar"] .card__listing { font-family: var(--font-ar-head); line-height: 1.6; }
 .card__details { margin: 0; font-size: .92rem; line-height: 1.5; color: var(--muted); }
 .card__listing a { text-decoration: none; }
