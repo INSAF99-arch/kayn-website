@@ -140,7 +140,7 @@ KAYN.products = [
       fr: "Discret par nature. Un bracelet sur cordon raffiné, sublimé par un diamant de 0,10 carat serti dans de l'or blanc 14 carats poli. Des lignes épurées, des matériaux premium et une touche discrète d'éclat. Livré avec un certificat IGI. À porter seul. À faire vôtre.",
       ar: "أناقة هادئة. سوار أنيق بخيط راقٍ، يزينه ألماسة بوزن 0.10 قيراط مثبتة في ذهب أبيض عيار 14 مصقول. خطوط نقية، وخامات فاخرة، ولمسة خفية من البريق. يأتي مع شهادة IGI. ارتدِه وحده. واجعله لك."
     },
-    priceMAD: 1590, pricePlaceholder: false,
+    priceMAD: 1390, pricePlaceholder: false,
     gallery: KAYN.oneGallery(),
     colors: KAYN.oneColors(),
     metal: { setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, hardware: null },                // setting confirmed by brief; other hardware unconfirmed
@@ -250,7 +250,7 @@ KAYN.products = [
       fr: "Une déclaration discrète. Une présence indéniable. Conçu pour ceux qui apprécient les détails, SOLIS associe une chaîne raffinée à une unique pierre brillante sertie clos. Sa silhouette épurée et sa finition polie créent un équilibre entre simplicité et sophistication, pour un port quotidien comme pour les occasions plus élégantes. À porter seul pour une touche discrète de distinction, ou avec votre montre préférée pour un style réfléchi et sans effort. Moins, mais mieux.",
       ar: "لمسة هادئة. حضور لا يُنسى. صُمّم لمن يقدّرون التفاصيل، يجمع SOLIS بين سلسلة أنيقة وحجر لامع واحد مثبّت في إطار دائري. يخلق شكله النقي ولمسته المصقولة توازناً بين البساطة والرقيّ، فيناسب الاستخدام اليومي كما المناسبات الأرقى. ارتدِه وحده للمسة تميّز هادئة، أو مع ساعتك المفضلة لإطلالة مدروسة بلا تكلف. الأقل، لكن الأفضل."
     },
-    priceMAD: 3090, pricePlaceholder: false,
+    priceMAD: 3190, pricePlaceholder: false,
     gallery: [
       { src: "assets/solis-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn on the wrist", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté au poignet", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة في إطار دائري، على المعصم" } },
       { src: "assets/solis-2.webp", alt: { en: "Three SOLIS chain bracelets with a diamond, a green stone and a pink stone, worn together on the wrist", fr: "Trois bracelets chaîne SOLIS avec un diamant, une pierre verte et une pierre rose, portés ensemble au poignet", ar: "ثلاثة أساور سلسلة SOLIS بألماسة وحجر أخضر وحجر وردي، على المعصم" } },
@@ -316,7 +316,7 @@ KAYN.products = [
       fr: "Des lignes pures, d'une précision discrète. The Line associe un cordon noir à une fine barre en or blanc 14 carats poli, rehaussée de diamants. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention.",
       ar: "خطوط نقية بدقة هادئة. يجمع The Line بين خيط أسود وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، تزينه ألماسات. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه."
     },
-    priceMAD: 3890, pricePlaceholder: false,
+    priceMAD: 3990, pricePlaceholder: false,
     gallery: [{
       src: "assets/line-5.webp",
       alt: {
