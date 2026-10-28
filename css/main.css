@@ -262,7 +262,9 @@ html[lang="ar"] .card__price { font-family: var(--font-ar-body); }
 
 /* Out of stock + more detail sections */
 .pdp__stock { margin: 0; }
-.badge--out .badge__dot { background: var(--muted); }
+.badge--out { font: 600 1.05rem/1.2 var(--font-head); gap: var(--s-3); color: var(--black); }
+.badge--out .badge__dot { background: var(--muted); width: 10px; height: 10px; }
+html[lang="ar"] .badge--out { font-family: var(--font-ar-head); letter-spacing: 0; text-transform: none; font-size: 1.15rem; }
 .avail { margin-top: var(--s-5); padding-top: 0; border-top: 0; }
 .avail__copy { color: #2b2b27; max-width: 52ch; }
 .avail__panel .btn { margin-top: var(--s-2); }
