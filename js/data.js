@@ -109,8 +109,7 @@ KAYN.products = [
     id: "the-minimalist",
     slug: "the-minimalist",
     name: { en: "The Minimalist", fr: "The Minimalist", ar: "The Minimalist" },
-    listing: {   // card text: large title, smaller details line, then the price
-      title: { en: "The Minimalist Cord Bracelet", fr: "Bracelet cordon The Minimalist", ar: "سوار The Minimalist بخيط" },
+    listing: {   // card text: the name (large), a smaller details line, then the price
       details: { en: "0.10ct Diamond, 14K White Gold", fr: "Diamant 0,10ct, or blanc 14 carats", ar: "ألماسة 0.10 قيراط، ذهب أبيض عيار 14" }
     },
     details: {   // two of the three descriptive sections on the product page (the third is shared)
@@ -157,7 +156,6 @@ KAYN.products = [
     slug: "the-signature",
     name: { en: "The Signature", fr: "The Signature", ar: "The Signature" },
     listing: {
-      title: { en: "The Signature Cord Bracelet", fr: "Bracelet cordon The Signature", ar: "سوار The Signature بخيط" },
       details: { en: "0.10ct Diamond, Geometric 14K White Gold Setting", fr: "Diamant 0,10ct, sertissage géométrique en or blanc 14 carats", ar: "ألماسة 0.10 قيراط، تصميم هندسي من الذهب الأبيض عيار 14" }
     },
     details: {
@@ -220,7 +218,6 @@ KAYN.products = [
     name: { en: "SOLIS", fr: "SOLIS", ar: "SOLIS" },
     optionLabel: { en: "Choose your metal", fr: "Choisissez votre métal", ar: "اختر المعدن" },
     listing: {
-      title: { en: "SOLIS Chain Bracelet", fr: "Bracelet chaîne SOLIS", ar: "سوار سلسلة SOLIS" },
       details: { en: "0.10ct Diamond, 14K White or Yellow Gold", fr: "Diamant 0,10ct, or blanc ou jaune 14 carats", ar: "ألماسة 0.10 قيراط، ذهب أبيض أو أصفر عيار 14" }
     },
     details: {
@@ -286,7 +283,6 @@ KAYN.products = [
     slug: "the-line",
     name: { en: "The Line", fr: "The Line", ar: "The Line" },
     listing: {
-      title: { en: "The Line Cord Bracelet", fr: "Bracelet cordon The Line", ar: "سوار The Line بخيط" },
       details: { en: "Two 0.10ct Diamonds, 14K White Gold Bar", fr: "Deux diamants de 0,10ct, barre en or blanc 14 carats", ar: "ألماستان 0.10 قيراط لكل منهما، قضيب من الذهب الأبيض عيار 14" }
     },
     details: {
@@ -337,9 +333,8 @@ KAYN.products = [
   {
     id: "vector",
     slug: "vector",
-    name: { en: "Vector", fr: "Vector", ar: "Vector" },
+    name: { en: "The Vector", fr: "The Vector", ar: "The Vector" },
     listing: {
-      title: { en: "Vector Cord Bracelet", fr: "Bracelet cordon Vector", ar: "سوار Vector بخيط" },
       details: { en: "1ct Diamonds, 14K White Gold Bar", fr: "Diamants 1ct, barre en or blanc 14 carats", ar: "ألماس 1 قيراط، قضيب من الذهب الأبيض عيار 14" }
     },
     details: {
@@ -365,17 +360,17 @@ KAYN.products = [
       ar: "قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بالألماس، على خيط ناعم."
     },
     long: {
-      en: "One line, drawn in white gold. Vector sets a slim 14K white gold bar with diamonds on a soft cord. Designed for everyday wear, it brings a discreet brilliance without demanding attention.",
-      fr: "Une seule ligne, tracée en or blanc. Vector associe une fine barre en or blanc 14 carats sertie de diamants à un cordon souple. Conçu pour le quotidien, il apporte un éclat discret sans chercher à attirer l'attention.",
-      ar: "خط واحد يرسمه الذهب الأبيض. يجمع Vector بين قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بالألماس وخيط ناعم. صُمّم للاستخدام اليومي، ويمنح بريقاً هادئاً دون أن يلفت الانتباه."
+      en: "One line, drawn in white gold. The Vector sets a slim 14K white gold bar with diamonds on a soft cord. Designed for everyday wear, it brings a discreet brilliance without demanding attention.",
+      fr: "Une seule ligne, tracée en or blanc. The Vector associe une fine barre en or blanc 14 carats sertie de diamants à un cordon souple. Conçu pour le quotidien, il apporte un éclat discret sans chercher à attirer l'attention.",
+      ar: "خط واحد يرسمه الذهب الأبيض. يجمع The Vector بين قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بالألماس وخيط ناعم. صُمّم للاستخدام اليومي، ويمنح بريقاً هادئاً دون أن يلفت الانتباه."
     },
     priceMAD: 8990, pricePlaceholder: false,
     gallery: [{
       src: "assets/vector-main.webp",
       alt: {
-        en: "Vector bracelet: black cord with a slim white gold bar paved with diamonds, worn on the wrist",
-        fr: "Bracelet Vector : cordon noir avec une fine barre en or blanc pavée de diamants, porté au poignet",
-        ar: "سوار Vector: خيط أسود مع قضيب رفيع من الذهب الأبيض مرصّع بالألماس، على المعصم"
+        en: "The Vector bracelet: black cord with a slim white gold bar paved with diamonds, worn on the wrist",
+        fr: "Bracelet The Vector : cordon noir avec une fine barre en or blanc pavée de diamants, porté au poignet",
+        ar: "سوار The Vector: خيط أسود مع قضيب رفيع من الذهب الأبيض مرصّع بالألماس، على المعصم"
       }
     }],
     colors: [

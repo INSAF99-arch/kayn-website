@@ -67,7 +67,7 @@ window.KAYN = window.KAYN || {};
       ((p.gallery || p.colors[0].images)[1] ? '<span class="card__img card__img--alt" aria-hidden="true">' + K.productImage(p, 1) + "</span>" : "") +
       "</a>" +
       '<div class="card__body">' +
-      '<h3 class="card__listing"><a href="' + href + '">' + esc(K.L(p.listing ? p.listing.title : p.name)) + "</a></h3>" +
+      '<h3 class="card__listing"><a href="' + href + '">' + esc(K.L(p.name)) + "</a></h3>" +
       (p.listing ? '<p class="card__details">' + esc(K.L(p.listing.details)) + "</p>" : "") +
       '<p class="card__price">' + esc(K.formatPrice(p.priceMAD)) + "</p>" +
       "</div></article>";
