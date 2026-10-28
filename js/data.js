@@ -384,6 +384,64 @@ KAYN.products = [
   }
 ];
 
+/* Home page "Precision, up close" banner (dark section): hovering a product swaps the photo,
+   the description and the spec sheet. `photo` = [gallery index used for the alt text, file];
+   `dim` darkens photos that have no dark-toned original. */
+KAYN.spot = (function () {
+  var T = function (en, fr, ar) { return { en: en, fr: fr, ar: ar }; };
+  var L = {
+    setting: T("Setting", "Sertissage", "التصميم"), cord: T("Cord", "Cordon", "الخيط"),
+    chain: T("Chain", "Chaîne", "السلسلة"), diamond: T("Diamond", "Diamant", "الألماس"), stone: T("Stone", "Pierre", "الحجر")
+  };
+  return {
+    "the-minimalist": {
+      photo: ["assets/one-black-dark.webp", 5], dim: false,
+      copy: T("A single diamond in a round bezel, on a fine braided cord.", "Un seul diamant dans un sertissage clos rond, sur un cordon tressé fin.", "ألماسة واحدة في إطار دائري، على خيط منسوج رفيع."),
+      rows: [
+        [L.setting, T("Round bezel, in 14K white gold.", "Serti clos rond, en or blanc 14 carats.", "إطار دائري، من الذهب الأبيض عيار 14.")],
+        [L.cord, T("Fine braided cord, in four colours.", "Cordon tressé fin, en quatre couleurs.", "خيط منسوج رفيع، بأربعة ألوان.")],
+        [L.diamond, T("0.10 carat diamond, with an IGI certificate.", "Diamant de 0,10 carat, avec certificat IGI.", "ألماسة بوزن 0.10 قيراط، مع شهادة IGI.")]
+      ]
+    },
+    "the-signature": {
+      photo: ["assets/essential-3.webp", 2], dim: false,
+      copy: T("A geometric setting around a single diamond, on a fine double cord.", "Un sertissage géométrique autour d'un seul diamant, sur un double cordon fin.", "تصميم هندسي يحيط بألماسة واحدة، على خيط مزدوج رفيع."),
+      rows: [
+        [L.setting, T("Geometric setting, in 14K white gold.", "Sertissage géométrique, en or blanc 14 carats.", "تصميم هندسي من الذهب الأبيض عيار 14.")],
+        [L.cord, T("Fine double cord, in olive, black or burgundy.", "Double cordon fin, en olive, noir ou bordeaux.", "خيط مزدوج رفيع، بالزيتوني أو الأسود أو العنابي.")],
+        [L.diamond, T("0.10 carat diamond, with an IGI certificate.", "Diamant de 0,10 carat, avec certificat IGI.", "ألماسة بوزن 0.10 قيراط، مع شهادة IGI.")]
+      ]
+    },
+    "solis": {
+      photo: ["assets/solis-2.webp", 1], dim: true,
+      copy: T("A fine chain carrying a single bezel-set stone.", "Une chaîne fine portant une seule pierre sertie clos.", "سلسلة رفيعة تحمل حجراً واحداً في إطار دائري."),
+      rows: [
+        [L.setting, T("Round bezel, in 14K white or yellow gold.", "Serti clos rond, en or blanc ou jaune 14 carats.", "إطار دائري، من الذهب الأبيض أو الأصفر عيار 14.")],
+        [L.chain, T("Fine chain, in 14K gold.", "Chaîne fine, en or 14 carats.", "سلسلة رفيعة من الذهب عيار 14.")],
+        [L.stone, T("0.10 carat diamond, green or pink stone, with an IGI certificate.", "Diamant, pierre verte ou rose de 0,10 carat, avec certificat IGI.", "ألماس أو حجر أخضر أو وردي بوزن 0.10 قيراط، مع شهادة IGI.")]
+      ]
+    },
+    "the-line": {
+      photo: ["assets/line-2.webp", 2], dim: true,
+      copy: T("A slim polished bar with a diamond at each end, on a fine cord.", "Une fine barre polie avec un diamant à chaque extrémité, sur un cordon fin.", "قضيب رفيع مصقول بألماسة عند كل طرف، على خيط رفيع."),
+      rows: [
+        [L.setting, T("Polished bar, in 14K white gold.", "Barre polie, en or blanc 14 carats.", "قضيب مصقول من الذهب الأبيض عيار 14.")],
+        [L.cord, T("Fine cord, in black or olive.", "Cordon fin, en noir ou olive.", "خيط رفيع، بالأسود أو الزيتوني.")],
+        [L.diamond, T("Two 0.10 carat diamonds, with an IGI certificate.", "Deux diamants de 0,10 carat, avec certificat IGI.", "ألماستان بوزن 0.10 قيراط لكل منهما، مع شهادة IGI.")]
+      ]
+    },
+    "vector": {
+      photo: ["assets/vector-main.webp", 0], dim: true,
+      copy: T("A slim bar paved end to end with diamonds, on a soft cord.", "Une fine barre entièrement pavée de diamants, sur un cordon souple.", "قضيب رفيع مرصّع بالألماس من طرفه إلى طرفه، على خيط ناعم."),
+      rows: [
+        [L.setting, T("Pavé bar, in 14K white gold.", "Barre pavée, en or blanc 14 carats.", "قضيب مرصّع من الذهب الأبيض عيار 14.")],
+        [L.cord, T("Soft cord, in bronze or blue.", "Cordon souple, en bronze ou bleu.", "خيط ناعم، بالبرونزي أو الأزرق.")],
+        [L.diamond, T("20 diamonds totalling 1 carat, with an IGI certificate.", "20 diamants totalisant 1 carat, avec certificat IGI.", "20 ألماسة بوزن إجمالي 1 قيراط، مع شهادة IGI.")]
+      ]
+    }
+  };
+})();
+
 /* Customer reviews shown on the home page.
    IMPORTANT: the entries below are SAMPLE reviews for design preview only (sample: true) and are
    labelled as such on the page. Replace them with real customer reviews before launch, and remove

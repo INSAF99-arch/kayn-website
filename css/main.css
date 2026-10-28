@@ -40,6 +40,22 @@ main:focus { outline: none; }
 .dialog .eyebrow { color: var(--muted); }
 .eyebrow--tight { margin-bottom: 0; }
 .detail__media { max-width: 440px; width: 100%; justify-self: center; }
+/* all photos stacked in one frame; the chosen one fades in */
+.detail__stack { position: relative; aspect-ratio: 4 / 5; }
+.detail__shot { position: absolute; inset: 0; opacity: 0; transition: opacity .6s var(--ease); }
+.detail__shot.is-active { opacity: 1; }
+.detail__shot .crop { height: 100%; aspect-ratio: auto; }
+.detail__shot--dim img { filter: brightness(.78) saturate(.92); }
+.detail__tabs { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-5); margin-top: var(--s-5); }
+.detail__tab { appearance: none; background: none; border: 0; border-bottom: 1px solid transparent; padding: var(--s-2) 0; font: 500 .8125rem/1.4 var(--font-head); letter-spacing: var(--track-label); text-transform: uppercase; color: var(--muted-on-dark); cursor: pointer; transition: color .3s var(--ease), border-color .3s var(--ease); }
+.detail__tab:hover, .detail__tab[aria-pressed="true"] { color: var(--offwhite); border-bottom-color: var(--offwhite); }
+html[lang="ar"] .detail__tab { font-family: var(--font-ar-body); letter-spacing: 0; text-transform: none; font-size: .95rem; }
+/* every panel sits in the same cell, so the banner keeps one height while the text changes */
+.detail__panels { display: grid; }
+.detail__panel { grid-area: 1 / 1; opacity: 0; visibility: hidden; transition: opacity .45s var(--ease), visibility 0s linear .45s; }
+.detail__panel.is-active { opacity: 1; visibility: visible; transition-delay: 0s; }
+.detail__link { margin-top: var(--s-6); }
+@media (prefers-reduced-motion: reduce) { .detail__shot, .detail__panel { transition: none; } }
 .lead { font-size: 1.125rem; color: var(--muted); margin-top: var(--s-4); max-width: 56ch; }
 .fine { font-size: .8125rem; color: var(--muted); margin-top: var(--s-5); }
 .tbc { color: var(--muted); font-style: normal; }
@@ -169,10 +185,10 @@ html[dir="rtl"] .rail__btn svg { transform: scaleX(-1); }
 
 /* Detail */
 .detail__inner { display: grid; gap: var(--s-7); align-items: center; }
-.detail__text > p { color: var(--muted-on-dark); margin-top: var(--s-4); max-width: 52ch; }
-.detail__text > p.detail__name { margin-top: var(--s-5); color: var(--offwhite); font: 600 clamp(1.6rem, 2.6vw, 2.15rem)/1.15 var(--font-head); letter-spacing: 0; }
-.detail__text > p.detail__name + p { margin-top: var(--s-2); }
-html[lang="ar"] .detail__text > p.detail__name { font-family: var(--font-ar-head); line-height: 1.5; }
+.detail__panel > p { color: var(--muted-on-dark); margin-top: var(--s-4); max-width: 52ch; }
+.detail__panel > p.detail__name { margin-top: var(--s-5); color: var(--offwhite); font: 600 clamp(1.6rem, 2.6vw, 2.15rem)/1.15 var(--font-head); letter-spacing: 0; }
+.detail__panel > p.detail__name + p { margin-top: var(--s-2); }
+html[lang="ar"] .detail__panel > p.detail__name { font-family: var(--font-ar-head); line-height: 1.5; }
 .dl { margin-top: var(--s-6); border-top: 1px solid var(--line-on-dark); }
 .dl > div { display: grid; grid-template-columns: 8rem 1fr; gap: var(--s-4); padding-block: var(--s-4); border-bottom: 1px solid var(--line-on-dark); }
 .dl dt { font: 500 .75rem/1.6 var(--font-head); letter-spacing: var(--track-label); text-transform: uppercase; color: var(--muted-on-dark); }

@@ -135,6 +135,19 @@
       }
       K.updateAvailability(p);                   // the notification form follows the chosen option
     },
+    spot: function (el) {                          // dark banner: show the chosen product's photo and spec sheet
+      var i = el.getAttribute("data-spot"), root = el.closest(".detail");
+      if (el.getAttribute("aria-pressed") === "true") return;
+      root.querySelectorAll(".detail__tab").forEach(function (b) { b.setAttribute("aria-pressed", String(b === el)); });
+      root.querySelectorAll("[data-spot-pane]").forEach(function (p) {
+        var on = p.getAttribute("data-spot-pane") === i;
+        p.classList.toggle("is-active", on);
+        if (p.classList.contains("detail__panel")) {
+          if (on) p.removeAttribute("aria-hidden"); else p.setAttribute("aria-hidden", "true");
+          var a = p.querySelector("a"); if (a) a.tabIndex = on ? 0 : -1;
+        }
+      });
+    },
     rail: function (el) {                          // product row: previous / next
       var row = el.closest(".rail").querySelector(".grid"), card = row.querySelector(".card");
       var step = (card ? card.getBoundingClientRect().width : row.clientWidth / 2) + 24;
@@ -153,6 +166,14 @@
     if (el && actions[el.getAttribute("data-action")]) { actions[el.getAttribute("data-action")](el); return; }
     // mobile menu: close after choosing a link
     if (e.target.closest("#mobile-nav a")) setMenu(false);
+  });
+
+  // banner: moving the pointer over a product name, or focusing it, switches the product
+  ["mouseover", "focusin"].forEach(function (type) {
+    document.addEventListener(type, function (e) {
+      var tab = e.target.closest && e.target.closest(".detail__tab");
+      if (tab) actions.spot(tab);
+    });
   });
 
   document.addEventListener("submit", function (e) {

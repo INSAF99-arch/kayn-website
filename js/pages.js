@@ -17,6 +17,31 @@ window.KAYN = window.KAYN || {};
       '<div class="rail__nav">' + arrow(-1, "rail.prev", "M15 5l-7 7 7 7") + arrow(1, "rail.next", "M9 5l7 7-7 7") + "</div></div>";
   }
 
+  /* Dark banner: pick a product (hover, focus or tap) to change the photo, description and spec sheet. */
+  function spotlight() {
+    var items = K.products.filter(function (p) { return K.spot[p.id]; });
+    var photos = items.map(function (p, i) {
+      var s = K.spot[p.id];
+      return '<div class="detail__shot' + (s.dim ? " detail__shot--dim" : "") + (i === 0 ? " is-active" : "") + '" data-spot-pane="' + i + '">' +
+        K.imageHtml({ src: s.photo[0] }, K.L(p.gallery[s.photo[1]].alt)) + "</div>";
+    }).join("");
+    var tabs = items.map(function (p, i) {
+      return '<button type="button" class="detail__tab" data-action="spot" data-spot="' + i + '" aria-pressed="' + (i === 0) + '">' + esc(K.L(p.name)) + "</button>";
+    }).join("");
+    var panels = items.map(function (p, i) {
+      var s = K.spot[p.id];
+      return '<div class="detail__panel' + (i === 0 ? " is-active" : "") + '" data-spot-pane="' + i + '"' + (i === 0 ? "" : ' aria-hidden="true"') + ">" +
+        '<p class="detail__name">' + esc(K.L(p.name)) + "</p><p>" + esc(K.L(s.copy)) + '</p><dl class="dl">' +
+        s.rows.map(function (r) { return "<div><dt>" + esc(K.L(r[0])) + "</dt><dd>" + esc(K.L(r[1])) + "</dd></div>"; }).join("") +
+        '</dl><a class="btn btn--ghost detail__link" href="#/collection/' + p.slug + '"' + (i === 0 ? "" : ' tabindex="-1"') + ">" + esc(t("detail.view")) + "</a></div>";
+    }).join("");
+    return '<div class="wrap detail__inner">' +
+      '<div class="detail__media"><div class="detail__stack">' + photos + "</div></div>" +
+      '<div class="detail__text"><span class="eyebrow">' + esc(t("detail.eyebrow")) + '</span><h2 id="detail-title" class="h2">' + esc(t("detail.title")) + "</h2>" +
+      '<div class="detail__tabs" role="group" aria-label="' + esc(t("nav.collection")) + '">' + tabs + "</div>" +
+      '<div class="detail__panels">' + panels + "</div></div></div>";
+  }
+
   function home() {
     var insta = [["box", "insta.alt1"], ["bag", "insta.alt2"], ["card", "insta.alt3"], ["closeWide", "insta.alt4"]].map(function (x) {
       return '<a class="insta__tile" href="' + esc(K.site.instagramUrl) + '" target="_blank" rel="noopener noreferrer">' + K.crop(x[0], t(x[1])) + "</a>";
@@ -39,12 +64,8 @@ window.KAYN = window.KAYN || {};
           '<h2 id="brand-title" class="statement__title">' + esc(t("brand.title")) + "</h2>" +
           '<p class="statement__copy">' + esc(t("brand.copy")) + "</p></div></section>" +
 
-        '<section class="section section--olive detail" aria-labelledby="detail-title"><div class="wrap detail__inner">' +
-          '<div class="detail__media">' + K.imageHtml({ src: "assets/one-black-dark.webp" }, K.L(K.products[0].gallery[5].alt)) + "</div>" +
-          '<div class="detail__text"><span class="eyebrow">' + esc(t("detail.eyebrow")) + '</span><h2 id="detail-title" class="h2">' + esc(t("detail.title")) + "</h2>" +
-          '<p class="detail__name">' + esc(K.L(K.products[0].name)) + "</p><p>" + esc(t("detail.copy")) + "</p><dl class=\"dl\">" +
-          [1, 2, 3].map(function (n) { return "<div><dt>" + esc(t("detail.p" + n + "t")) + "</dt><dd>" + esc(t("detail.p" + n)) + "</dd></div>"; }).join("") +
-          "</dl></div></div></section>" +
+        '<section class="section section--olive detail" aria-labelledby="detail-title">' +
+          spotlight() + "</section>" +
 
         K.reviewsSection() +
 
