@@ -8,7 +8,13 @@ window.KAYN = window.KAYN || {};
   }
 
   function grid() {
-    return '<div class="grid">' + K.products.map(K.productCard).join("") + "</div>";
+    var arrow = function (dir, key, d) {
+      return '<button type="button" class="rail__btn" data-action="rail" data-dir="' + dir + '" aria-label="' + esc(t(key)) + '">' +
+        '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="' + d + '"/></svg></button>';
+    };
+    // one row of products: swipe or scroll sideways, or use the arrows
+    return '<div class="rail"><div class="grid" tabindex="0" role="region" aria-label="' + esc(t("nav.collection")) + '">' + K.products.map(K.productCard).join("") + "</div>" +
+      '<div class="rail__nav">' + arrow(-1, "rail.prev", "M15 5l-7 7 7 7") + arrow(1, "rail.next", "M9 5l7 7-7 7") + "</div></div>";
   }
 
   function home() {

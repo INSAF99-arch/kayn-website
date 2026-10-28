@@ -135,6 +135,12 @@
       }
       K.updateAvailability(p);                   // the notification form follows the chosen option
     },
+    rail: function (el) {                          // product row: previous / next
+      var row = el.closest(".rail").querySelector(".grid"), card = row.querySelector(".card");
+      var step = (card ? card.getBoundingClientRect().width : row.clientWidth / 2) + 24;
+      var rtl = document.documentElement.dir === "rtl" ? -1 : 1;
+      row.scrollBy({ left: Number(el.getAttribute("data-dir")) * step * rtl, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    },
     gallery: function (el) {
       var i = el.getAttribute("data-index"), set = el.closest(".gallery__set");
       set.querySelectorAll(".gallery__slide").forEach(function (s) { s.hidden = s.getAttribute("data-slide") !== i; });
