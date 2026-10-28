@@ -6,7 +6,7 @@ window.KAYN = window.KAYN || {};
 KAYN.site = {
   instagramUrl: "https://www.instagram.com/kayn_jewelry?mdxt=a29xeXF0aDRtZWl2&utm_source=qr",          // PLACEHOLDER: official account URL
   instagramHandle: "@kayn_jewelry",                             // PLACEHOLDER
-  contactEmail: "contact@kayn.com",                 // PLACEHOLDER
+  contactEmail: "contact@maison-kayn.com",
                                   // PLACEHOLDER
                                      // PLACEHOLDER
   currency: "MAD"

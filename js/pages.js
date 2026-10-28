@@ -165,7 +165,8 @@ window.KAYN = window.KAYN || {};
 
   function legal(kind) {
     var doc = K.legal[kind], title = K.L(doc.title);
-    var fill = function (s) { return esc(s).replace("{insta}", esc(K.site.instagramHandle)); };
+    var mail = '<a href="mailto:' + esc(K.site.contactEmail) + '">' + esc(K.site.contactEmail) + "</a>";
+    var fill = function (s) { return esc(s).replace("{email}", mail); };
     var body = doc.sections.map(function (sec, i) {
       return '<section class="legal__sec"><h2 class="h3">' + (i + 1) + ". " + esc(K.L(sec.h)) + "</h2>" + sec.body.map(function (b) {
         return b.t === "ul"

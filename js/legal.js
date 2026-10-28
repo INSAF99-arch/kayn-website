@@ -1,6 +1,6 @@
 /* KAYN — Privacy Policy and Terms (English, French, Arabic).
    Standard text for a small online jewelry brand. Have it reviewed by a legal professional before relying on it.
-   `{insta}` is replaced with the Instagram handle from KAYN.site. */
+   `{email}` is replaced with a mailto link to KAYN.site.contactEmail. */
 window.KAYN = window.KAYN || {};
 (function (K) {
   var P = function (en, fr, ar) { return { t: "p", v: { en: en, fr: fr, ar: ar } }; };
@@ -88,9 +88,9 @@ window.KAYN = window.KAYN || {};
             "قد نحدّث هذه السياسة من وقت لآخر. تجد دائماً أحدث نسخة في هذه الصفحة مع تاريخ آخر تحديث.")
         ]),
         S("Contact us", "Nous contacter", "تواصل معنا", [
-          P("For any question about this policy or your personal information, contact us through our Instagram account {insta}.",
-            "Pour toute question sur cette politique ou vos informations personnelles, contactez-nous via notre compte Instagram {insta}.",
-            "لأي سؤال حول هذه السياسة أو معلوماتك الشخصية، تواصل معنا عبر حسابنا على إنستغرام {insta}.")
+          P("For any question about this policy or your personal information, contact us by email at {email}.",
+            "Pour toute question sur cette politique ou vos informations personnelles, contactez-nous par e-mail à {email}.",
+            "لأي سؤال حول هذه السياسة أو معلوماتك الشخصية، تواصل معنا عبر البريد الإلكتروني {email}.")
         ])
       ]
     },
@@ -164,9 +164,9 @@ window.KAYN = window.KAYN || {};
             "تخضع هذه الشروط لقوانين المملكة المغربية، وتختص بها المحاكم المغربية، دون المساس بحقوقك الإلزامية كمستهلك في بلد إقامتك.")
         ]),
         S("Contact us", "Nous contacter", "تواصل معنا", [
-          P("For any question about these terms, contact us through our Instagram account {insta}.",
-            "Pour toute question sur ces conditions, contactez-nous via notre compte Instagram {insta}.",
-            "لأي سؤال حول هذه الشروط، تواصل معنا عبر حسابنا على إنستغرام {insta}.")
+          P("For any question about these terms, contact us by email at {email}.",
+            "Pour toute question sur ces conditions, contactez-nous par e-mail à {email}.",
+            "لأي سؤال حول هذه الشروط، تواصل معنا عبر البريد الإلكتروني {email}.")
         ])
       ]
     }
