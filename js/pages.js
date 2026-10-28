@@ -34,7 +34,7 @@ window.KAYN = window.KAYN || {};
           '<p class="statement__copy">' + esc(t("brand.copy")) + "</p></div></section>" +
 
         '<section class="section section--olive detail" aria-labelledby="detail-title"><div class="wrap detail__inner">' +
-          '<div class="detail__media">' + K.productImage(K.products[0], 5) + "</div>" +
+          '<div class="detail__media">' + K.imageHtml({ src: "assets/one-black-dark.webp" }, K.L(K.products[0].gallery[5].alt)) + "</div>" +
           '<div class="detail__text"><span class="eyebrow">' + esc(t("detail.eyebrow")) + '</span><h2 id="detail-title" class="h2">' + esc(t("detail.title")) + "</h2>" +
           "<p>" + esc(t("detail.copy")) + "</p><dl class=\"dl\">" +
           [1, 2, 3].map(function (n) { return "<div><dt>" + esc(t("detail.p" + n + "t")) + "</dt><dd>" + esc(t("detail.p" + n)) + "</dd></div>"; }).join("") +
