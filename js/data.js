@@ -84,9 +84,8 @@ KAYN.signatureGallery = function () {
   return [
     { src: P + "essential-2.webp", alt: a("bracelets in black, olive and burgundy, worn together on the wrist", "bracelets en noir, olive et bordeaux, portés ensemble au poignet", "أساور بالأسود والزيتوني والعنابي على المعصم") },
     { src: P + "essential-3.webp", alt: a("in black, olive and burgundy on a stone surface", "en noir, olive et bordeaux sur une pierre", "بالأسود والزيتوني والعنابي على سطح حجري") },
-    { src: P + "essential-4.jpg", alt: a("olive cord bracelet with an octagonal setting and diamond, on stone", "bracelet à cordon olive, sertissage octogonal et diamant, sur une pierre", "سوار بخيط زيتوني وتصميم ثماني وألماسة على الحجر") },
-    { src: P + "essential-5.jpg", alt: a("olive cord bracelet with an octagonal setting and diamond, on a rock", "bracelet à cordon olive, sertissage octogonal et diamant, sur un rocher", "سوار بخيط زيتوني وتصميم ثماني وألماسة على صخرة") },
-    { src: P + "essential-6.jpg", alt: a("close-up of the octagonal setting and diamond", "gros plan sur le sertissage octogonal et le diamant", "لقطة قريبة للتصميم الثماني والألماسة") }
+    { src: P + "essential-4.webp", alt: a("olive cord bracelet with an octagonal setting and diamond, on stone", "bracelet à cordon olive, sertissage octogonal et diamant, sur une pierre", "سوار بخيط زيتوني وتصميم ثماني وألماسة على الحجر") },
+    { src: P + "essential-6.webp", alt: a("close-up of the octagonal setting and diamond", "gros plan sur le sertissage octogonal et le diamant", "لقطة قريبة للتصميم الثماني والألماسة") }
   ];
 };
 
@@ -189,9 +188,9 @@ KAYN.products = [
     gallery: [{
       src: "assets/essential-main.webp",
       alt: {
-        en: "The Signature bracelet: geometric setting with a round diamond on a double olive cord, worn on the wrist",
-        fr: "Bracelet The Signature : sertissage géométrique avec diamant rond sur un double cordon olive, porté au poignet",
-        ar: "سوار The Signature: تصميم هندسي مع ألماسة مستديرة على خيط زيتوني مزدوج، على المعصم"
+        en: "The Signature bracelet: octagonal white gold setting with a diamond on a double olive cord, worn on the wrist",
+        fr: "Bracelet The Signature : sertissage octogonal en or blanc avec diamant sur un double cordon olive, porté au poignet",
+        ar: "سوار The Signature: تصميم ثماني من الذهب الأبيض مع ألماسة على خيط زيتوني مزدوج، على المعصم"
       }
     }].concat(KAYN.signatureGallery()),
     colors: [   // colours visible in the supplied photos; PLACEHOLDER until confirmed
