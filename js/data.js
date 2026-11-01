@@ -178,14 +178,14 @@ KAYN.products = [
       ar: "تفصيل مميّز من الذهب الأبيض عيار 14 والألماس، لمن يقدّرون التفرّد. واثق في طابعه ومدروس في كل خط، يضفي لمسة خفية من الحدّة على أسلوبك اليومي."
     },
     short: {
-      en: "Olive-green cord, geometric 14K white gold setting, 0.10 carat diamond.",
-      fr: "Cordon vert olive, sertissage géométrique en or blanc 14 carats, diamant de 0,10 carat.",
-      ar: "خيط أخضر زيتوني، تصميم هندسي من الذهب الأبيض عيار 14، وألماسة بوزن 0.10 قيراط."
+      en: "Adjustable cord, geometric 14K white gold setting, 0.10 carat diamond.",
+      fr: "Cordon ajustable, sertissage géométrique en or blanc 14 carats, diamant de 0,10 carat.",
+      ar: "خيط قابل للتعديل، تصميم هندسي من الذهب الأبيض عيار 14، وألماسة بوزن 0.10 قيراط."
     },
     long: {
-      en: "A refined expression of understated luxury. The Signature pairs an olive-green cord with a geometric diamond setting in 14K white gold, creating a balance between precision and simplicity. Designed for everyday wear, it makes a subtle statement without demanding attention.",
-      fr: "Une expression raffinée du luxe discret. The Signature associe un cordon vert olive à un sertissage géométrique en or blanc 14 carats, pour un équilibre entre précision et simplicité. Conçu pour le quotidien, il affirme un style subtil sans chercher à attirer l'attention.",
-      ar: "تعبير راقٍ عن الفخامة الهادئة. يجمع The Signature بين خيط أخضر زيتوني وتصميم هندسي للألماسة من الذهب الأبيض عيار 14، ليحقق توازناً بين الدقة والبساطة. صُمّم للاستخدام اليومي، ويترك أثراً أنيقاً دون أن يلفت الانتباه."
+      en: "A refined expression of understated luxury. The Signature pairs an adjustable cord with a geometric diamond setting in 14K white gold, creating a balance between precision and simplicity. Designed for everyday wear, it makes a subtle statement without demanding attention.",
+      fr: "Une expression raffinée du luxe discret. The Signature associe un cordon ajustable à un sertissage géométrique en or blanc 14 carats, pour un équilibre entre précision et simplicité. Conçu pour le quotidien, il affirme un style subtil sans chercher à attirer l'attention.",
+      ar: "تعبير راقٍ عن الفخامة الهادئة. يجمع The Signature بين خيط قابل للتعديل وتصميم هندسي للألماسة من الذهب الأبيض عيار 14، ليحقق توازناً بين الدقة والبساطة. صُمّم للاستخدام اليومي، ويترك أثراً أنيقاً دون أن يلفت الانتباه."
     },
     priceMAD: 2990, pricePlaceholder: false,
     gallery: [{
@@ -305,14 +305,14 @@ KAYN.products = [
       ar: "قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بألماستين. يتميّز بالتوازن والهندسة النقية، وتصبح البساطة توقيع هذه القطعة. عصرية ومتزنة، وصُمّمت لتتميّز دون أن تقول الكثير."
     },
     short: {
-      en: "Black cord, slim polished 14K white gold bar, diamond accents.",
-      fr: "Cordon noir, fine barre en or blanc 14 carats poli, touches de diamant.",
-      ar: "خيط أسود، وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، ولمسات من الألماس."
+      en: "Adjustable cord, slim polished 14K white gold bar, diamond accents.",
+      fr: "Cordon ajustable, fine barre en or blanc 14 carats poli, touches de diamant.",
+      ar: "خيط قابل للتعديل، وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، ولمسات من الألماس."
     },
     long: {
-      en: "Pure lines, quietly precise. The Line pairs a black cord with a slim bar of polished 14K white gold, accented with diamonds. Designed for everyday wear, it adds a discreet touch of brilliance without demanding attention.",
-      fr: "Des lignes pures, d'une précision discrète. The Line associe un cordon noir à une fine barre en or blanc 14 carats poli, rehaussée de diamants. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention.",
-      ar: "خطوط نقية بدقة هادئة. يجمع The Line بين خيط أسود وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، تزينه ألماسات. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه."
+      en: "Pure lines, quietly precise. The Line pairs an adjustable cord with a slim bar of polished 14K white gold, accented with diamonds. Designed for everyday wear, it adds a discreet touch of brilliance without demanding attention.",
+      fr: "Des lignes pures, d'une précision discrète. The Line associe un cordon ajustable à une fine barre en or blanc 14 carats poli, rehaussée de diamants. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention.",
+      ar: "خطوط نقية بدقة هادئة. يجمع The Line بين خيط قابل للتعديل وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، تزينه ألماسات. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه."
     },
     priceMAD: 3990, pricePlaceholder: false,
     gallery: [{
