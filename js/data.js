@@ -370,11 +370,11 @@ KAYN.products = [
         ar: "سوار The Vector: خيط أسود مع قضيب رفيع من الذهب الأبيض مرصّع بالألماس، على المعصم"
       }
     }, {
-      src: "assets/vector-main.webp",
+      src: "assets/vector-box.webp",
       alt: {
-        en: "The Vector bracelet: black cord with a slim white gold bar paved with diamonds, worn on the wrist",
-        fr: "Bracelet The Vector : cordon noir avec une fine barre en or blanc pavée de diamants, porté au poignet",
-        ar: "سوار The Vector: خيط أسود مع قضيب رفيع من الذهب الأبيض مرصّع بالألماس، على المعصم"
+        en: "The Vector bracelet: black cord with a slim white gold bar paved with diamonds, beside the KAYN box and pouch",
+        fr: "Bracelet The Vector : cordon noir avec une fine barre en or blanc pavée de diamants, à côté du coffret et de la pochette KAYN",
+        ar: "سوار The Vector: خيط أسود مع قضيب رفيع من الذهب الأبيض مرصّع بالألماس، بجانب علبة وكيس KAYN"
       }
     }],
     colors: [
@@ -434,7 +434,7 @@ KAYN.spot = (function () {
       ]
     },
     "vector": {
-      photo: ["assets/vector-main.webp", 1], dim: true,
+      photo: ["assets/vector-box.webp", 1], dim: true,
       copy: T("A slim bar paved end to end with diamonds, on a soft cord.", "Une fine barre entièrement pavée de diamants, sur un cordon souple.", "قضيب رفيع مرصّع بالألماس من طرفه إلى طرفه، على خيط ناعم."),
       rows: [
         [L.setting, T("Pavé bar, in 14K white gold.", "Barre pavée, en or blanc 14 carats.", "قضيب مرصّع من الذهب الأبيض عيار 14.")],
