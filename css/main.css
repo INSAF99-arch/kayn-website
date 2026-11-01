@@ -322,7 +322,7 @@ html[dir="rtl"] .insta__tile .crop { transform: translateX(50%); }
 .crumbs { display: flex; gap: var(--s-3); font-size: .8125rem; color: var(--muted); margin-bottom: var(--s-6); }
 .crumbs a { color: var(--muted); }
 .pdp { display: grid; gap: var(--s-7); }
-@media (min-width: 900px) { .pdp { grid-template-columns: 1.1fr 1fr; gap: var(--s-8); align-items: start; } .gallery { position: sticky; top: calc(var(--header-h) + var(--s-5)); } }
+@media (min-width: 900px) { .pdp { grid-template-columns: 1.1fr 1fr; gap: var(--s-8); align-items: start; } }
 .gallery__thumbs { display: flex; flex-wrap: wrap; gap: var(--s-3); margin-top: var(--s-3); }
 .pdp > *, .pdetails__item { min-width: 0; }
 @media (max-width: 480px) { .gallery__thumbs { gap: 8px; } .gallery__thumbs .gallery__thumb { width: 46px; } }
