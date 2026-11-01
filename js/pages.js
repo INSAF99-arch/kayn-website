@@ -144,9 +144,9 @@ window.KAYN = window.KAYN || {};
         '<p class="pdp__stock"><span class="badge badge--out"><span class="badge__dot" aria-hidden="true"></span>' + esc(t("oos.status")) + "</span></p>" +
         '<p class="lead">' + esc(K.L(p.short)) + "</p>" +
         colors +
-        K.outOfStockHtml(p) +
         '<h2 class="h3">' + esc(t("pd.desc")) + "</h2><p>" + esc(K.L(p.long)) + "</p>" +
         (specs ? '<h2 class="h3">' + esc(t("pd.material")) + '</h2><dl class="specs">' + specs + "</dl>" : "") +
+        K.outOfStockHtml(p) +
         (care ? '<h2 class="h3">' + esc(t("pd.care")) + "</h2>" + care : "") +
         "</div></div>" +
         '<div class="also"><h2 class="h3">' + esc(t("coll.also")) + '</h2><div class="also__grid">' + others + "</div></div>" +

@@ -142,7 +142,7 @@ KAYN.products = [
       fr: "Discret par nature. Un bracelet sur cordon raffiné, sublimé par un diamant de 0,10 carat serti dans de l'or blanc 14 carats poli. Des lignes épurées, des matériaux premium et une touche discrète d'éclat. Livré avec un certificat IGI. À porter seul. À faire vôtre.",
       ar: "أناقة هادئة. سوار أنيق بخيط راقٍ، يزينه ألماسة بوزن 0.10 قيراط مثبتة في ذهب أبيض عيار 14 مصقول. خطوط نقية، وخامات فاخرة، ولمسة خفية من البريق. يأتي مع شهادة IGI. ارتدِه وحده. واجعله لك."
     },
-    priceMAD: 1390, pricePlaceholder: false,
+    priceMAD: 1590, pricePlaceholder: false,
     gallery: KAYN.oneGallery(),
     colors: KAYN.oneColors(),
     metal: { setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, hardware: null },                // setting confirmed by brief; other hardware unconfirmed
