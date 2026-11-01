@@ -82,8 +82,6 @@ KAYN.signatureGallery = function () {
   var P = "assets/";
   var a = function (en, fr, ar) { return { en: "The Signature: " + en, fr: "The Signature : " + fr, ar: "The Signature: " + ar }; };
   return [
-    { src: P + "essential-2.webp", alt: a("bracelets in black, olive and burgundy, worn together on the wrist", "bracelets en noir, olive et bordeaux, portés ensemble au poignet", "أساور بالأسود والزيتوني والعنابي على المعصم") },
-    { src: P + "essential-3.webp", alt: a("in black, olive and burgundy on a stone surface", "en noir, olive et bordeaux sur une pierre", "بالأسود والزيتوني والعنابي على سطح حجري") },
     { src: P + "essential-4.webp", alt: a("olive cord bracelet with an octagonal setting and diamond, on stone", "bracelet à cordon olive, sertissage octogonal et diamant, sur une pierre", "سوار بخيط زيتوني وتصميم ثماني وألماسة على الحجر") },
     { src: P + "essential-6.webp", alt: a("close-up of the octagonal setting and diamond", "gros plan sur le sertissage octogonal et le diamant", "لقطة قريبة للتصميم الثماني والألماسة") },
     { src: P + "essential-three-colours.webp", alt: a("black, olive and burgundy bracelets side by side on stone", "bracelets noir, olive et bordeaux côte à côte sur une pierre", "أساور بالأسود والزيتوني والعنابي جنباً إلى جنب على الحجر") },
@@ -200,8 +198,8 @@ KAYN.products = [
     }].concat(KAYN.signatureGallery()),
     colors: [   // colours visible in the supplied photos; PLACEHOLDER until confirmed
       { id: "olive", hex: "#2F3A2E", name: { en: "Olive green", fr: "Vert olive", ar: "أخضر زيتوني" }, show: 0, images: [] },
-      { id: "black", hex: "#0B0B0B", name: { en: "Black", fr: "Noir", ar: "أسود" }, show: 7, images: [] },
-      { id: "burgundy", hex: "#6B1A22", name: { en: "Burgundy", fr: "Bordeaux", ar: "عنابي" }, show: 6, images: [] }
+      { id: "black", hex: "#0B0B0B", name: { en: "Black", fr: "Noir", ar: "أسود" }, show: 5, images: [] },
+      { id: "burgundy", hex: "#6B1A22", name: { en: "Burgundy", fr: "Bordeaux", ar: "عنابي" }, show: 4, images: [] }
     ],
     metal: {
       setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" },
@@ -408,7 +406,6 @@ KAYN.spot = (function () {
       ]
     },
     "the-signature": {
-      photo: ["assets/essential-3.webp", 2], dim: false,
       copy: T("A geometric setting around a single diamond, on a fine double cord.", "Un sertissage géométrique autour d'un seul diamant, sur un double cordon fin.", "تصميم هندسي يحيط بألماسة واحدة، على خيط مزدوج رفيع."),
       rows: [
         [L.setting, T("Geometric setting, in 14K white gold.", "Sertissage géométrique, en or blanc 14 carats.", "تصميم هندسي من الذهب الأبيض عيار 14.")],
