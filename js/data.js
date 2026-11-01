@@ -239,17 +239,17 @@ KAYN.products = [
     slug: "the-line",
     name: { en: "The Line", fr: "The Line", ar: "The Line" },
     listing: {
-      details: { en: "2 × 0.10 ct diamonds · 14K white gold", fr: "2 diamants de 0,10 ct · or blanc 14 carats", ar: "ألماستان 0.10 قيراط لكل منهما · ذهب أبيض عيار 14" }
+      details: { en: "2 diamonds, 0.2 ct total · 14K white gold", fr: "2 diamants, 0,2 ct au total · or blanc 14 carats", ar: "ألماستان، 0.2 قيراط إجمالاً · ذهب أبيض عيار 14" }
     },
     short: {
-      en: "Adjustable double cord, slim bar, 14K white gold, two 0.10 carat diamonds.",
-      fr: "Double cordon ajustable, fine barre, or blanc 14 carats, deux diamants de 0,10 carat.",
-      ar: "خيط مزدوج قابل للتعديل، قضيب رفيع، ذهب أبيض عيار 14، ألماستان بوزن 0.10 قيراط لكل منهما."
+      en: "Adjustable double cord, slim bar, 14K white gold, two diamonds totalling 0.2 carat.",
+      fr: "Double cordon ajustable, fine barre, or blanc 14 carats, deux diamants totalisant 0,2 carat.",
+      ar: "خيط مزدوج قابل للتعديل، قضيب رفيع، ذهب أبيض عيار 14، ألماستان بوزن إجمالي 0.2 قيراط."
     },
     long: {
-      en: "Pure lines, quietly precise. The Line pairs an adjustable double cord with a slim bar of polished 14K white gold, set with a 0.10 carat diamond at each end. Designed for everyday wear, it adds a discreet touch of brilliance without demanding attention. Delivered with an IGI certificate.",
-      fr: "Des lignes pures, d'une précision discrète. The Line associe un double cordon ajustable à une fine barre en or blanc 14 carats poli, ornée d'un diamant de 0,10 carat à chaque extrémité. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
-      ar: "خطوط نقية بدقة هادئة. يجمع The Line بين خيط مزدوج قابل للتعديل وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، تزيّنه ألماسة بوزن 0.10 قيراط عند كل طرف. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
+      en: "Pure lines, quietly precise. The Line pairs an adjustable double cord with a slim bar of polished 14K white gold, set with a diamond at each end, 0.2 carat in total. Designed for everyday wear, it adds a discreet touch of brilliance without demanding attention. Delivered with an IGI certificate.",
+      fr: "Des lignes pures, d'une précision discrète. The Line associe un double cordon ajustable à une fine barre en or blanc 14 carats poli, ornée d'un diamant à chaque extrémité, 0,2 carat au total. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
+      ar: "خطوط نقية بدقة هادئة. يجمع The Line بين خيط مزدوج قابل للتعديل وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، تزيّنه ألماسة عند كل طرف، بوزن إجمالي 0.2 قيراط. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
     priceMAD: 4590, pricePlaceholder: false,
     gallery: [{
@@ -272,7 +272,7 @@ KAYN.products = [
       { id: "black", hex: "#0B0B0B", name: { en: "Black", fr: "Noir", ar: "أسود" }, show: 1, images: [] }
     ],
     metal: { setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, hardware: null },
-    diamond: { type: KAYN.labGrown, origin: null, carat: { en: "0.10 ct each", fr: "0,10 ct chacun", ar: "0.10 قيراط لكل ألماسة" }, clarity: "VVS2", certification: "IGI", count: "2" },
+    diamond: { type: KAYN.labGrown, origin: null, carat: { en: "0.2 ct total", fr: "0,2 ct au total", ar: "0.2 قيراط إجمالاً" }, clarity: "VVS2", certification: "IGI", count: "2" },
     extraSpecs: [   // shown after the standard rows
       { label: { en: "Design", fr: "Conception", ar: "التصميم" }, value: { en: "Adjustable double cord with a slim bar", fr: "Double cordon ajustable avec une fine barre", ar: "خيط مزدوج قابل للتعديل مع قضيب رفيع" } },
       { label: { en: "Setting style", fr: "Style de sertissage", ar: "طريقة التثبيت" }, value: { en: "Bezel-set diamond at each end of the bar", fr: "Un diamant serti clos à chaque extrémité de la barre", ar: "ألماسة مثبّتة في إطار عند كل طرف من القضيب" } }
@@ -386,7 +386,7 @@ KAYN.spot = (function () {
       rows: [
         [L.setting, T("Polished bar, in 14K white gold.", "Barre polie, en or blanc 14 carats.", "قضيب مصقول من الذهب الأبيض عيار 14.")],
         [L.cord, T("Adjustable double cord, in black or olive.", "Double cordon ajustable, en noir ou olive.", "خيط مزدوج قابل للتعديل، بالأسود أو الزيتوني.")],
-        [L.diamond, T("Two 0.10 carat diamonds, with an IGI certificate.", "Deux diamants de 0,10 carat, avec certificat IGI.", "ألماستان بوزن 0.10 قيراط لكل منهما، مع شهادة IGI.")]
+        [L.diamond, T("Two diamonds totalling 0.2 carat, with an IGI certificate.", "Deux diamants totalisant 0,2 carat, avec certificat IGI.", "ألماستان بوزن إجمالي 0.2 قيراط، مع شهادة IGI.")]
       ]
     },
     "vector": {
