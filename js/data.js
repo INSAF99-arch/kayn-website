@@ -352,9 +352,9 @@ KAYN.products = [
       ar: "قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بالألماس. هندسي ودقيق، يرسم خطاً واحداً واثقاً على المعصم."
     },
     short: {
-      en: "Slim 14K white gold bar paved with diamonds, on a soft cord.",
-      fr: "Fine barre en or blanc 14 carats pavée de diamants, sur cordon souple.",
-      ar: "قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بالألماس، على خيط ناعم."
+      en: "Slim 14K white gold bar paved with 1 carat of diamonds, on a soft cord.",
+      fr: "Fine barre en or blanc 14 carats pavée d'un carat de diamants, sur cordon souple.",
+      ar: "قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بألماس بوزن 1 قيراط، على خيط ناعم."
     },
     long: {
       en: "One line, drawn in white gold. The Vector sets a slim 14K white gold bar with diamonds on a soft cord. Designed for everyday wear, it brings a discreet brilliance without demanding attention.",
