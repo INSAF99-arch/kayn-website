@@ -88,7 +88,9 @@ KAYN.signatureGallery = function () {
     { src: P + "essential-6.webp", alt: a("close-up of the octagonal setting and diamond", "gros plan sur le sertissage octogonal et le diamant", "لقطة قريبة للتصميم الثماني والألماسة") },
     { src: P + "essential-three-colours.webp", alt: a("black, olive and burgundy bracelets side by side on stone", "bracelets noir, olive et bordeaux côte à côte sur une pierre", "أساور بالأسود والزيتوني والعنابي جنباً إلى جنب على الحجر") },
     { src: P + "essential-burgundy-wrist.webp", alt: a("burgundy bracelet worn on the wrist", "bracelet bordeaux porté au poignet", "سوار عنابي على المعصم") },
-    { src: P + "essential-black-wrist.webp", alt: a("black bracelet worn on the wrist", "bracelet noir porté au poignet", "سوار أسود على المعصم") }
+    { src: P + "essential-black-wrist.webp", alt: a("black bracelet worn on the wrist", "bracelet noir porté au poignet", "سوار أسود على المعصم") },
+    { src: P + "essential-three-block.webp", alt: a("black, olive and burgundy bracelets draped over a stone block", "bracelets noir, olive et bordeaux posés sur un bloc de pierre", "أساور بالأسود والزيتوني والعنابي على كتلة حجرية") },
+    { src: P + "essential-three-wrist.webp", alt: a("black, olive and burgundy bracelets worn together on the wrist", "bracelets noir, olive et bordeaux portés ensemble au poignet", "أساور بالأسود والزيتوني والعنابي على المعصم معاً") }
   ];
 };
 
