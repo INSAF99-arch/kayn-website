@@ -210,7 +210,7 @@ KAYN.products = [
       fr: "Une déclaration discrète. SOLIS associe une chaîne fine à un seul diamant de 0,10 carat, serti clos rond dans de l'or blanc 14 carats. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
       ar: "لمسة هادئة. يجمع SOLIS بين سلسلة رفيعة وألماسة واحدة بوزن 0.10 قيراط مثبّتة في إطار دائري من الذهب الأبيض عيار 14. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
-    priceMAD: 3700, pricePlaceholder: false,
+    priceMAD: 3690, pricePlaceholder: false,
     gallery: [
       { src: "assets/solis-pocket-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn with the hand in a pocket", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté la main dans la poche", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة واحدة مثبّتة في إطار دائري، واليد في الجيب" } },
       { src: "assets/solis-wrist-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn on the wrist", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté au poignet", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة واحدة مثبّتة في إطار دائري، على المعصم" } },
