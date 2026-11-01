@@ -54,9 +54,9 @@ KAYN.oneColors = function () {
   };
   return [
     { id: "olive", hex: "#4B5232", name: N.olive, show: 0, images: [] },
-    { id: "black", hex: "#0B0B0B", name: N.black, show: 6, images: [] },
-    { id: "grey", hex: "#A9A9A9", name: N.grey, show: 2, images: [] },
-    { id: "red", hex: "#D8261D", name: N.red, show: 3, images: [] }
+    { id: "black", hex: "#0B0B0B", name: N.black, show: 3, images: [] },
+    { id: "grey", hex: "#A9A9A9", name: N.grey, show: 1, images: [] },
+    { id: "red", hex: "#D8261D", name: N.red, show: 2, images: [] }
   ];
 };
 
@@ -68,12 +68,9 @@ KAYN.oneGallery = function () {
   var alt = function (en, fr, ar) { return { en: en, fr: fr, ar: ar }; };
   var worn = function (en, fr, ar) { return alt("The Minimalist: " + en, "The Minimalist : " + fr, "The Minimalist: " + ar); };
   return [
-    { src: P + "one-olive-main.webp", alt: worn("olive cord bracelet with a single diamond, worn on the wrist in the sun", "bracelet à cordon olive et un diamant unique, porté au poignet au soleil", "سوار بخيط زيتوني وألماسة واحدة على المعصم تحت الشمس") },
     { src: P + "one-olive-wrist.webp", alt: worn("olive cord bracelet with a single diamond, worn on the wrist", "bracelet à cordon olive et un diamant unique, porté au poignet", "سوار بخيط زيتوني وألماسة واحدة على المعصم") },
     { src: P + "one-grey-wrist.webp", alt: worn("grey cord bracelet with a single diamond, worn on the wrist", "bracelet à cordon gris et un diamant unique, porté au poignet", "سوار بخيط رمادي وألماسة واحدة على المعصم") },
-    { src: P + "one-red-wrist.webp", alt: worn("red cord bracelet with a single diamond, worn on the wrist", "bracelet à cordon rouge et un diamant unique, porté au poignet", "سوار بخيط أحمر وألماسة واحدة على المعصم") },
     { src: P + "one-red-wrist-2.webp", alt: worn("red cord bracelet with a single diamond, worn on the wrist with a linen shirt", "bracelet à cordon rouge et un diamant unique, porté au poignet avec une chemise en lin", "سوار بخيط أحمر وألماسة واحدة على المعصم مع قميص من الكتان") },
-    { src: P + "one-olive-wrist-2.webp", alt: worn("olive cord bracelet with a single diamond, worn with a linen shirt", "bracelet à cordon olive et un diamant unique, porté avec une chemise en lin", "سوار بخيط زيتوني وألماسة واحدة مع قميص من الكتان") },
     { src: P + "one-black-closeup.jpg", alt: worn("close-up of the black cord bracelet and its round diamond bezel, on stone", "gros plan sur le bracelet à cordon noir et son serti clos rond, sur une pierre", "لقطة قريبة للسوار الأسود وإطار الألماسة الدائري على الحجر") },
     { src: P + "one-four-colours.webp", alt: worn("in red, olive, black and grey on a stone surface", "en rouge, olive, noir et gris sur une pierre", "بألوان الأحمر والزيتوني والأسود والرمادي على سطح حجري") },
     { src: P + "one-olive-closeup.webp", alt: worn("close-up of the olive cord bracelet and its round diamond bezel, on stone", "gros plan sur le bracelet à cordon olive et son serti clos rond, sur une pierre", "لقطة قريبة للسوار الزيتوني وإطار الألماسة الدائري على الحجر") },
@@ -376,7 +373,7 @@ KAYN.spot = (function () {
   };
   return {
     "the-minimalist": {
-      photo: ["assets/one-black-dark.webp", 6], dim: false,
+      photo: ["assets/one-four-dark.webp", 4], dim: false,
       copy: T("A single diamond in a round bezel, on a fine adjustable braided cord.", "Un seul diamant dans un serti clos rond, sur un cordon tressé fin ajustable.", "ألماسة واحدة في إطار دائري، على خيط منسوج رفيع قابل للتعديل."),
       rows: [
         [L.setting, T("Round bezel, in 14K white gold.", "Serti clos rond, en or blanc 14 carats.", "إطار دائري، من الذهب الأبيض عيار 14.")],
