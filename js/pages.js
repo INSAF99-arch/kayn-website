@@ -43,8 +43,9 @@ window.KAYN = window.KAYN || {};
   }
 
   function home() {
-    var insta = [["box", "insta.alt1"], ["bag", "insta.alt2"], ["card", "insta.alt3"], ["closeWide", "insta.alt4"]].map(function (x) {
-      return '<a class="insta__tile" href="' + esc(K.site.instagramUrl) + '" target="_blank" rel="noopener noreferrer">' + K.crop(x[0], t(x[1])) + "</a>";
+    var insta = [["box", "insta.alt1"], ["bag", "insta.alt2"], ["card", "insta.alt3"], ["detail", "insta.alt4"]].map(function (x) {
+      var pic = x[0] === "detail" ? K.cropRaw("assets/insta-detail.webp", 1268, { x: 0, y: 0, w: 1268, h: 1241 }, t(x[1])) : K.crop(x[0], t(x[1]));   // last tile: the octagon close-up
+      return '<a class="insta__tile" href="' + esc(K.site.instagramUrl) + '" target="_blank" rel="noopener noreferrer">' + pic + "</a>";
     }).join("");
     return {
       title: t("meta.home"), desc: t("meta.homeDesc"),
