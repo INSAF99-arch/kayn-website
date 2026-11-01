@@ -47,6 +47,7 @@ main:focus { outline: none; }
 .detail__shot .crop { height: 100%; aspect-ratio: auto; }
 .detail__shot--dim img { filter: brightness(.78) saturate(.92); }
 .detail__tabs { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-5); margin-top: var(--s-5); }
+@media (min-width: 1200px) { .detail__tabs { flex-wrap: nowrap; justify-content: space-between; gap: var(--s-4); } .detail__tab { letter-spacing: .1em; white-space: nowrap; } }   /* all five names on one line on wide screens */
 .detail__tab { appearance: none; background: none; border: 0; border-bottom: 1px solid transparent; padding: var(--s-2) 0; font: 500 .8125rem/1.4 var(--font-head); letter-spacing: var(--track-label); text-transform: uppercase; color: var(--muted-on-dark); cursor: pointer; transition: color .3s var(--ease), border-color .3s var(--ease); }
 .detail__tab:hover, .detail__tab[aria-pressed="true"] { color: var(--offwhite); border-bottom-color: var(--offwhite); }
 html[lang="ar"] .detail__tab { font-family: var(--font-ar-body); letter-spacing: 0; text-transform: none; font-size: .95rem; }
