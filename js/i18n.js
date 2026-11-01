@@ -245,9 +245,12 @@ KAYN.L = function (obj) {
   return obj[KAYN.lang] != null ? obj[KAYN.lang] : obj.en;
 };
 
+/* Currency shown after prices: dirham in Arabic, MAD elsewhere. */
+KAYN.currencyLabel = { ar: "درهم" };
+
 KAYN.formatPrice = function (n) {
   var num = new Intl.NumberFormat(KAYN.langs[KAYN.lang].locale, { maximumFractionDigits: 0 }).format(n);
-  return num + " " + KAYN.site.currency;
+  return num + " " + (KAYN.currencyLabel[KAYN.lang] || KAYN.site.currency);
 };
 
 KAYN.setLang = function (code) {

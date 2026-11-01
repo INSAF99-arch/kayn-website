@@ -212,6 +212,7 @@ KAYN.products = [
     },
     priceMAD: 3700, pricePlaceholder: false,
     gallery: [
+      { src: "assets/solis-pocket-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn with the hand in a pocket", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté la main dans la poche", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة واحدة مثبّتة في إطار دائري، واليد في الجيب" } },
       { src: "assets/solis-wrist-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn on the wrist", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté au poignet", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة واحدة مثبّتة في إطار دائري، على المعصم" } },
       { src: "assets/solis-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn on the wrist", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté au poignet", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة واحدة مثبّتة في إطار دائري، على المعصم" } },
       { src: "assets/solis-box.webp", alt: { en: "SOLIS bracelet in 14K white gold beside the KAYN gift box", fr: "Bracelet SOLIS en or blanc 14 carats à côté du coffret cadeau KAYN", ar: "سوار SOLIS من الذهب الأبيض عيار 14 بجانب علبة الهدايا KAYN" } },
@@ -393,7 +394,7 @@ KAYN.spot = (function () {
       ]
     },
     "solis": {
-      photo: ["assets/solis-box.webp", 2], dim: true,
+      photo: ["assets/solis-box.webp", 3], dim: true,
       copy: T("A single diamond in a round bezel, on a fine chain.", "Un seul diamant dans un serti clos rond, sur une chaîne fine.", "ألماسة واحدة في إطار دائري، على سلسلة رفيعة."),
       rows: [
         [L.setting, T("Round bezel, in 14K white gold.", "Serti clos rond, en or blanc 14 carats.", "إطار دائري، من الذهب الأبيض عيار 14.")],

@@ -70,6 +70,7 @@ window.KAYN = window.KAYN || {};
       '<h3 class="card__listing"><a href="' + href + '">' + esc(K.L(p.name)) + "</a></h3>" +
       (p.listing ? '<p class="card__details">' + esc(K.L(p.listing.details)) + "</p>" : "") +
       '<p class="card__price">' + esc(K.formatPrice(p.priceMAD)) + "</p>" +
+      '<p class="card__stock"><span class="card__stock-dot" aria-hidden="true"></span>' + esc(t("oos.status")) + "</p>" +
       "</div></article>";
   };
 
@@ -84,7 +85,8 @@ window.KAYN = window.KAYN || {};
 
   K.header = function () {
     var links = [["#/collection", "nav.collection"], ["#/story", "nav.story"], ["#/track", "nav.track"]];
-    var nav = links.map(function (l) { return '<a class="nav__link" href="' + l[0] + '" data-route="' + l[0] + '">' + esc(t(l[1])) + "</a>"; }).join("");
+    var nav = links.map(function (l) { return '<a class="nav__link" href="' + l[0] + '" data-route="' + l[0] + '">' + esc(t(l[1])) + "</a>"; }).join("") +
+      '<a class="nav__link" href="mailto:' + esc(K.site.contactEmail) + '">' + esc(t("nav.contact")) + "</a>";
     return '<header class="header"><div class="header__inner">' +
       '<a class="header__logo" href="#/" aria-label="KAYN">' + K.logo("light", 112) + "</a>" +
       '<nav class="nav nav--desktop" aria-label="' + esc(t("nav.main")) + '">' + nav + "</nav>" +
@@ -107,7 +109,8 @@ window.KAYN = window.KAYN || {};
       '<nav class="footer__nav" aria-label="' + esc(t("footer.nav")) + '">' +
       '<a href="#/collection">' + esc(t("nav.collection")) + "</a>" +
       '<a href="#/story">' + esc(t("nav.story")) + "</a>" +
-      '<a href="#/track">' + esc(t("nav.track")) + "</a></nav>" +
+      '<a href="#/track">' + esc(t("nav.track")) + "</a>" +
+      '<a href="mailto:' + esc(s.contactEmail) + '">' + esc(t("nav.contact")) + "</a></nav>" +
       '<div class="footer__legal"><a href="#/privacy">' + esc(t("footer.privacy")) + '</a><a href="#/terms">' + esc(t("footer.terms")) + "</a></div>" +
       "</div>" +
       '<div class="wrap footer__bottom"><span>© ' + new Date().getFullYear() + " KAYN. " + esc(t("footer.rights")) + "</span></div></footer>";

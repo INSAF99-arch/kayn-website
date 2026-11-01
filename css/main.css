@@ -453,3 +453,8 @@ main.page-in { animation: fadeIn .55s var(--ease) both; }
   .footer a, .crumbs a, .review__product { display: inline-flex; align-items: center; min-height: 44px; }
   .detail__tab { min-height: 44px; display: inline-flex; align-items: center; }
 }
+
+/* Collection cards: small "Out of stock" label under the price. */
+.card__stock { display: flex; align-items: center; gap: var(--s-2); margin: 0; font: 500 .75rem/1.4 var(--font-head); letter-spacing: var(--track-label, .12em); text-transform: uppercase; color: var(--muted); }
+.card__stock-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
+html[lang="ar"] .card__stock { font-family: var(--font-ar-head); letter-spacing: 0; text-transform: none; font-size: .875rem; }
