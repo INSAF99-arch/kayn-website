@@ -1,6 +1,7 @@
+param([int]$Port = 5174)
 $root = (Get-Location).Path
 $l = New-Object System.Net.HttpListener
-$l.Prefixes.Add("http://localhost:5174/")
+$l.Prefixes.Add("http://localhost:$Port/")
 $l.Start()
 $types = @{ ".html"="text/html; charset=utf-8"; ".css"="text/css"; ".js"="application/javascript; charset=utf-8"; ".webp"="image/webp" }
 while ($l.IsListening) {

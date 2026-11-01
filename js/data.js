@@ -116,41 +116,28 @@ KAYN.products = [
     id: "the-minimalist",
     slug: "the-minimalist",
     name: { en: "The Minimalist", fr: "The Minimalist", ar: "The Minimalist" },
-    listing: {   // card text: the name (large), a smaller details line, then the price
-      details: { en: "0.10ct Diamond, 14K White Gold", fr: "Diamant 0,10ct, or blanc 14 carats", ar: "ألماسة 0.10 قيراط، ذهب أبيض عيار 14" }
-    },
-    details: {   // two of the three descriptive sections on the product page (the third is shared)
-      design: {
-        en: "A single diamond set in a fine round bezel, resting on a slender braided cord. Nothing more, nothing less: a quiet detail that sits close to the wrist and disappears into your day, then catches the light when you least expect it.",
-        fr: "Un seul diamant serti dans un fin serti clos rond, posé sur un cordon tressé délicat. Rien de plus, rien de moins : un détail discret qui épouse le poignet, se fait oublier dans la journée, puis capte la lumière quand on s'y attend le moins.",
-        ar: "ألماسة واحدة في إطار دائري رفيع، تستقر على خيط منسوج نحيل. لا أكثر ولا أقل: تفصيل هادئ يلتصق بالمعصم ويختفي في يومك، ثم يلتقط الضوء حين لا تتوقع."
-      },
-      materials: {
-        en: "The bezel is crafted in 14K white gold and holds a 0.10 carat diamond of VVS2 clarity, delivered with an IGI certificate. The cord is available in olive, black, grey and red.",
-        fr: "Le sertissage est réalisé en or blanc 14 carats et accueille un diamant de 0,10 carat de pureté VVS2, livré avec un certificat IGI. Le cordon existe en olive, noir, gris et rouge.",
-        ar: "صُنع الإطار من الذهب الأبيض عيار 14 ويحمل ألماسة بوزن 0.10 قيراط بدرجة نقاء VVS2، وتأتي مع شهادة IGI. يتوفر الخيط بالألوان الزيتوني والأسود والرمادي والأحمر."
-      }
-    },
-    card: {   // longer marketing text (not shown on the cards at the moment)
-      en: "Diamond and 14K white gold, in an understated essential designed to make an impression without asking for attention. Refined, effortless, and made to feel like your own.",
-      fr: "Diamant et or blanc 14 carats, dans un essentiel discret conçu pour marquer sans chercher à attirer l'attention. Raffiné, sans effort, et fait pour devenir le vôtre.",
-      ar: "ألماس وذهب أبيض عيار 14، في قطعة أساسية هادئة صُمّمت لتترك أثراً دون أن تطلب الانتباه. أنيقة وسلسة، ومصنوعة لتشعر أنها لك."
+    listing: {
+      details: { en: "0.10 ct diamond · 14K white gold", fr: "Diamant de 0,10 ct · or blanc 14 carats", ar: "ألماسة 0.10 قيراط · ذهب أبيض عيار 14" }
     },
     short: {
-      en: "0.10 carat diamond · 14K white gold. Understated by design.",
-      fr: "Diamant de 0,10 carat · or blanc 14 carats. Discret par nature.",
-      ar: "ألماسة 0.10 قيراط · ذهب أبيض عيار 14. أناقة هادئة."
+      en: "Fine braided cord, round bezel, 14K white gold, 0.10 carat diamond.",
+      fr: "Cordon tressé fin, serti clos rond, or blanc 14 carats, diamant de 0,10 carat.",
+      ar: "خيط منسوج رفيع، إطار دائري، ذهب أبيض عيار 14، ألماسة بوزن 0.10 قيراط."
     },
     long: {
-      en: "Understated by design. A refined cord bracelet, elevated by a 0.10 carat diamond set in polished 14K white gold. Clean lines, premium materials, and a discreet touch of brilliance. Delivered with an IGI certificate. Wear it alone. Make it yours.",
-      fr: "Discret par nature. Un bracelet sur cordon raffiné, sublimé par un diamant de 0,10 carat serti dans de l'or blanc 14 carats poli. Des lignes épurées, des matériaux premium et une touche discrète d'éclat. Livré avec un certificat IGI. À porter seul. À faire vôtre.",
-      ar: "أناقة هادئة. سوار أنيق بخيط راقٍ، يزينه ألماسة بوزن 0.10 قيراط مثبتة في ذهب أبيض عيار 14 مصقول. خطوط نقية، وخامات فاخرة، ولمسة خفية من البريق. يأتي مع شهادة IGI. ارتدِه وحده. واجعله لك."
+      en: "Understated by design. The Minimalist pairs a fine braided cord with a 0.10 carat diamond in a round bezel of polished 14K white gold. Designed for everyday wear, it adds a discreet touch of brilliance without demanding attention. Delivered with an IGI certificate.",
+      fr: "Discret par nature. The Minimalist associe un cordon tressé fin à un diamant de 0,10 carat, serti clos rond dans de l'or blanc 14 carats poli. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
+      ar: "أناقة هادئة. يجمع The Minimalist بين خيط منسوج رفيع وألماسة بوزن 0.10 قيراط مثبّتة في إطار دائري من الذهب الأبيض عيار 14 المصقول. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
     priceMAD: 1590, pricePlaceholder: false,
     gallery: KAYN.oneGallery(),
     colors: KAYN.oneColors(),
     metal: { setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, hardware: null },                // setting confirmed by brief; other hardware unconfirmed
     diamond: { type: KAYN.labGrown, origin: null, carat: KAYN.carat010, clarity: "VVS2", certification: "IGI", count: "1" },
+    extraSpecs: [   // shown after the standard rows
+      { label: { en: "Design", fr: "Conception", ar: "التصميم" }, value: { en: "Fine braided cord with a single round diamond", fr: "Cordon tressé fin avec un seul diamant rond", ar: "خيط منسوج رفيع مع ألماسة مستديرة واحدة" } },
+      { label: { en: "Setting style", fr: "Style de sertissage", ar: "طريقة التثبيت" }, value: { en: "Round bezel", fr: "Serti clos rond", ar: "إطار دائري" } }
+    ],
     dimensions: null,
     care: {
       en: ["Wipe gently with a soft, dry cloth.", "Store in the KAYN box when not worn.", "Keep away from perfume and harsh chemicals."],
@@ -163,34 +150,17 @@ KAYN.products = [
     slug: "the-signature",
     name: { en: "The Signature", fr: "The Signature", ar: "The Signature" },
     listing: {
-      details: { en: "0.10ct Diamond, Geometric 14K White Gold Setting", fr: "Diamant 0,10ct, sertissage géométrique en or blanc 14 carats", ar: "ألماسة 0.10 قيراط، تصميم هندسي من الذهب الأبيض عيار 14" }
-    },
-    details: {
-      design: {
-        en: "A geometric centrepiece with a round diamond at its heart, carried on a double-strand adjustable cord with white-gold-tone loops. Precise in form and calm in presence, it is designed to be adjusted to your wrist and worn every day.",
-        fr: "Une pièce centrale géométrique avec un diamant rond en son cœur, portée par un double cordon ajustable aux anneaux de ton or blanc. Précis dans sa forme et calme dans sa présence, il s'ajuste à votre poignet et se porte chaque jour.",
-        ar: "قطعة مركزية هندسية تحمل في قلبها ألماسة مستديرة، على خيط مزدوج قابل للتعديل مع حلقات بلون الذهب الأبيض. دقيقة في شكلها وهادئة في حضورها، صُممت لتُضبط على معصمك وتُلبس كل يوم."
-      },
-      materials: {
-        en: "The setting is crafted in 14K white gold and holds a 0.10 carat diamond of VVS2 clarity, delivered with an IGI certificate. Available on an olive, black or burgundy cord.",
-        fr: "Le sertissage est réalisé en or blanc 14 carats et accueille un diamant de 0,10 carat de pureté VVS2, livré avec un certificat IGI. Disponible sur cordon olive, noir ou bordeaux.",
-        ar: "صُنع الإطار من الذهب الأبيض عيار 14 ويحمل ألماسة بوزن 0.10 قيراط بدرجة نقاء VVS2، وتأتي مع شهادة IGI. متوفر بخيط زيتوني أو أسود أو عنابي."
-      }
-    },
-    card: {
-      en: "A defining detail in 14K white gold and diamond, for those who appreciate individuality. Confident in character and considered in every line, it brings a subtle edge to everyday style.",
-      fr: "Un détail distinctif en or blanc 14 carats et diamant, pour ceux qui apprécient l'individualité. Affirmé de caractère et réfléchi dans chaque ligne, il apporte une touche subtile de caractère au style du quotidien.",
-      ar: "تفصيل مميّز من الذهب الأبيض عيار 14 والألماس، لمن يقدّرون التفرّد. واثق في طابعه ومدروس في كل خط، يضفي لمسة خفية من الحدّة على أسلوبك اليومي."
+      details: { en: "0.10 ct diamond · 14K white gold", fr: "Diamant de 0,10 ct · or blanc 14 carats", ar: "ألماسة 0.10 قيراط · ذهب أبيض عيار 14" }
     },
     short: {
-      en: "Adjustable cord, geometric 14K white gold setting, 0.10 carat diamond.",
-      fr: "Cordon ajustable, sertissage géométrique en or blanc 14 carats, diamant de 0,10 carat.",
-      ar: "خيط قابل للتعديل، تصميم هندسي من الذهب الأبيض عيار 14، وألماسة بوزن 0.10 قيراط."
+      en: "Adjustable double cord, geometric setting, 14K white gold, 0.10 carat diamond.",
+      fr: "Double cordon ajustable, sertissage géométrique, or blanc 14 carats, diamant de 0,10 carat.",
+      ar: "خيط مزدوج قابل للتعديل، تصميم هندسي، ذهب أبيض عيار 14، ألماسة بوزن 0.10 قيراط."
     },
     long: {
-      en: "A refined expression of understated luxury. The Signature pairs an adjustable cord with a geometric diamond setting in 14K white gold, creating a balance between precision and simplicity. Designed for everyday wear, it makes a subtle statement without demanding attention.",
-      fr: "Une expression raffinée du luxe discret. The Signature associe un cordon ajustable à un sertissage géométrique en or blanc 14 carats, pour un équilibre entre précision et simplicité. Conçu pour le quotidien, il affirme un style subtil sans chercher à attirer l'attention.",
-      ar: "تعبير راقٍ عن الفخامة الهادئة. يجمع The Signature بين خيط قابل للتعديل وتصميم هندسي للألماسة من الذهب الأبيض عيار 14، ليحقق توازناً بين الدقة والبساطة. صُمّم للاستخدام اليومي، ويترك أثراً أنيقاً دون أن يلفت الانتباه."
+      en: "A defining detail. The Signature pairs an adjustable double cord with a geometric setting in 14K white gold, holding a 0.10 carat diamond. Designed for everyday wear, it adds a discreet touch of brilliance without demanding attention. Delivered with an IGI certificate.",
+      fr: "Un détail qui s'affirme. The Signature associe un double cordon ajustable à un sertissage géométrique en or blanc 14 carats, qui accueille un diamant de 0,10 carat. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
+      ar: "تفصيل يفرض حضوره بهدوء. يجمع The Signature بين خيط مزدوج قابل للتعديل وتصميم هندسي من الذهب الأبيض عيار 14 يحمل ألماسة بوزن 0.10 قيراط. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
     priceMAD: 2990, pricePlaceholder: false,
     gallery: [{
@@ -212,51 +182,37 @@ KAYN.products = [
     },
     diamond: { type: KAYN.labGrown, origin: null, carat: KAYN.carat010, clarity: "VVS2", certification: "IGI", count: "1" },
     extraSpecs: [   // shown after the standard rows
-      { label: { en: "Design", fr: "Conception", ar: "الخيط" }, value: { en: "Double-strand adjustable cord", fr: "Cordon double brin ajustable", ar: "خيط مزدوج قابل للتعديل" } },
-      { label: { en: "Setting style", fr: "Style de sertissage", ar: "نمط التصميم" }, value: { en: "Geometric centrepiece with a round diamond", fr: "Pièce centrale géométrique avec un diamant rond", ar: "قطعة مركزية هندسية مع ألماسة مستديرة" } },
-      { label: { en: "Fit", fr: "Taille", ar: "المقاس" }, value: { en: "Adjustable", fr: "Ajustable", ar: "قابل للتعديل" } }
+      { label: { en: "Design", fr: "Conception", ar: "التصميم" }, value: { en: "Adjustable double cord with a geometric centrepiece", fr: "Double cordon ajustable avec une pièce centrale géométrique", ar: "خيط مزدوج قابل للتعديل مع قطعة مركزية هندسية" } },
+      { label: { en: "Setting style", fr: "Style de sertissage", ar: "طريقة التثبيت" }, value: { en: "Geometric setting around a round diamond", fr: "Sertissage géométrique autour d'un diamant rond", ar: "تصميم هندسي يحيط بألماسة مستديرة" } }
     ],
     dimensions: null,
-    care: null
+    care: {
+      en: ["Wipe gently with a soft, dry cloth.", "Store in the KAYN box when not worn.", "Keep away from perfume and harsh chemicals."],
+      fr: ["Essuyer délicatement avec un chiffon doux et sec.", "Ranger dans l'écrin KAYN lorsqu'il n'est pas porté.", "Éviter le contact avec les parfums et produits agressifs."],
+      ar: ["امسحه برفق بقطعة قماش ناعمة وجافة.", "احتفظ به في علبة KAYN عند عدم ارتدائه.", "أبعده عن العطور والمواد الكيميائية القاسية."]
+    }
   },
   {
     id: "solis",
     slug: "solis",
     name: { en: "SOLIS", fr: "SOLIS", ar: "SOLIS" },
     listing: {
-      details: { en: "0.10ct Diamond, 14K White Gold", fr: "Diamant 0,10ct, or blanc 14 carats", ar: "ألماسة 0.10 قيراط، ذهب أبيض عيار 14" }
-    },
-    details: {
-      design: {
-        en: "A fine chain interrupted by a single bezel-set stone: a delicate profile with quiet brilliance. Light on the wrist and easy to style, it sits comfortably alone or beside your favourite watch.",
-        fr: "Une chaîne fine ponctuée d'une seule pierre sertie clos : un profil délicat, d'un éclat discret. Légère au poignet et facile à porter, elle se suffit à elle-même ou accompagne votre montre préférée.",
-        ar: "سلسلة رفيعة تتوسطها حجر واحد مثبّت في إطار دائري: حضور رقيق وبريق هادئ. خفيفة على المعصم وسهلة التنسيق، تكتفي بنفسها أو ترافق ساعتك المفضلة."
-      },
-      materials: {
-        en: "Crafted in 14K white gold, with a 0.10 carat diamond of VVS2 clarity, delivered with an IGI certificate.",
-        fr: "Réalisé en or blanc 14 carats, avec un diamant de 0,10 carat de pureté VVS2, livré avec un certificat IGI.",
-        ar: "صُنع من الذهب الأبيض عيار 14، مع ألماسة بوزن 0.10 قيراط بدرجة نقاء VVS2، وتأتي مع شهادة IGI."
-      }
-    },
-    card: {
-      en: "Fine 14K white gold set with a brilliant diamond. Clean lines and a quiet brilliance give this piece its character. Elegant without excess, SOLIS brings a refined finishing touch to any look.",
-      fr: "De l'or blanc 14 carats serti d'un brillant diamant. Des lignes épurées et un éclat discret donnent à cette pièce son caractère. Élégant sans excès, SOLIS apporte une touche finale raffinée à toutes les tenues.",
-      ar: "ذهب أبيض عيار 14 مرصّع بألماسة لامعة. خطوط نقية وبريق هادئ يمنحان هذه القطعة طابعها. أنيق دون مبالغة، يضيف SOLIS لمسة أخيرة راقية إلى أي إطلالة."
+      details: { en: "0.10 ct diamond · 14K white gold", fr: "Diamant de 0,10 ct · or blanc 14 carats", ar: "ألماسة 0.10 قيراط · ذهب أبيض عيار 14" }
     },
     short: {
-      en: "Fine chain with a single bezel-set diamond, in 14K white gold.",
-      fr: "Chaîne fine avec un diamant serti clos, en or blanc 14 carats.",
-      ar: "سلسلة رفيعة مع ألماسة واحدة مثبّتة في إطار دائري، من الذهب الأبيض عيار 14."
+      en: "Fine chain, round bezel, 14K white gold, 0.10 carat diamond.",
+      fr: "Chaîne fine, serti clos rond, or blanc 14 carats, diamant de 0,10 carat.",
+      ar: "سلسلة رفيعة، إطار دائري، ذهب أبيض عيار 14، ألماسة بوزن 0.10 قيراط."
     },
     long: {
-      en: "A subtle statement. An unmistakable presence. Designed for those who appreciate the details, SOLIS pairs a refined chain with a single bezel-set brilliant stone. Its clean silhouette and polished finish create a balance of simplicity and sophistication, making it equally suited to everyday wear or more elevated occasions. Wear it alone for a discreet touch of distinction, or pair it with your favourite watch for a considered, effortless look. Less, but better.",
-      fr: "Une déclaration discrète. Une présence indéniable. Conçu pour ceux qui apprécient les détails, SOLIS associe une chaîne raffinée à une unique pierre brillante sertie clos. Sa silhouette épurée et sa finition polie créent un équilibre entre simplicité et sophistication, pour un port quotidien comme pour les occasions plus élégantes. À porter seul pour une touche discrète de distinction, ou avec votre montre préférée pour un style réfléchi et sans effort. Moins, mais mieux.",
-      ar: "لمسة هادئة. حضور لا يُنسى. صُمّم لمن يقدّرون التفاصيل، يجمع SOLIS بين سلسلة أنيقة وحجر لامع واحد مثبّت في إطار دائري. يخلق شكله النقي ولمسته المصقولة توازناً بين البساطة والرقيّ، فيناسب الاستخدام اليومي كما المناسبات الأرقى. ارتدِه وحده للمسة تميّز هادئة، أو مع ساعتك المفضلة لإطلالة مدروسة بلا تكلف. الأقل، لكن الأفضل."
+      en: "A subtle statement. SOLIS pairs a fine chain with a single 0.10 carat diamond in a round bezel of 14K white gold. Designed for everyday wear, it adds a discreet touch of brilliance without demanding attention. Delivered with an IGI certificate.",
+      fr: "Une déclaration discrète. SOLIS associe une chaîne fine à un seul diamant de 0,10 carat, serti clos rond dans de l'or blanc 14 carats. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
+      ar: "لمسة هادئة. يجمع SOLIS بين سلسلة رفيعة وألماسة واحدة بوزن 0.10 قيراط مثبّتة في إطار دائري من الذهب الأبيض عيار 14. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
     priceMAD: 3700, pricePlaceholder: false,
     gallery: [
       { src: "assets/solis-wrist-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn on the wrist", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté au poignet", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة واحدة مثبّتة في إطار دائري، على المعصم" } },
-      { src: "assets/solis-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn on the wrist", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté au poignet", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة في إطار دائري، على المعصم" } },
+      { src: "assets/solis-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn on the wrist", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté au poignet", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة واحدة مثبّتة في إطار دائري، على المعصم" } },
       { src: "assets/solis-box.webp", alt: { en: "SOLIS bracelet in 14K white gold beside the KAYN gift box", fr: "Bracelet SOLIS en or blanc 14 carats à côté du coffret cadeau KAYN", ar: "سوار SOLIS من الذهب الأبيض عيار 14 بجانب علبة الهدايا KAYN" } },
     ],
     colors: [   // metal options
@@ -267,47 +223,33 @@ KAYN.products = [
       type: { en: "Lab-grown diamond", fr: "Diamant de laboratoire", ar: "ألماسة مصنّعة في المختبر" },
       origin: null, carat: { en: "0.10 ct", fr: "0,10 ct", ar: "0.10 قيراط" }, clarity: "VVS2", certification: "IGI", count: "1"
     },
-    extraSpecs: [
-      { label: { en: "Design", fr: "Conception", ar: "التصميم العام" }, value: { en: "Minimalist chain bracelet with a single round stone", fr: "Bracelet chaîne minimaliste avec une seule pierre ronde", ar: "سوار سلسلة بسيط مع حجر دائري واحد" } },
-      { label: { en: "Setting style", fr: "Style de sertissage", ar: "نمط التثبيت" }, value: { en: "Circular bezel setting", fr: "Sertissage clos circulaire", ar: "تثبيت في إطار دائري" } },
-      { label: { en: "Fit", fr: "Taille", ar: "المقاس" }, value: { en: "Delicate profile designed for everyday styling", fr: "Profil délicat pensé pour un style quotidien", ar: "تصميم رفيع ناعم مناسب للإطلالات اليومية" } }
+    extraSpecs: [   // shown after the standard rows
+      { label: { en: "Design", fr: "Conception", ar: "التصميم" }, value: { en: "Fine chain with a single round diamond", fr: "Chaîne fine avec un seul diamant rond", ar: "سلسلة رفيعة مع ألماسة مستديرة واحدة" } },
+      { label: { en: "Setting style", fr: "Style de sertissage", ar: "طريقة التثبيت" }, value: { en: "Round bezel", fr: "Serti clos rond", ar: "إطار دائري" } }
     ],
     dimensions: null,
-    care: null
+    care: {
+      en: ["Wipe gently with a soft, dry cloth.", "Store in the KAYN box when not worn.", "Keep away from perfume and harsh chemicals."],
+      fr: ["Essuyer délicatement avec un chiffon doux et sec.", "Ranger dans l'écrin KAYN lorsqu'il n'est pas porté.", "Éviter le contact avec les parfums et produits agressifs."],
+      ar: ["امسحه برفق بقطعة قماش ناعمة وجافة.", "احتفظ به في علبة KAYN عند عدم ارتدائه.", "أبعده عن العطور والمواد الكيميائية القاسية."]
+    }
   },
   {
     id: "the-line",
     slug: "the-line",
     name: { en: "The Line", fr: "The Line", ar: "The Line" },
     listing: {
-      details: { en: "Two 0.10ct Diamonds, 14K White Gold Bar", fr: "Deux diamants de 0,10ct, barre en or blanc 14 carats", ar: "ألماستان 0.10 قيراط لكل منهما، قضيب من الذهب الأبيض عيار 14" }
-    },
-    details: {
-      design: {
-        en: "A slim, polished bar of white gold with a diamond set at each end, resting on a fine cord. Clean geometry and a measured shine: a modern line drawn across the wrist.",
-        fr: "Une fine barre polie en or blanc, avec un diamant serti à chaque extrémité, posée sur un cordon fin. Une géométrie épurée et un éclat mesuré : une ligne moderne tracée sur le poignet.",
-        ar: "قضيب رفيع مصقول من الذهب الأبيض، بألماسة مثبّتة عند كل طرف، يستقر على خيط رفيع. هندسة نقية وبريق متزن: خط عصري يرسم المعصم."
-      },
-      materials: {
-        en: "The bar is crafted in 14K white gold and set with two diamonds of 0.10 carat each, VVS2 clarity, delivered with an IGI certificate. Available on a black or olive cord.",
-        fr: "La barre est réalisée en or blanc 14 carats et sertie de deux diamants de 0,10 carat chacun, de pureté VVS2, livrés avec un certificat IGI. Disponible sur cordon noir ou olive.",
-        ar: "صُنع القضيب من الذهب الأبيض عيار 14 ويحمل ألماستين بوزن 0.10 قيراط لكل منهما بدرجة نقاء VVS2، وتأتي مع شهادة IGI. متوفر بخيط أسود أو زيتوني."
-      }
-    },
-    card: {
-      en: "A slim bar of 14K white gold set with two diamonds. Defined by balance and clean geometry, this piece makes simplicity its signature. Modern, composed, and designed to stand apart without saying too much.",
-      fr: "Une fine barre en or blanc 14 carats sertie de deux diamants. Défini par l'équilibre et une géométrie épurée, ce bijou fait de la simplicité sa signature. Moderne, maîtrisé, et conçu pour se démarquer sans en dire trop.",
-      ar: "قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بألماستين. يتميّز بالتوازن والهندسة النقية، وتصبح البساطة توقيع هذه القطعة. عصرية ومتزنة، وصُمّمت لتتميّز دون أن تقول الكثير."
+      details: { en: "2 × 0.10 ct diamonds · 14K white gold", fr: "2 diamants de 0,10 ct · or blanc 14 carats", ar: "ألماستان 0.10 قيراط لكل منهما · ذهب أبيض عيار 14" }
     },
     short: {
-      en: "Adjustable cord, slim polished 14K white gold bar, diamond accents.",
-      fr: "Cordon ajustable, fine barre en or blanc 14 carats poli, touches de diamant.",
-      ar: "خيط قابل للتعديل، وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، ولمسات من الألماس."
+      en: "Adjustable double cord, slim bar, 14K white gold, two 0.10 carat diamonds.",
+      fr: "Double cordon ajustable, fine barre, or blanc 14 carats, deux diamants de 0,10 carat.",
+      ar: "خيط مزدوج قابل للتعديل، قضيب رفيع، ذهب أبيض عيار 14، ألماستان بوزن 0.10 قيراط لكل منهما."
     },
     long: {
-      en: "Pure lines, quietly precise. The Line pairs an adjustable cord with a slim bar of polished 14K white gold, accented with diamonds. Designed for everyday wear, it adds a discreet touch of brilliance without demanding attention.",
-      fr: "Des lignes pures, d'une précision discrète. The Line associe un cordon ajustable à une fine barre en or blanc 14 carats poli, rehaussée de diamants. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention.",
-      ar: "خطوط نقية بدقة هادئة. يجمع The Line بين خيط قابل للتعديل وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، تزينه ألماسات. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه."
+      en: "Pure lines, quietly precise. The Line pairs an adjustable double cord with a slim bar of polished 14K white gold, set with a 0.10 carat diamond at each end. Designed for everyday wear, it adds a discreet touch of brilliance without demanding attention. Delivered with an IGI certificate.",
+      fr: "Des lignes pures, d'une précision discrète. The Line associe un double cordon ajustable à une fine barre en or blanc 14 carats poli, ornée d'un diamant de 0,10 carat à chaque extrémité. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
+      ar: "خطوط نقية بدقة هادئة. يجمع The Line بين خيط مزدوج قابل للتعديل وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، تزيّنه ألماسة بوزن 0.10 قيراط عند كل طرف. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
     priceMAD: 3990, pricePlaceholder: false,
     gallery: [{
@@ -324,42 +266,33 @@ KAYN.products = [
     ],
     metal: { setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, hardware: null },
     diamond: { type: KAYN.labGrown, origin: null, carat: { en: "0.10 ct each", fr: "0,10 ct chacun", ar: "0.10 قيراط لكل ألماسة" }, clarity: "VVS2", certification: "IGI", count: "2" },
+    extraSpecs: [   // shown after the standard rows
+      { label: { en: "Design", fr: "Conception", ar: "التصميم" }, value: { en: "Adjustable double cord with a slim bar", fr: "Double cordon ajustable avec une fine barre", ar: "خيط مزدوج قابل للتعديل مع قضيب رفيع" } },
+      { label: { en: "Setting style", fr: "Style de sertissage", ar: "طريقة التثبيت" }, value: { en: "Bezel-set diamond at each end of the bar", fr: "Un diamant serti clos à chaque extrémité de la barre", ar: "ألماسة مثبّتة في إطار عند كل طرف من القضيب" } }
+    ],
     dimensions: null,
-    care: null
+    care: {
+      en: ["Wipe gently with a soft, dry cloth.", "Store in the KAYN box when not worn.", "Keep away from perfume and harsh chemicals."],
+      fr: ["Essuyer délicatement avec un chiffon doux et sec.", "Ranger dans l'écrin KAYN lorsqu'il n'est pas porté.", "Éviter le contact avec les parfums et produits agressifs."],
+      ar: ["امسحه برفق بقطعة قماش ناعمة وجافة.", "احتفظ به في علبة KAYN عند عدم ارتدائه.", "أبعده عن العطور والمواد الكيميائية القاسية."]
+    }
   },
   {
     id: "vector",
     slug: "vector",
     name: { en: "The Vector", fr: "The Vector", ar: "The Vector" },
     listing: {
-      details: { en: "1ct Diamonds, 14K White Gold Bar", fr: "Diamants 1ct, barre en or blanc 14 carats", ar: "ألماس 1 قيراط، قضيب من الذهب الأبيض عيار 14" }
-    },
-    details: {
-      design: {
-        en: "A slender bar of white gold, paved from end to end with fine diamonds and drawn across the wrist on a soft cord. Graphic and precise: a single confident line.",
-        fr: "Une fine barre en or blanc, entièrement pavée de petits diamants et posée sur un cordon souple. Graphique et précis : une seule ligne, pleine d'assurance.",
-        ar: "قضيب رفيع من الذهب الأبيض، مرصّع من طرفه إلى طرفه بألماسات دقيقة، يمتد على المعصم فوق خيط ناعم. هندسي ودقيق: خط واحد واثق."
-      },
-      materials: {
-        en: "The bar is crafted in 14K white gold and pavé-set with 20 diamonds totalling 1 carat, delivered with an IGI certificate. Available on a bronze or blue cord.",
-        fr: "La barre est réalisée en or blanc 14 carats et sertie en pavé de 20 diamants totalisant 1 carat, livrés avec un certificat IGI. Disponible sur cordon bronze ou bleu.",
-        ar: "صُنع القضيب من الذهب الأبيض عيار 14 ومرصّع بـ 20 ألماسة بوزن إجمالي 1 قيراط، وتأتي مع شهادة IGI. متوفر بخيط برونزي أو أزرق."
-      }
-    },
-    card: {
-      en: "A slim bar of 14K white gold paved with diamonds. Graphic and precise, it draws a single confident line across the wrist.",
-      fr: "Une fine barre en or blanc 14 carats pavée de diamants. Graphique et précise, elle trace une seule ligne pleine d'assurance sur le poignet.",
-      ar: "قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بالألماس. هندسي ودقيق، يرسم خطاً واحداً واثقاً على المعصم."
+      details: { en: "20 diamonds, 1 ct total · 14K white gold", fr: "20 diamants, 1 ct au total · or blanc 14 carats", ar: "20 ألماسة، 1 قيراط إجمالاً · ذهب أبيض عيار 14" }
     },
     short: {
-      en: "Slim 14K white gold bar paved with 1 carat of diamonds, on a soft cord.",
-      fr: "Fine barre en or blanc 14 carats pavée d'un carat de diamants, sur cordon souple.",
-      ar: "قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بألماس بوزن 1 قيراط، على خيط ناعم."
+      en: "Adjustable double cord, slim pavé bar, 14K white gold, 1 carat of diamonds.",
+      fr: "Double cordon ajustable, fine barre pavée, or blanc 14 carats, 1 carat de diamants.",
+      ar: "خيط مزدوج قابل للتعديل، قضيب رفيع مرصّع، ذهب أبيض عيار 14، ألماس بوزن 1 قيراط."
     },
     long: {
-      en: "One line, drawn in white gold. The Vector sets a slim 14K white gold bar with diamonds on a soft cord. Designed for everyday wear, it brings a discreet brilliance without demanding attention.",
-      fr: "Une seule ligne, tracée en or blanc. The Vector associe une fine barre en or blanc 14 carats sertie de diamants à un cordon souple. Conçu pour le quotidien, il apporte un éclat discret sans chercher à attirer l'attention.",
-      ar: "خط واحد يرسمه الذهب الأبيض. يجمع The Vector بين قضيب رفيع من الذهب الأبيض عيار 14 مرصّع بالألماس وخيط ناعم. صُمّم للاستخدام اليومي، ويمنح بريقاً هادئاً دون أن يلفت الانتباه."
+      en: "One line, drawn in white gold. The Vector pairs an adjustable double cord with a slim bar of 14K white gold, paved with 20 diamonds totalling 1 carat. Designed for everyday wear, it adds a discreet touch of brilliance without demanding attention. Delivered with an IGI certificate.",
+      fr: "Une seule ligne, tracée en or blanc. The Vector associe un double cordon ajustable à une fine barre en or blanc 14 carats, pavée de 20 diamants totalisant 1 carat. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
+      ar: "خط واحد يرسمه الذهب الأبيض. يجمع The Vector بين خيط مزدوج قابل للتعديل وقضيب رفيع من الذهب الأبيض عيار 14، مرصّع بـ 20 ألماسة بوزن إجمالي 1 قيراط. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
     priceMAD: 8990, pricePlaceholder: false,
     gallery: [{
@@ -390,8 +323,16 @@ KAYN.products = [
     ],
     metal: { setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, hardware: null },
     diamond: { type: KAYN.labGrown, origin: null, carat: { en: "1 ct total", fr: "1 ct au total", ar: "1 قيراط إجمالاً" }, clarity: null, certification: "IGI", count: "20" },
+    extraSpecs: [   // shown after the standard rows
+      { label: { en: "Design", fr: "Conception", ar: "التصميم" }, value: { en: "Adjustable double cord with a slim bar", fr: "Double cordon ajustable avec une fine barre", ar: "خيط مزدوج قابل للتعديل مع قضيب رفيع" } },
+      { label: { en: "Setting style", fr: "Style de sertissage", ar: "طريقة التثبيت" }, value: { en: "Pavé-set with 20 diamonds", fr: "Serti pavé de 20 diamants", ar: "ترصيع بافيه بـ 20 ألماسة" } }
+    ],
     dimensions: null,
-    care: null
+    care: {
+      en: ["Wipe gently with a soft, dry cloth.", "Store in the KAYN box when not worn.", "Keep away from perfume and harsh chemicals."],
+      fr: ["Essuyer délicatement avec un chiffon doux et sec.", "Ranger dans l'écrin KAYN lorsqu'il n'est pas porté.", "Éviter le contact avec les parfums et produits agressifs."],
+      ar: ["امسحه برفق بقطعة قماش ناعمة وجافة.", "احتفظ به في علبة KAYN عند عدم ارتدائه.", "أبعده عن العطور والمواد الكيميائية القاسية."]
+    }
   }
 ];
 
@@ -401,13 +342,13 @@ KAYN.products = [
 KAYN.spot = (function () {
   var T = function (en, fr, ar) { return { en: en, fr: fr, ar: ar }; };
   var L = {
-    setting: T("Setting", "Sertissage", "التصميم"), cord: T("Cord", "Cordon", "الخيط"),
-    chain: T("Chain", "Chaîne", "السلسلة"), diamond: T("Diamond", "Diamant", "الألماس"), stone: T("Stone", "Pierre", "الحجر")
+    setting: T("Setting", "Sertissage", "التثبيت"), cord: T("Cord", "Cordon", "الخيط"),
+    chain: T("Chain", "Chaîne", "السلسلة"), diamond: T("Diamond", "Diamant", "الألماس")
   };
   return {
     "the-minimalist": {
       photo: ["assets/one-black-dark.webp", 6], dim: false,
-      copy: T("A single diamond in a round bezel, on a fine braided cord.", "Un seul diamant dans un sertissage clos rond, sur un cordon tressé fin.", "ألماسة واحدة في إطار دائري، على خيط منسوج رفيع."),
+      copy: T("A single diamond in a round bezel, on a fine braided cord.", "Un seul diamant dans un serti clos rond, sur un cordon tressé fin.", "ألماسة واحدة في إطار دائري، على خيط منسوج رفيع."),
       rows: [
         [L.setting, T("Round bezel, in 14K white gold.", "Serti clos rond, en or blanc 14 carats.", "إطار دائري، من الذهب الأبيض عيار 14.")],
         [L.cord, T("Fine braided cord, in four colours.", "Cordon tressé fin, en quatre couleurs.", "خيط منسوج رفيع، بأربعة ألوان.")],
@@ -415,37 +356,38 @@ KAYN.spot = (function () {
       ]
     },
     "the-signature": {
-      copy: T("A geometric setting around a single diamond, on a fine double cord.", "Un sertissage géométrique autour d'un seul diamant, sur un double cordon fin.", "تصميم هندسي يحيط بألماسة واحدة، على خيط مزدوج رفيع."),
+      photo: ["assets/essential-3.webp", 4], dim: false,
+      copy: T("A geometric setting around a single diamond, on an adjustable double cord.", "Un sertissage géométrique autour d'un seul diamant, sur un double cordon ajustable.", "تصميم هندسي يحيط بألماسة واحدة، على خيط مزدوج قابل للتعديل."),
       rows: [
         [L.setting, T("Geometric setting, in 14K white gold.", "Sertissage géométrique, en or blanc 14 carats.", "تصميم هندسي من الذهب الأبيض عيار 14.")],
-        [L.cord, T("Fine double cord, in olive, black or burgundy.", "Double cordon fin, en olive, noir ou bordeaux.", "خيط مزدوج رفيع، بالزيتوني أو الأسود أو العنابي.")],
+        [L.cord, T("Adjustable double cord, in olive, black or burgundy.", "Double cordon ajustable, en olive, noir ou bordeaux.", "خيط مزدوج قابل للتعديل، بالزيتوني أو الأسود أو العنابي.")],
         [L.diamond, T("0.10 carat diamond, with an IGI certificate.", "Diamant de 0,10 carat, avec certificat IGI.", "ألماسة بوزن 0.10 قيراط، مع شهادة IGI.")]
       ]
     },
     "solis": {
       photo: ["assets/solis-box.webp", 2], dim: true,
-      copy: T("A fine chain carrying a single bezel-set stone.", "Une chaîne fine portant une seule pierre sertie clos.", "سلسلة رفيعة تحمل حجراً واحداً في إطار دائري."),
+      copy: T("A single diamond in a round bezel, on a fine chain.", "Un seul diamant dans un serti clos rond, sur une chaîne fine.", "ألماسة واحدة في إطار دائري، على سلسلة رفيعة."),
       rows: [
         [L.setting, T("Round bezel, in 14K white gold.", "Serti clos rond, en or blanc 14 carats.", "إطار دائري، من الذهب الأبيض عيار 14.")],
-        [L.chain, T("Fine chain, in 14K gold.", "Chaîne fine, en or 14 carats.", "سلسلة رفيعة من الذهب عيار 14.")],
-        [L.stone, T("0.10 carat diamond, with an IGI certificate.", "Diamant de 0,10 carat, avec certificat IGI.", "ألماسة بوزن 0.10 قيراط، مع شهادة IGI.")]
+        [L.chain, T("Fine chain, in 14K white gold.", "Chaîne fine, en or blanc 14 carats.", "سلسلة رفيعة من الذهب الأبيض عيار 14.")],
+        [L.diamond, T("0.10 carat diamond, with an IGI certificate.", "Diamant de 0,10 carat, avec certificat IGI.", "ألماسة بوزن 0.10 قيراط، مع شهادة IGI.")]
       ]
     },
     "the-line": {
       photo: ["assets/line-2.webp", 2], dim: true,
-      copy: T("A slim polished bar with a diamond at each end, on a fine cord.", "Une fine barre polie avec un diamant à chaque extrémité, sur un cordon fin.", "قضيب رفيع مصقول بألماسة عند كل طرف، على خيط رفيع."),
+      copy: T("A slim polished bar with a diamond at each end, on an adjustable double cord.", "Une fine barre polie avec un diamant à chaque extrémité, sur un double cordon ajustable.", "قضيب رفيع مصقول بألماسة عند كل طرف، على خيط مزدوج قابل للتعديل."),
       rows: [
         [L.setting, T("Polished bar, in 14K white gold.", "Barre polie, en or blanc 14 carats.", "قضيب مصقول من الذهب الأبيض عيار 14.")],
-        [L.cord, T("Fine cord, in black or olive.", "Cordon fin, en noir ou olive.", "خيط رفيع، بالأسود أو الزيتوني.")],
+        [L.cord, T("Adjustable double cord, in black or olive.", "Double cordon ajustable, en noir ou olive.", "خيط مزدوج قابل للتعديل، بالأسود أو الزيتوني.")],
         [L.diamond, T("Two 0.10 carat diamonds, with an IGI certificate.", "Deux diamants de 0,10 carat, avec certificat IGI.", "ألماستان بوزن 0.10 قيراط لكل منهما، مع شهادة IGI.")]
       ]
     },
     "vector": {
       photo: ["assets/vector-box.webp", 1], dim: true,
-      copy: T("A slim bar paved end to end with diamonds, on a soft cord.", "Une fine barre entièrement pavée de diamants, sur un cordon souple.", "قضيب رفيع مرصّع بالألماس من طرفه إلى طرفه، على خيط ناعم."),
+      copy: T("A slim bar paved end to end with diamonds, on an adjustable double cord.", "Une fine barre entièrement pavée de diamants, sur un double cordon ajustable.", "قضيب رفيع مرصّع بالألماس من طرفه إلى طرفه، على خيط مزدوج قابل للتعديل."),
       rows: [
         [L.setting, T("Pavé bar, in 14K white gold.", "Barre pavée, en or blanc 14 carats.", "قضيب مرصّع من الذهب الأبيض عيار 14.")],
-        [L.cord, T("Soft cord, in bronze or blue.", "Cordon souple, en bronze ou bleu.", "خيط ناعم، بالبرونزي أو الأزرق.")],
+        [L.cord, T("Adjustable double cord, in bronze or blue.", "Double cordon ajustable, en bronze ou bleu.", "خيط مزدوج قابل للتعديل، بالبرونزي أو الأزرق.")],
         [L.diamond, T("20 diamonds totalling 1 carat, with an IGI certificate.", "20 diamants totalisant 1 carat, avec certificat IGI.", "20 ألماسة بوزن إجمالي 1 قيراط، مع شهادة IGI.")]
       ]
     }
@@ -471,9 +413,9 @@ KAYN.reviews = [
     fr: "Très chic, super service client. Je recommande.",
     ar: "أنيق جداً وخدمة عملاء ممتازة. أنصح به." } },
   { name: { en: "Amine R.", fr: "Amine R.", ar: "أمين ر." }, product: "solis", rating: 5, sample: true, text: {
-    en: "Got the white gold, I get compliments all the time.",
-    fr: "J'ai pris l'or blanc, on me fait des compliments tout le temps.",
-    ar: "اخترت الذهب الأبيض وأتلقى المجاملات دائماً." } },
+    en: "Beautiful piece, I get compliments all the time.",
+    fr: "Une très belle pièce, on me fait des compliments tout le temps.",
+    ar: "قطعة جميلة جداً وأتلقى المجاملات دائماً." } },
   { name: { en: "Nadia A.", fr: "Nadia A.", ar: "نادية أ." }, product: "the-line", rating: 5, sample: true, text: {
     en: "Gift for my fiancé's birthday. He loved it!",
     fr: "Cadeau pour l'anniversaire de mon fiancé. Il a adoré !",

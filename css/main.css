@@ -443,3 +443,9 @@ main.page-in { animation: fadeIn .55s var(--ease) both; }
   .js-anim .reveal { opacity: 1 !important; transform: none !important; }
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+
+/* Touch screens: comfortable tap targets for small text links and the banner product names. */
+@media (pointer: coarse) {
+  .footer a, .crumbs a, .review__product { display: inline-flex; align-items: center; min-height: 44px; }
+  .detail__tab { min-height: 44px; display: inline-flex; align-items: center; }
+}
