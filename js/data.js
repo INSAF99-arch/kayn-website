@@ -251,8 +251,15 @@ KAYN.products = [
       fr: "Des lignes pures, d'une précision discrète. The Line associe un double cordon ajustable à une fine barre en or blanc 14 carats poli, ornée d'un diamant de 0,10 carat à chaque extrémité. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
       ar: "خطوط نقية بدقة هادئة. يجمع The Line بين خيط مزدوج قابل للتعديل وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، تزيّنه ألماسة بوزن 0.10 قيراط عند كل طرف. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
-    priceMAD: 3990, pricePlaceholder: false,
+    priceMAD: 4590, pricePlaceholder: false,
     gallery: [{
+      src: "assets/line-wrist-main.webp",
+      alt: {
+        en: "The Line bracelet: olive cord with a slim white gold bar and two diamonds, worn with the hand in a pocket",
+        fr: "Bracelet The Line : cordon olive avec une fine barre en or blanc et deux diamants, porté la main dans la poche",
+        ar: "سوار The Line: خيط زيتوني مع قضيب رفيع من الذهب الأبيض وألماستين، واليد في الجيب"
+      }
+    }, {
       src: "assets/line-5.webp",
       alt: {
         en: "The Line bracelet: black cord with a slim white gold bar and two diamonds, worn on the wrist",
@@ -261,8 +268,8 @@ KAYN.products = [
       }
     }].concat(KAYN.lineGallery()),
     colors: [   // colours visible in the supplied photos; PLACEHOLDER until confirmed
-      { id: "black", hex: "#0B0B0B", name: { en: "Black", fr: "Noir", ar: "أسود" }, show: 0, images: [] },
-      { id: "olive", hex: "#2F3A2E", name: { en: "Olive green", fr: "Vert olive", ar: "أخضر زيتوني" }, show: 3, images: [] }
+      { id: "olive", hex: "#2F3A2E", name: { en: "Olive green", fr: "Vert olive", ar: "أخضر زيتوني" }, show: 0, images: [] },
+      { id: "black", hex: "#0B0B0B", name: { en: "Black", fr: "Noir", ar: "أسود" }, show: 1, images: [] }
     ],
     metal: { setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, hardware: null },
     diamond: { type: KAYN.labGrown, origin: null, carat: { en: "0.10 ct each", fr: "0,10 ct chacun", ar: "0.10 قيراط لكل ألماسة" }, clarity: "VVS2", certification: "IGI", count: "2" },
@@ -374,7 +381,7 @@ KAYN.spot = (function () {
       ]
     },
     "the-line": {
-      photo: ["assets/line-2.webp", 2], dim: true,
+      photo: ["assets/line-2.webp", 3], dim: true,
       copy: T("A slim polished bar with a diamond at each end, on an adjustable double cord.", "Une fine barre polie avec un diamant à chaque extrémité, sur un double cordon ajustable.", "قضيب رفيع مصقول بألماسة عند كل طرف، على خيط مزدوج قابل للتعديل."),
       rows: [
         [L.setting, T("Polished bar, in 14K white gold.", "Barre polie, en or blanc 14 carats.", "قضيب مصقول من الذهب الأبيض عيار 14.")],
