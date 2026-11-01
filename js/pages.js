@@ -122,8 +122,8 @@ window.KAYN = window.KAYN || {};
             '<span class="swatch" style="background:' + c.hex + '"></span><span>' + esc(K.L(c.name)) + "</span></button>";
         }).join("") + "</div></div>";
     };
-    var colors = optionGroup("color", p.optionLabel ? K.L(p.optionLabel) : t("pd.chooseColour"), p.colors) +
-      (p.stones ? optionGroup("stone", K.L(p.stoneLabel), p.stones) : "");
+    var colors = (p.colors.length > 1 ? optionGroup("color", p.optionLabel ? K.L(p.optionLabel) : t("pd.chooseColour"), p.colors) : "") +
+      (p.stones && p.stones.length > 1 ? optionGroup("stone", K.L(p.stoneLabel), p.stones) : "");   // a single option needs no selector
 
     var care = p.care ? '<ul class="list">' + K.L(p.care).map(function (c) { return "<li>" + esc(c) + "</li>"; }).join("") + "</ul>" : "";
     var specs = specRow(t("pd.setting"), p.metal.setting) + specRow(t("pd.hardware"), p.metal.hardware) +

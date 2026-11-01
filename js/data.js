@@ -223,9 +223,8 @@ KAYN.products = [
     id: "solis",
     slug: "solis",
     name: { en: "SOLIS", fr: "SOLIS", ar: "SOLIS" },
-    optionLabel: { en: "Choose your metal", fr: "Choisissez votre métal", ar: "اختر المعدن" },
     listing: {
-      details: { en: "0.10ct Diamond, 14K White or Yellow Gold", fr: "Diamant 0,10ct, or blanc ou jaune 14 carats", ar: "ألماسة 0.10 قيراط، ذهب أبيض أو أصفر عيار 14" }
+      details: { en: "0.10ct Diamond, 14K White Gold", fr: "Diamant 0,10ct, or blanc 14 carats", ar: "ألماسة 0.10 قيراط، ذهب أبيض عيار 14" }
     },
     details: {
       design: {
@@ -234,20 +233,20 @@ KAYN.products = [
         ar: "سلسلة رفيعة تتوسطها حجر واحد مثبّت في إطار دائري: حضور رقيق وبريق هادئ. خفيفة على المعصم وسهلة التنسيق، تكتفي بنفسها أو ترافق ساعتك المفضلة."
       },
       materials: {
-        en: "Crafted in 14K white or yellow gold, with a 0.10 carat stone of VVS2 clarity, delivered with an IGI certificate. Choose a diamond, or a green or pink stone.",
-        fr: "Réalisé en or blanc ou jaune 14 carats, avec une pierre de 0,10 carat de pureté VVS2, livrée avec un certificat IGI. Au choix : un diamant, ou une pierre verte ou rose.",
-        ar: "صُنع من الذهب الأبيض أو الأصفر عيار 14، مع حجر بوزن 0.10 قيراط بدرجة نقاء VVS2، ويأتي مع شهادة IGI. اختر ألماساً أو حجراً أخضر أو وردياً."
+        en: "Crafted in 14K white gold, with a 0.10 carat diamond of VVS2 clarity, delivered with an IGI certificate.",
+        fr: "Réalisé en or blanc 14 carats, avec un diamant de 0,10 carat de pureté VVS2, livré avec un certificat IGI.",
+        ar: "صُنع من الذهب الأبيض عيار 14، مع ألماسة بوزن 0.10 قيراط بدرجة نقاء VVS2، وتأتي مع شهادة IGI."
       }
     },
     card: {
-      en: "Fine 14K white or yellow gold set with a brilliant diamond. Clean lines and a quiet brilliance give this piece its character. Elegant without excess, SOLIS brings a refined finishing touch to any look.",
-      fr: "De l'or blanc ou jaune 14 carats serti d'un brillant diamant. Des lignes épurées et un éclat discret donnent à cette pièce son caractère. Élégant sans excès, SOLIS apporte une touche finale raffinée à toutes les tenues.",
-      ar: "ذهب أبيض أو أصفر عيار 14 مرصّع بألماسة لامعة. خطوط نقية وبريق هادئ يمنحان هذه القطعة طابعها. أنيق دون مبالغة، يضيف SOLIS لمسة أخيرة راقية إلى أي إطلالة."
+      en: "Fine 14K white gold set with a brilliant diamond. Clean lines and a quiet brilliance give this piece its character. Elegant without excess, SOLIS brings a refined finishing touch to any look.",
+      fr: "De l'or blanc 14 carats serti d'un brillant diamant. Des lignes épurées et un éclat discret donnent à cette pièce son caractère. Élégant sans excès, SOLIS apporte une touche finale raffinée à toutes les tenues.",
+      ar: "ذهب أبيض عيار 14 مرصّع بألماسة لامعة. خطوط نقية وبريق هادئ يمنحان هذه القطعة طابعها. أنيق دون مبالغة، يضيف SOLIS لمسة أخيرة راقية إلى أي إطلالة."
     },
     short: {
-      en: "Fine chain with a single bezel-set diamond, in 14K white or yellow gold.",
-      fr: "Chaîne fine avec un diamant serti clos, en or blanc ou jaune 14 carats.",
-      ar: "سلسلة رفيعة مع ألماسة واحدة مثبّتة في إطار دائري، من الذهب الأبيض أو الأصفر عيار 14."
+      en: "Fine chain with a single bezel-set diamond, in 14K white gold.",
+      fr: "Chaîne fine avec un diamant serti clos, en or blanc 14 carats.",
+      ar: "سلسلة رفيعة مع ألماسة واحدة مثبّتة في إطار دائري، من الذهب الأبيض عيار 14."
     },
     long: {
       en: "A subtle statement. An unmistakable presence. Designed for those who appreciate the details, SOLIS pairs a refined chain with a single bezel-set brilliant stone. Its clean silhouette and polished finish create a balance of simplicity and sophistication, making it equally suited to everyday wear or more elevated occasions. Wear it alone for a discreet touch of distinction, or pair it with your favourite watch for a considered, effortless look. Less, but better.",
@@ -259,28 +258,17 @@ KAYN.products = [
       { src: "assets/solis-wrist-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn on the wrist", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté au poignet", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة واحدة مثبّتة في إطار دائري، على المعصم" } },
       { src: "assets/solis-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn on the wrist", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté au poignet", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة في إطار دائري، على المعصم" } },
       { src: "assets/solis-box.webp", alt: { en: "SOLIS bracelet in 14K white gold beside the KAYN gift box", fr: "Bracelet SOLIS en or blanc 14 carats à côté du coffret cadeau KAYN", ar: "سوار SOLIS من الذهب الأبيض عيار 14 بجانب علبة الهدايا KAYN" } },
-      { src: "assets/solis-2.webp", alt: { en: "Three SOLIS chain bracelets with a diamond, a green stone and a pink stone, worn together on the wrist", fr: "Trois bracelets chaîne SOLIS avec un diamant, une pierre verte et une pierre rose, portés ensemble au poignet", ar: "ثلاثة أساور سلسلة SOLIS بألماسة وحجر أخضر وحجر وردي، على المعصم" } },
-      { src: "assets/solis-3.webp", alt: { en: "SOLIS bracelet in 14K yellow gold with a bezel-set diamond, worn on the wrist", fr: "Bracelet SOLIS en or jaune 14 carats avec un diamant serti clos, porté au poignet", ar: "سوار SOLIS من الذهب الأصفر عيار 14 مع ألماسة في إطار دائري، على المعصم" } },
-      { src: "assets/solis-4.webp", alt: { en: "Three SOLIS bracelets in 14K yellow gold with a diamond, a green stone and a pink stone, worn together on the wrist", fr: "Trois bracelets SOLIS en or jaune 14 carats avec un diamant, une pierre verte et une pierre rose, portés ensemble au poignet", ar: "ثلاثة أساور SOLIS من الذهب الأصفر عيار 14 بألماسة وحجر أخضر وحجر وردي، على المعصم" } }
     ],
     colors: [   // metal options
-      { id: "white-gold", hex: "#D9D9D6", name: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, show: 0, images: [] },
-      { id: "yellow-gold", hex: "#C9A24A", name: { en: "14K yellow gold", fr: "Or jaune 14 carats", ar: "ذهب أصفر عيار 14" }, show: 4, images: [] }
+      { id: "white-gold", hex: "#D9D9D6", name: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, show: 0, images: [] }
     ],
-    stoneLabel: { en: "Choose your stone", fr: "Choisissez votre pierre", ar: "اختر الحجر" },
-    stones: [   // stone options; photos live in the gallery above
-      { id: "diamond", hex: "#FFFFFF", name: { en: "Diamond", fr: "Diamant", ar: "ألماس" }, show: null },   // null = show the selected metal's photo
-      { id: "green", hex: "#1F8A5B", name: { en: "Green stone", fr: "Pierre verte", ar: "حجر أخضر" }, show: { "white-gold": 3, "yellow-gold": 5 } },
-      { id: "pink", hex: "#C2185B", name: { en: "Pink stone", fr: "Pierre rose", ar: "حجر وردي" }, show: { "white-gold": 3, "yellow-gold": 5 } }
-    ],
-    metal: { setting: { en: "14K white gold or 14K yellow gold", fr: "Or blanc ou or jaune 14 carats", ar: "ذهب أبيض أو أصفر عيار 14" }, hardware: null },
+    metal: { setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, hardware: null },
     diamond: {
-      type: { en: "Lab-grown (diamond, green and pink stones)", fr: "De laboratoire (diamant, pierres verte et rose)", ar: "مصنّعة في المختبر (ألماس وحجر أخضر ووردي)" },
-      origin: null, carat: { en: "0.10 ct per stone", fr: "0,10 ct par pierre", ar: "0.10 قيراط لكل حجر" }, clarity: "VVS2", certification: "IGI", count: "1"
+      type: { en: "Lab-grown diamond", fr: "Diamant de laboratoire", ar: "ألماسة مصنّعة في المختبر" },
+      origin: null, carat: { en: "0.10 ct", fr: "0,10 ct", ar: "0.10 قيراط" }, clarity: "VVS2", certification: "IGI", count: "1"
     },
     extraSpecs: [
       { label: { en: "Design", fr: "Conception", ar: "التصميم العام" }, value: { en: "Minimalist chain bracelet with a single round stone", fr: "Bracelet chaîne minimaliste avec une seule pierre ronde", ar: "سوار سلسلة بسيط مع حجر دائري واحد" } },
-      { label: { en: "Stone options", fr: "Choix de pierres", ar: "خيارات الأحجار" }, value: { en: "Diamond, green stone or pink stone", fr: "Diamant, pierre verte ou pierre rose", ar: "ألماس أو حجر أخضر أو حجر وردي" } },
       { label: { en: "Setting style", fr: "Style de sertissage", ar: "نمط التثبيت" }, value: { en: "Circular bezel setting", fr: "Sertissage clos circulaire", ar: "تثبيت في إطار دائري" } },
       { label: { en: "Fit", fr: "Taille", ar: "المقاس" }, value: { en: "Delicate profile designed for everyday styling", fr: "Profil délicat pensé pour un style quotidien", ar: "تصميم رفيع ناعم مناسب للإطلالات اليومية" } }
     ],
@@ -421,12 +409,12 @@ KAYN.spot = (function () {
       ]
     },
     "solis": {
-      photo: ["assets/solis-2.webp", 3], dim: true,
+      photo: ["assets/solis-box.webp", 2], dim: true,
       copy: T("A fine chain carrying a single bezel-set stone.", "Une chaîne fine portant une seule pierre sertie clos.", "سلسلة رفيعة تحمل حجراً واحداً في إطار دائري."),
       rows: [
-        [L.setting, T("Round bezel, in 14K white or yellow gold.", "Serti clos rond, en or blanc ou jaune 14 carats.", "إطار دائري، من الذهب الأبيض أو الأصفر عيار 14.")],
+        [L.setting, T("Round bezel, in 14K white gold.", "Serti clos rond, en or blanc 14 carats.", "إطار دائري، من الذهب الأبيض عيار 14.")],
         [L.chain, T("Fine chain, in 14K gold.", "Chaîne fine, en or 14 carats.", "سلسلة رفيعة من الذهب عيار 14.")],
-        [L.stone, T("0.10 carat diamond, green or pink stone, with an IGI certificate.", "Diamant, pierre verte ou rose de 0,10 carat, avec certificat IGI.", "ألماس أو حجر أخضر أو وردي بوزن 0.10 قيراط، مع شهادة IGI.")]
+        [L.stone, T("0.10 carat diamond, with an IGI certificate.", "Diamant de 0,10 carat, avec certificat IGI.", "ألماسة بوزن 0.10 قيراط، مع شهادة IGI.")]
       ]
     },
     "the-line": {
@@ -469,9 +457,9 @@ KAYN.reviews = [
     fr: "Très chic, super service client. Je recommande.",
     ar: "أنيق جداً وخدمة عملاء ممتازة. أنصح به." } },
   { name: { en: "Amine R.", fr: "Amine R.", ar: "أمين ر." }, product: "solis", rating: 5, sample: true, text: {
-    en: "Got the yellow gold, I get compliments all the time.",
-    fr: "J'ai pris l'or jaune, on me fait des compliments tout le temps.",
-    ar: "اخترت الذهب الأصفر وأتلقى المجاملات دائماً." } },
+    en: "Got the white gold, I get compliments all the time.",
+    fr: "J'ai pris l'or blanc, on me fait des compliments tout le temps.",
+    ar: "اخترت الذهب الأبيض وأتلقى المجاملات دائماً." } },
   { name: { en: "Nadia A.", fr: "Nadia A.", ar: "نادية أ." }, product: "the-line", rating: 5, sample: true, text: {
     en: "Gift for my fiancé's birthday. He loved it!",
     fr: "Cadeau pour l'anniversaire de mon fiancé. Il a adoré !",
