@@ -189,7 +189,7 @@ KAYN.products = [
       fr: "Une expression raffinée du luxe discret. The Signature associe un cordon vert olive à un sertissage géométrique en or blanc 14 carats, pour un équilibre entre précision et simplicité. Conçu pour le quotidien, il affirme un style subtil sans chercher à attirer l'attention.",
       ar: "تعبير راقٍ عن الفخامة الهادئة. يجمع The Signature بين خيط أخضر زيتوني وتصميم هندسي للألماسة من الذهب الأبيض عيار 14، ليحقق توازناً بين الدقة والبساطة. صُمّم للاستخدام اليومي، ويترك أثراً أنيقاً دون أن يلفت الانتباه."
     },
-    priceMAD: 2290, pricePlaceholder: false,
+    priceMAD: 2990, pricePlaceholder: false,
     gallery: [{
       src: "assets/essential-main.webp",
       alt: {
