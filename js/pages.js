@@ -138,7 +138,8 @@ window.KAYN = window.KAYN || {};
       title: name + " — KAYN", desc: K.L(p.short),
       html: '<section class="section page-top"><div class="wrap">' +
         '<nav class="crumbs" aria-label="' + esc(t("pd.breadcrumb")) + '"><a href="#/collection">' + esc(t("pd.back")) + '</a><span aria-hidden="true">/</span><span aria-current="page">' + esc(name) + "</span></nav>" +
-        '<div class="pdp"><div class="gallery">' + sets + "</div>" +
+        '<div class="pdp"><div class="pdp__media"><div class="gallery">' + sets + "</div>" +
+        (care ? '<div class="pdp__care pdp__care--side"><h2 class="h3">' + esc(t("pd.care")) + "</h2>" + care + "</div>" : "") + "</div>" +
         '<div class="pdp__info" data-product="' + esc(p.id) + '"><h1 class="h1">' + esc(name) + "</h1>" +
         '<p class="pdp__price">' + K.priceHtml(p, true) + "</p>" +
         '<p class="pdp__stock"><span class="badge badge--out"><span class="badge__dot" aria-hidden="true"></span>' + esc(t("oos.status")) + "</span></p>" +
@@ -147,7 +148,7 @@ window.KAYN = window.KAYN || {};
         '<h2 class="h3">' + esc(t("pd.desc")) + "</h2><p>" + esc(K.L(p.long)) + "</p>" +
         (specs ? '<h2 class="h3">' + esc(t("pd.material")) + '</h2><dl class="specs">' + specs + "</dl>" : "") +
         K.outOfStockHtml(p) +
-        (care ? '<h2 class="h3">' + esc(t("pd.care")) + "</h2>" + care : "") +
+        (care ? '<div class="pdp__care pdp__care--inline"><h2 class="h3">' + esc(t("pd.care")) + "</h2>" + care + "</div>" : "") +
         "</div></div>" +
         '<div class="also"><h2 class="h3">' + esc(t("coll.also")) + '</h2><div class="also__grid">' + others + "</div></div>" +
         "</div></section>"

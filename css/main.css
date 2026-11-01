@@ -459,3 +459,11 @@ main.page-in { animation: fadeIn .55s var(--ease) both; }
 .card__stock { display: flex; align-items: center; gap: var(--s-2); margin: 0; font: 500 .75rem/1.4 var(--font-head); letter-spacing: var(--track-label, .12em); text-transform: uppercase; color: var(--muted); }
 .card__stock-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
 html[lang="ar"] .card__stock { font-family: var(--font-ar-head); letter-spacing: 0; text-transform: none; font-size: .875rem; }
+
+/* Care: on wide screens it sits in the left column under the photos, next to the notify form; on narrow screens it stays at the end of the product info. */
+.pdp__care--side { display: none; }
+.pdp__care--inline { width: 100%; }
+@media (min-width: 900px) {
+  .pdp__care--side { display: block; margin-top: var(--s-7); }
+  .pdp__care--inline { display: none; }
+}
