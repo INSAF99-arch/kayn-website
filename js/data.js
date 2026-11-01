@@ -256,20 +256,22 @@ KAYN.products = [
     },
     priceMAD: 3700, pricePlaceholder: false,
     gallery: [
+      { src: "assets/solis-wrist-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn on the wrist", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté au poignet", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة واحدة مثبّتة في إطار دائري، على المعصم" } },
       { src: "assets/solis-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn on the wrist", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté au poignet", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة في إطار دائري، على المعصم" } },
+      { src: "assets/solis-box.webp", alt: { en: "SOLIS bracelet in 14K white gold beside the KAYN gift box", fr: "Bracelet SOLIS en or blanc 14 carats à côté du coffret cadeau KAYN", ar: "سوار SOLIS من الذهب الأبيض عيار 14 بجانب علبة الهدايا KAYN" } },
       { src: "assets/solis-2.webp", alt: { en: "Three SOLIS chain bracelets with a diamond, a green stone and a pink stone, worn together on the wrist", fr: "Trois bracelets chaîne SOLIS avec un diamant, une pierre verte et une pierre rose, portés ensemble au poignet", ar: "ثلاثة أساور سلسلة SOLIS بألماسة وحجر أخضر وحجر وردي، على المعصم" } },
       { src: "assets/solis-3.webp", alt: { en: "SOLIS bracelet in 14K yellow gold with a bezel-set diamond, worn on the wrist", fr: "Bracelet SOLIS en or jaune 14 carats avec un diamant serti clos, porté au poignet", ar: "سوار SOLIS من الذهب الأصفر عيار 14 مع ألماسة في إطار دائري، على المعصم" } },
       { src: "assets/solis-4.webp", alt: { en: "Three SOLIS bracelets in 14K yellow gold with a diamond, a green stone and a pink stone, worn together on the wrist", fr: "Trois bracelets SOLIS en or jaune 14 carats avec un diamant, une pierre verte et une pierre rose, portés ensemble au poignet", ar: "ثلاثة أساور SOLIS من الذهب الأصفر عيار 14 بألماسة وحجر أخضر وحجر وردي، على المعصم" } }
     ],
     colors: [   // metal options
       { id: "white-gold", hex: "#D9D9D6", name: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, show: 0, images: [] },
-      { id: "yellow-gold", hex: "#C9A24A", name: { en: "14K yellow gold", fr: "Or jaune 14 carats", ar: "ذهب أصفر عيار 14" }, show: 2, images: [] }
+      { id: "yellow-gold", hex: "#C9A24A", name: { en: "14K yellow gold", fr: "Or jaune 14 carats", ar: "ذهب أصفر عيار 14" }, show: 4, images: [] }
     ],
     stoneLabel: { en: "Choose your stone", fr: "Choisissez votre pierre", ar: "اختر الحجر" },
     stones: [   // stone options; photos live in the gallery above
       { id: "diamond", hex: "#FFFFFF", name: { en: "Diamond", fr: "Diamant", ar: "ألماس" }, show: null },   // null = show the selected metal's photo
-      { id: "green", hex: "#1F8A5B", name: { en: "Green stone", fr: "Pierre verte", ar: "حجر أخضر" }, show: { "white-gold": 1, "yellow-gold": 3 } },
-      { id: "pink", hex: "#C2185B", name: { en: "Pink stone", fr: "Pierre rose", ar: "حجر وردي" }, show: { "white-gold": 1, "yellow-gold": 3 } }
+      { id: "green", hex: "#1F8A5B", name: { en: "Green stone", fr: "Pierre verte", ar: "حجر أخضر" }, show: { "white-gold": 3, "yellow-gold": 5 } },
+      { id: "pink", hex: "#C2185B", name: { en: "Pink stone", fr: "Pierre rose", ar: "حجر وردي" }, show: { "white-gold": 3, "yellow-gold": 5 } }
     ],
     metal: { setting: { en: "14K white gold or 14K yellow gold", fr: "Or blanc ou or jaune 14 carats", ar: "ذهب أبيض أو أصفر عيار 14" }, hardware: null },
     diamond: {
@@ -419,7 +421,7 @@ KAYN.spot = (function () {
       ]
     },
     "solis": {
-      photo: ["assets/solis-2.webp", 1], dim: true,
+      photo: ["assets/solis-2.webp", 3], dim: true,
       copy: T("A fine chain carrying a single bezel-set stone.", "Une chaîne fine portant une seule pierre sertie clos.", "سلسلة رفيعة تحمل حجراً واحداً في إطار دائري."),
       rows: [
         [L.setting, T("Round bezel, in 14K white or yellow gold.", "Serti clos rond, en or blanc ou jaune 14 carats.", "إطار دائري، من الذهب الأبيض أو الأصفر عيار 14.")],
