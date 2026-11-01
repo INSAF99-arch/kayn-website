@@ -85,7 +85,10 @@ KAYN.signatureGallery = function () {
     { src: P + "essential-2.webp", alt: a("bracelets in black, olive and burgundy, worn together on the wrist", "bracelets en noir, olive et bordeaux, portés ensemble au poignet", "أساور بالأسود والزيتوني والعنابي على المعصم") },
     { src: P + "essential-3.webp", alt: a("in black, olive and burgundy on a stone surface", "en noir, olive et bordeaux sur une pierre", "بالأسود والزيتوني والعنابي على سطح حجري") },
     { src: P + "essential-4.webp", alt: a("olive cord bracelet with an octagonal setting and diamond, on stone", "bracelet à cordon olive, sertissage octogonal et diamant, sur une pierre", "سوار بخيط زيتوني وتصميم ثماني وألماسة على الحجر") },
-    { src: P + "essential-6.webp", alt: a("close-up of the octagonal setting and diamond", "gros plan sur le sertissage octogonal et le diamant", "لقطة قريبة للتصميم الثماني والألماسة") }
+    { src: P + "essential-6.webp", alt: a("close-up of the octagonal setting and diamond", "gros plan sur le sertissage octogonal et le diamant", "لقطة قريبة للتصميم الثماني والألماسة") },
+    { src: P + "essential-three-colours.webp", alt: a("black, olive and burgundy bracelets side by side on stone", "bracelets noir, olive et bordeaux côte à côte sur une pierre", "أساور بالأسود والزيتوني والعنابي جنباً إلى جنب على الحجر") },
+    { src: P + "essential-burgundy-wrist.webp", alt: a("burgundy bracelet worn on the wrist", "bracelet bordeaux porté au poignet", "سوار عنابي على المعصم") },
+    { src: P + "essential-black-wrist.webp", alt: a("black bracelet worn on the wrist", "bracelet noir porté au poignet", "سوار أسود على المعصم") }
   ];
 };
 
@@ -195,8 +198,8 @@ KAYN.products = [
     }].concat(KAYN.signatureGallery()),
     colors: [   // colours visible in the supplied photos; PLACEHOLDER until confirmed
       { id: "olive", hex: "#2F3A2E", name: { en: "Olive green", fr: "Vert olive", ar: "أخضر زيتوني" }, show: 0, images: [] },
-      { id: "black", hex: "#0B0B0B", name: { en: "Black", fr: "Noir", ar: "أسود" }, show: 1, images: [] },
-      { id: "burgundy", hex: "#6B1A22", name: { en: "Burgundy", fr: "Bordeaux", ar: "عنابي" }, show: 1, images: [] }
+      { id: "black", hex: "#0B0B0B", name: { en: "Black", fr: "Noir", ar: "أسود" }, show: 7, images: [] },
+      { id: "burgundy", hex: "#6B1A22", name: { en: "Burgundy", fr: "Bordeaux", ar: "عنابي" }, show: 6, images: [] }
     ],
     metal: {
       setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" },
