@@ -376,6 +376,13 @@ KAYN.products = [
         fr: "Bracelet The Vector : cordon noir avec une fine barre en or blanc pavée de diamants, à côté du coffret et de la pochette KAYN",
         ar: "سوار The Vector: خيط أسود مع قضيب رفيع من الذهب الأبيض مرصّع بالألماس، بجانب علبة وكيس KAYN"
       }
+    }, {
+      src: "assets/vector-pocket.webp",
+      alt: {
+        en: "The Vector bracelet: black cord with a slim white gold bar paved with diamonds, worn with the hand in a pocket",
+        fr: "Bracelet The Vector : cordon noir avec une fine barre en or blanc pavée de diamants, porté la main dans la poche",
+        ar: "سوار The Vector: خيط أسود مع قضيب رفيع من الذهب الأبيض مرصّع بالألماس، واليد في الجيب"
+      }
     }],
     colors: [
       { id: "bronze", hex: "#8C6239", name: { en: "Bronze", fr: "Bronze", ar: "برونزي" }, show: null, images: [] },
