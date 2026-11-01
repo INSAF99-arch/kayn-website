@@ -397,6 +397,9 @@ html[lang="ar"] .story .lead { font-family: var(--font-ar-head); line-height: 1.
 }
 /* Footer social icon */
 .social { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin-top: var(--s-5); margin-inline-start: -10px; color: var(--offwhite); border-radius: 50%; transition: transform .3s var(--ease), color .3s var(--ease); }
+.socials { display: flex; gap: var(--s-2); margin-top: var(--s-5); }
+.socials .social { margin-top: 0; }
+.socials .social + .social { margin-inline-start: 0; }
 .social:hover { transform: translateY(-2px) scale(1.08); color: var(--beige); }
 
 /* Track package */

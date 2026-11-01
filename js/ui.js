@@ -98,9 +98,12 @@ window.KAYN = window.KAYN || {};
     var s = K.site;
     return '<footer class="footer"><div class="wrap footer__grid">' +
       '<div class="footer__brand">' + K.logo("dark", 150) + '<p class="tagline">' + esc(t("brandTagline")) + "</p>" +
-      '<a class="social" href="' + esc(s.instagramUrl) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc(t("footer.instagram")) + '">' +
+      '<div class="socials"><a class="social" href="' + esc(s.instagramUrl) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc(t("footer.instagram")) + '">' +
       '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
-      '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a></div>' +
+      '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a>' +
+      '<a class="social" href="' + esc(s.facebookUrl) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc(t("footer.facebook")) + '">' +
+      '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+      '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div></div>' +
       '<nav class="footer__nav" aria-label="' + esc(t("footer.nav")) + '">' +
       '<a href="#/collection">' + esc(t("nav.collection")) + "</a>" +
       '<a href="#/story">' + esc(t("nav.story")) + "</a>" +

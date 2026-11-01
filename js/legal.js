@@ -144,9 +144,9 @@ window.KAYN = window.KAYN || {};
             "تتعهد بعدم إساءة استخدام الموقع أو محاولة تعطيل عمله أو الوصول إليه بوسائل غير مصرّح بها أو تقديم معلومات غير صحيحة.")
         ]),
         S("Links to other websites", "Liens vers d'autres sites", "الروابط إلى مواقع أخرى", [
-          P("The website may link to third-party sites such as Instagram. We are not responsible for their content or practices.",
-            "Le site peut contenir des liens vers des sites tiers comme Instagram. Nous ne sommes pas responsables de leur contenu ni de leurs pratiques.",
-            "قد يتضمن الموقع روابط إلى مواقع أطراف ثالثة مثل إنستغرام. ولسنا مسؤولين عن محتواها أو ممارساتها.")
+          P("The website may link to third-party sites such as Instagram and Facebook. We are not responsible for their content or practices.",
+            "Le site peut contenir des liens vers des sites tiers comme Instagram et Facebook. Nous ne sommes pas responsables de leur contenu ni de leurs pratiques.",
+            "قد يتضمن الموقع روابط إلى مواقع أطراف ثالثة مثل إنستغرام وفيسبوك. ولسنا مسؤولين عن محتواها أو ممارساتها.")
         ]),
         S("Limitation of liability", "Limitation de responsabilité", "حدود المسؤولية", [
           P("To the fullest extent permitted by law, KAYN is not liable for indirect or consequential loss arising from your use of the website. Nothing in these terms limits any rights you have under mandatory consumer protection laws.",

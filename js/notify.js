@@ -85,13 +85,18 @@ window.KAYN = window.KAYN || {};
     return sel;
   };
 
+  /* "Name — option" line; a piece with a single option shows just its name. */
+  K.pieceLabel = function (p, sel) {
+    return p.colors.length > 1 || (p.stones && p.stones.length > 1) ? K.L(p.name) + " — " + K.L(sel.name) : K.L(p.name);
+  };
+
   /* Out-of-stock block shown directly on the product page: message plus the notification form.
      FRONTEND DEMO: every product is shown as out of stock; there is no stock service behind it. */
   K.outOfStockHtml = function (p) {
     var t = K.t, esc = K.esc, sel = K.selectionOf(p, null);
     return '<div class="avail" id="avail"><div class="avail__panel">' +
       '<h2 class="avail__title">' + esc(t("oos.title")) + "</h2>" +
-      '<p class="avail__piece" id="avail-piece">' + esc(K.L(p.name) + " — " + K.L(sel.name)) + "</p>" +
+      '<p class="avail__piece" id="avail-piece">' + esc(K.pieceLabel(p, sel)) + "</p>" +
       '<p class="avail__copy">' + esc(t("oos.copy")) + "</p>" +
       K.notifyFormHtml(p.id, sel.id, "avail") + "</div></div>";
   };
@@ -101,7 +106,7 @@ window.KAYN = window.KAYN || {};
     var info = document.querySelector(".pdp__info"), piece = document.getElementById("avail-piece");
     if (!info || !piece) return;
     var sel = K.selectionOf(p, info);
-    piece.textContent = K.L(p.name) + " — " + K.L(sel.name);
+    piece.textContent = K.pieceLabel(p, sel);
     var hidden = document.querySelector("#avail input[name=colorId]");
     if (hidden) hidden.value = sel.id;
   };

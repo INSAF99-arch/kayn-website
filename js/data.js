@@ -4,8 +4,9 @@
 window.KAYN = window.KAYN || {};
 
 KAYN.site = {
-  instagramUrl: "https://www.instagram.com/kayn_jewelry?mdxt=a29xeXF0aDRtZWl2&utm_source=qr",          // PLACEHOLDER: official account URL
-  instagramHandle: "@kayn_jewelry",                             // PLACEHOLDER
+  instagramUrl: "https://www.instagram.com/kayn_jewelry/",
+  instagramHandle: "@kayn_jewelry",
+  facebookUrl: "https://www.facebook.com/profile.php?id=61595923025464",
   contactEmail: "contact@maison-kayn.com",
                                   // PLACEHOLDER
                                      // PLACEHOLDER
@@ -120,14 +121,14 @@ KAYN.products = [
       details: { en: "0.10 ct diamond · 14K white gold", fr: "Diamant de 0,10 ct · or blanc 14 carats", ar: "ألماسة 0.10 قيراط · ذهب أبيض عيار 14" }
     },
     short: {
-      en: "Fine braided cord, round bezel, 14K white gold, 0.10 carat diamond.",
-      fr: "Cordon tressé fin, serti clos rond, or blanc 14 carats, diamant de 0,10 carat.",
-      ar: "خيط منسوج رفيع، إطار دائري، ذهب أبيض عيار 14، ألماسة بوزن 0.10 قيراط."
+      en: "Fine adjustable braided cord, round bezel, 14K white gold, 0.10 carat diamond.",
+      fr: "Cordon tressé fin ajustable, serti clos rond, or blanc 14 carats, diamant de 0,10 carat.",
+      ar: "خيط منسوج رفيع قابل للتعديل، إطار دائري، ذهب أبيض عيار 14، ألماسة بوزن 0.10 قيراط."
     },
     long: {
-      en: "Understated by design. The Minimalist pairs a fine braided cord with a 0.10 carat diamond in a round bezel of polished 14K white gold. Designed for everyday wear, it adds a discreet touch of brilliance without demanding attention. Delivered with an IGI certificate.",
-      fr: "Discret par nature. The Minimalist associe un cordon tressé fin à un diamant de 0,10 carat, serti clos rond dans de l'or blanc 14 carats poli. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
-      ar: "أناقة هادئة. يجمع The Minimalist بين خيط منسوج رفيع وألماسة بوزن 0.10 قيراط مثبّتة في إطار دائري من الذهب الأبيض عيار 14 المصقول. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
+      en: "Understated by design. The Minimalist pairs a fine adjustable braided cord with a 0.10 carat diamond in a round bezel of polished 14K white gold. Designed for everyday wear, it adds a discreet touch of brilliance without demanding attention. Delivered with an IGI certificate.",
+      fr: "Discret par nature. The Minimalist associe un cordon tressé fin ajustable à un diamant de 0,10 carat, serti clos rond dans de l'or blanc 14 carats poli. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
+      ar: "أناقة هادئة. يجمع The Minimalist بين خيط منسوج رفيع قابل للتعديل وألماسة بوزن 0.10 قيراط مثبّتة في إطار دائري من الذهب الأبيض عيار 14 المصقول. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
     priceMAD: 1590, pricePlaceholder: false,
     gallery: KAYN.oneGallery(),
@@ -135,7 +136,7 @@ KAYN.products = [
     metal: { setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, hardware: null },                // setting confirmed by brief; other hardware unconfirmed
     diamond: { type: KAYN.labGrown, origin: null, carat: KAYN.carat010, clarity: "VVS2", certification: "IGI", count: "1" },
     extraSpecs: [   // shown after the standard rows
-      { label: { en: "Design", fr: "Conception", ar: "التصميم" }, value: { en: "Fine braided cord with a single round diamond", fr: "Cordon tressé fin avec un seul diamant rond", ar: "خيط منسوج رفيع مع ألماسة مستديرة واحدة" } },
+      { label: { en: "Design", fr: "Conception", ar: "التصميم" }, value: { en: "Fine adjustable braided cord with a single round diamond", fr: "Cordon tressé fin ajustable avec un seul diamant rond", ar: "خيط منسوج رفيع قابل للتعديل مع ألماسة مستديرة واحدة" } },
       { label: { en: "Setting style", fr: "Style de sertissage", ar: "طريقة التثبيت" }, value: { en: "Round bezel", fr: "Serti clos rond", ar: "إطار دائري" } }
     ],
     dimensions: null,
@@ -171,7 +172,7 @@ KAYN.products = [
         ar: "سوار The Signature: تصميم ثماني من الذهب الأبيض مع ألماسة على خيط زيتوني مزدوج، على المعصم"
       }
     }].concat(KAYN.signatureGallery()),
-    colors: [   // colours visible in the supplied photos; PLACEHOLDER until confirmed
+    colors: [   // confirmed colour options
       { id: "olive", hex: "#2F3A2E", name: { en: "Olive green", fr: "Vert olive", ar: "أخضر زيتوني" }, show: 0, images: [] },
       { id: "black", hex: "#0B0B0B", name: { en: "Black", fr: "Noir", ar: "أسود" }, show: 6, images: [] },
       { id: "burgundy", hex: "#6B1A22", name: { en: "Burgundy", fr: "Bordeaux", ar: "عنابي" }, show: 5, images: [] }
@@ -267,7 +268,7 @@ KAYN.products = [
         ar: "سوار The Line: خيط أسود مع قضيب رفيع من الذهب الأبيض وألماستين، على المعصم"
       }
     }].concat(KAYN.lineGallery()),
-    colors: [   // colours visible in the supplied photos; PLACEHOLDER until confirmed
+    colors: [   // confirmed colour options
       { id: "olive", hex: "#2F3A2E", name: { en: "Olive green", fr: "Vert olive", ar: "أخضر زيتوني" }, show: 0, images: [] },
       { id: "black", hex: "#0B0B0B", name: { en: "Black", fr: "Noir", ar: "أسود" }, show: 1, images: [] }
     ],
@@ -325,11 +326,10 @@ KAYN.products = [
       }
     }],
     colors: [
-      { id: "bronze", hex: "#8C6239", name: { en: "Bronze", fr: "Bronze", ar: "برونزي" }, show: null, images: [] },
-      { id: "blue", hex: "#1F3A5F", name: { en: "Blue", fr: "Bleu", ar: "أزرق" }, show: null, images: [] }
+      { id: "black", hex: "#0B0B0B", name: { en: "Black", fr: "Noir", ar: "أسود" }, show: 0, images: [] }
     ],
     metal: { setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, hardware: null },
-    diamond: { type: KAYN.labGrown, origin: null, carat: { en: "1 ct total", fr: "1 ct au total", ar: "1 قيراط إجمالاً" }, clarity: null, certification: "IGI", count: "20" },
+    diamond: { type: KAYN.labGrown, origin: null, carat: { en: "1 ct total", fr: "1 ct au total", ar: "1 قيراط إجمالاً" }, clarity: "VVS2", certification: "IGI", count: "20" },
     extraSpecs: [   // shown after the standard rows
       { label: { en: "Design", fr: "Conception", ar: "التصميم" }, value: { en: "Adjustable double cord with a slim bar", fr: "Double cordon ajustable avec une fine barre", ar: "خيط مزدوج قابل للتعديل مع قضيب رفيع" } },
       { label: { en: "Setting style", fr: "Style de sertissage", ar: "طريقة التثبيت" }, value: { en: "Pavé-set with 20 diamonds", fr: "Serti pavé de 20 diamants", ar: "ترصيع بافيه بـ 20 ألماسة" } }
@@ -355,10 +355,10 @@ KAYN.spot = (function () {
   return {
     "the-minimalist": {
       photo: ["assets/one-black-dark.webp", 6], dim: false,
-      copy: T("A single diamond in a round bezel, on a fine braided cord.", "Un seul diamant dans un serti clos rond, sur un cordon tressé fin.", "ألماسة واحدة في إطار دائري، على خيط منسوج رفيع."),
+      copy: T("A single diamond in a round bezel, on a fine adjustable braided cord.", "Un seul diamant dans un serti clos rond, sur un cordon tressé fin ajustable.", "ألماسة واحدة في إطار دائري، على خيط منسوج رفيع قابل للتعديل."),
       rows: [
         [L.setting, T("Round bezel, in 14K white gold.", "Serti clos rond, en or blanc 14 carats.", "إطار دائري، من الذهب الأبيض عيار 14.")],
-        [L.cord, T("Fine braided cord, in four colours.", "Cordon tressé fin, en quatre couleurs.", "خيط منسوج رفيع، بأربعة ألوان.")],
+        [L.cord, T("Fine adjustable braided cord, in four colours.", "Cordon tressé fin ajustable, en quatre couleurs.", "خيط منسوج رفيع قابل للتعديل، بأربعة ألوان.")],
         [L.diamond, T("0.10 carat diamond, with an IGI certificate.", "Diamant de 0,10 carat, avec certificat IGI.", "ألماسة بوزن 0.10 قيراط، مع شهادة IGI.")]
       ]
     },
@@ -394,7 +394,7 @@ KAYN.spot = (function () {
       copy: T("A slim bar paved end to end with diamonds, on an adjustable double cord.", "Une fine barre entièrement pavée de diamants, sur un double cordon ajustable.", "قضيب رفيع مرصّع بالألماس من طرفه إلى طرفه، على خيط مزدوج قابل للتعديل."),
       rows: [
         [L.setting, T("Pavé bar, in 14K white gold.", "Barre pavée, en or blanc 14 carats.", "قضيب مرصّع من الذهب الأبيض عيار 14.")],
-        [L.cord, T("Adjustable double cord, in bronze or blue.", "Double cordon ajustable, en bronze ou bleu.", "خيط مزدوج قابل للتعديل، بالبرونزي أو الأزرق.")],
+        [L.cord, T("Adjustable double cord, in black.", "Double cordon ajustable, en noir.", "خيط مزدوج قابل للتعديل، بالأسود.")],
         [L.diamond, T("20 diamonds totalling 1 carat, with an IGI certificate.", "20 diamants totalisant 1 carat, avec certificat IGI.", "20 ألماسة بوزن إجمالي 1 قيراط، مع شهادة IGI.")]
       ]
     }

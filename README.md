@@ -18,4 +18,4 @@ Open `index.html` in a browser, or serve the folder with any static server (for 
 
 - The email form is a visual demo only. Nothing is stored or sent.
 - The reviews in `KAYN.reviews` are labelled sample reviews. Replace them with real ones before launch.
-- The Instagram link and handle in `KAYN.site` are placeholders.
+- The Instagram and Facebook links in `KAYN.site` are the confirmed official accounts.
