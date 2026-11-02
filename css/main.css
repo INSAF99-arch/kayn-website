@@ -357,6 +357,7 @@ html[dir="rtl"] .insta__tile .crop { transform: translateX(50%); }
 .story { display: flex; flex-direction: column; align-items: flex-start; }
 .story .lead { font: 400 clamp(1.45rem, 3.2vw, 2.1rem)/1.3 var(--font-head); color: var(--black); max-width: 28ch; }
 html[lang="ar"] .story .lead { font-family: var(--font-ar-head); line-height: 1.6; }
+.story__photo { display: block; width: 100%; max-width: 30rem; height: auto; aspect-ratio: 1180 / 1333; object-fit: cover; margin-top: var(--s-6); }
 .story__block { margin-top: var(--s-5); max-width: 60ch; }
 .story__close { font: 400 1.35rem/1.3 var(--font-head); color: var(--black); margin-top: var(--s-4); }
 html[lang="ar"] .story__close { font-family: var(--font-ar-head); line-height: 1.6; }

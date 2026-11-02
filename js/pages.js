@@ -156,6 +156,7 @@ window.KAYN = window.KAYN || {};
     return {
       title: t("meta.story"), desc: t("meta.storyDesc"),
       html: '<section class="section page-top"><div class="wrap wrap--narrow story"><h1 class="h1">' + esc(t("story.title")) + '</h1><p class="lead">' + esc(t("story.lead")) + "</p>" +
+        '<img class="story__photo" src="assets/founder.webp" width="1180" height="1333" alt="' + esc(t("story.photoAlt")) + '" decoding="async">' +
         [1, 2, 3, 4, 5, 6, 7, 8, 9].map(function (n) {
           return '<div class="story__block"><p' + (n === 9 ? ' class="story__close"' : "") + ">" + esc(t("story.p" + n)) + "</p></div>";
         }).join("") +
