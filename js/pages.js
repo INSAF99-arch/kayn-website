@@ -153,14 +153,12 @@ window.KAYN = window.KAYN || {};
   }
 
   function story() {
-    var block = function (h, body) { return '<div class="story__block"><h2 class="h3">' + esc(h) + "</h2>" + body + "</div>"; };
     return {
       title: t("meta.story"), desc: t("meta.storyDesc"),
       html: '<section class="section page-top"><div class="wrap wrap--narrow story"><h1 class="h1">' + esc(t("story.title")) + '</h1><p class="lead">' + esc(t("story.lead")) + "</p>" +
-        block(t("story.s1t"), "<p>" + esc(t("story.s1")) + "</p>") +
-        block(t("story.s2t"), "<p>" + esc(t("story.s2")) + "</p>") +
-        block(t("story.s3t"), '<ul class="list"><li>' + esc(t("story.s3a")) + "</li><li>" + esc(t("story.s3b")) + "</li><li>" + esc(t("story.s3c")) + "</li></ul>") +
-        block(t("story.s4t"), "<p>" + esc(t("story.s4")) + "</p>") +
+        [1, 2, 3, 4, 5, 6, 7, 8, 9].map(function (n) {
+          return '<div class="story__block"><p' + (n === 9 ? ' class="story__close"' : "") + ">" + esc(t("story.p" + n)) + "</p></div>";
+        }).join("") +
         '<a class="btn btn--solid" href="#/collection">' + esc(t("story.cta")) + "</a></div></section>"
     };
   }
