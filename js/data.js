@@ -101,8 +101,6 @@ KAYN.lineGallery = function () {
   var a = function (en, fr, ar) { return { en: "The Line: " + en, fr: "The Line : " + fr, ar: "The Line: " + ar }; };
   return [
     { src: P + "line-main.webp", alt: a("black cord bracelet with a slim white gold bar and diamond accents, worn on the wrist", "bracelet à cordon noir avec une fine barre en or blanc et des touches de diamant, porté au poignet", "سوار بخيط أسود وقضيب رفيع من الذهب الأبيض ولمسات ألماس، على المعصم") },
-    { src: P + "line-2.webp", alt: a("black cord bracelet with a slim white gold bar and two diamonds, on stone", "bracelet à cordon noir, fine barre en or blanc et deux diamants, sur une pierre", "سوار بخيط أسود وقضيب رفيع من الذهب الأبيض وألماستان على الحجر") },
-    { src: P + "line-3.webp", alt: a("olive cord bracelet with a slim white gold bar and two diamonds, on stone", "bracelet à cordon olive, fine barre en or blanc et deux diamants, sur une pierre", "سوار بخيط زيتوني وقضيب رفيع من الذهب الأبيض وألماستان على الحجر") },
     { src: P + "line-4.webp", alt: a("worn on the wrist next to The Signature", "porté au poignet à côté de The Signature", "على المعصم بجانب The Signature") }
   ];
 };
@@ -400,7 +398,7 @@ KAYN.spot = (function () {
       ]
     },
     "the-line": {
-      photo: ["assets/line-2.webp", 6], dim: true,
+      photo: ["assets/line-main.webp", 5], dim: true,
       copy: T("A slim polished bar with a diamond at each end, on an adjustable double cord.", "Une fine barre polie avec un diamant à chaque extrémité, sur un double cordon ajustable.", "قضيب رفيع مصقول بألماسة عند كل طرف، على خيط مزدوج قابل للتعديل."),
       rows: [
         [L.setting, T("Polished bar, in 14K white gold.", "Barre polie, en or blanc 14 carats.", "قضيب مصقول من الذهب الأبيض عيار 14.")],
