@@ -85,8 +85,7 @@ window.KAYN = window.KAYN || {};
 
   K.header = function () {
     var links = [["#/collection", "nav.collection"], ["#/story", "nav.story"], ["#/track", "nav.track"]];
-    var nav = links.map(function (l) { return '<a class="nav__link" href="' + l[0] + '" data-route="' + l[0] + '">' + esc(t(l[1])) + "</a>"; }).join("") +
-      '<a class="nav__link" href="mailto:' + esc(K.site.contactEmail) + '">' + esc(t("nav.contact")) + "</a>";
+    var nav = links.map(function (l) { return '<a class="nav__link" href="' + l[0] + '" data-route="' + l[0] + '">' + esc(t(l[1])) + "</a>"; }).join("");   // Contact lives in the footer only
     return '<header class="header"><div class="header__inner">' +
       '<a class="header__logo" href="#/" aria-label="KAYN">' + K.logo("light", 112) + "</a>" +
       '<nav class="nav nav--desktop" aria-label="' + esc(t("nav.main")) + '">' + nav + "</nav>" +

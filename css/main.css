@@ -158,11 +158,6 @@ html[lang="ar"] .detail__tab { font-family: var(--font-ar-body); letter-spacing:
 .grid > .card { flex: 0 0 78%; min-width: 0; scroll-snap-align: start; }
 @media (min-width: 600px) { .grid > .card { flex-basis: calc((100% - 2 * var(--s-5)) / 3); } }
 @media (min-width: 1100px) { .grid > .card { flex-basis: calc((100% - 3 * var(--s-5)) / 4); } }
-.rail__nav { display: none; justify-content: flex-end; gap: var(--s-3); margin-top: var(--s-3); }
-@media (min-width: 600px) { .rail__nav { display: flex; } }
-.rail__btn { width: 44px; height: 44px; display: inline-grid; place-items: center; border: 1px solid rgba(11, 11, 11, .3); border-radius: 50%; background: transparent; color: var(--black); cursor: pointer; transition: background-color .25s var(--ease), color .25s var(--ease); }
-.rail__btn:hover { background: var(--black); color: var(--offwhite); }
-html[dir="rtl"] .rail__btn svg { transform: scaleX(-1); }
 .card { display: flex; flex-direction: column; }
 .card__media { display: block; overflow: hidden; }
 .card__media .crop img { transition: transform .6s var(--ease); }
@@ -460,10 +455,13 @@ main.page-in { animation: fadeIn .55s var(--ease) both; }
 .card__stock-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
 html[lang="ar"] .card__stock { font-family: var(--font-ar-head); letter-spacing: 0; text-transform: none; font-size: .875rem; }
 
-/* Care: on wide screens it sits in the left column under the photos, next to the notify form; on narrow screens it stays at the end of the product info. */
-.pdp__care--side { display: none; }
-.pdp__care--inline { width: 100%; }
+/* Care: on wide screens it shares a grid row with the notify panel (left column, heading level with the panel title); on narrow screens it follows the panel. */
+.pdp__care { padding-top: var(--s-6); }
+.pdp__care .h3 { margin-top: 0; }
 @media (min-width: 900px) {
-  .pdp__care--side { display: block; margin-top: var(--s-7); }
-  .pdp__care--inline { display: none; }
+  .pdp { row-gap: 0; }
+  .pdp__info { grid-column: 2; }
+  .pdp__media { grid-column: 1; grid-row: 1; }
+  .pdp .avail { grid-column: 2; grid-row: 2; }
+  .pdp__care { grid-column: 1; grid-row: 2; margin-top: var(--s-5); }
 }

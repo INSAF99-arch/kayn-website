@@ -8,13 +8,8 @@ window.KAYN = window.KAYN || {};
   }
 
   function grid() {
-    var arrow = function (dir, key, d) {
-      return '<button type="button" class="rail__btn" data-action="rail" data-dir="' + dir + '" aria-label="' + esc(t(key)) + '">' +
-        '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="' + d + '"/></svg></button>';
-    };
-    // one row of products: swipe or scroll sideways, or use the arrows
-    return '<div class="rail"><div class="grid" tabindex="0" role="region" aria-label="' + esc(t("nav.collection")) + '">' + K.products.map(K.productCard).join("") + "</div>" +
-      '<div class="rail__nav">' + arrow(-1, "rail.prev", "M15 5l-7 7 7 7") + arrow(1, "rail.next", "M9 5l7 7-7 7") + "</div></div>";
+    // one row of products: swipe or scroll sideways; with a mouse it also scrolls when the pointer is near either edge (see app.js)
+    return '<div class="rail"><div class="grid" tabindex="0" role="region" aria-label="' + esc(t("nav.collection")) + '">' + K.products.map(K.productCard).join("") + "</div></div>";
   }
 
   /* Dark banner: pick a product (hover, focus or tap) to change the photo, description and spec sheet. */
@@ -139,8 +134,7 @@ window.KAYN = window.KAYN || {};
       title: name + " — KAYN", desc: K.L(p.short),
       html: '<section class="section page-top"><div class="wrap">' +
         '<nav class="crumbs" aria-label="' + esc(t("pd.breadcrumb")) + '"><a href="#/collection">' + esc(t("pd.back")) + '</a><span aria-hidden="true">/</span><span aria-current="page">' + esc(name) + "</span></nav>" +
-        '<div class="pdp"><div class="pdp__media"><div class="gallery">' + sets + "</div>" +
-        (care ? '<div class="pdp__care pdp__care--side"><h2 class="h3">' + esc(t("pd.care")) + "</h2>" + care + "</div>" : "") + "</div>" +
+        '<div class="pdp"><div class="pdp__media"><div class="gallery">' + sets + "</div></div>" +
         '<div class="pdp__info" data-product="' + esc(p.id) + '"><h1 class="h1">' + esc(name) + "</h1>" +
         '<p class="pdp__price">' + K.priceHtml(p, true) + "</p>" +
         '<p class="pdp__stock"><span class="badge badge--out"><span class="badge__dot" aria-hidden="true"></span>' + esc(t("oos.status")) + "</span></p>" +
@@ -148,9 +142,11 @@ window.KAYN = window.KAYN || {};
         colors +
         '<h2 class="h3">' + esc(t("pd.desc")) + "</h2><p>" + esc(K.L(p.long)) + "</p>" +
         (specs ? '<h2 class="h3">' + esc(t("pd.material")) + '</h2><dl class="specs">' + specs + "</dl>" : "") +
+        "</div>" +
+        /* Care sits beside the availability panel on desktop (same grid row) and under it on mobile. */
         K.outOfStockHtml(p) +
-        (care ? '<div class="pdp__care pdp__care--inline"><h2 class="h3">' + esc(t("pd.care")) + "</h2>" + care + "</div>" : "") +
-        "</div></div>" +
+        (care ? '<div class="pdp__care"><h2 class="h3">' + esc(t("pd.care")) + "</h2>" + care + "</div>" : "") +
+        "</div>" +
         '<div class="also"><h2 class="h3">' + esc(t("coll.also")) + '</h2><div class="also__grid">' + others + "</div></div>" +
         "</div></section>"
     };

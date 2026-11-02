@@ -45,7 +45,7 @@
 
   /* Scroll-reveal: mark blocks with .reveal (staggered inside grids) and show them as they enter the viewport. */
   var REVEAL = ".section__head, .card, .review, .insta__tile, .statement__inner > *, .detail__inner > *, .wait__inner > *, " +
-    ".story > *, .story__block, .gallery, .pdp__info > *, .also, .crumbs";
+    ".story > *, .story__block, .gallery, .pdp__info > *, .pdp__care, .also, .crumbs";
   function revealNow(el) {
     el.classList.add("is-in");
     if (io) io.unobserve(el);
@@ -148,12 +148,6 @@
         }
       });
     },
-    rail: function (el) {                          // product row: previous / next
-      var row = el.closest(".rail").querySelector(".grid"), card = row.querySelector(".card");
-      var step = (card ? card.getBoundingClientRect().width : row.clientWidth / 2) + 24;
-      var rtl = document.documentElement.dir === "rtl" ? -1 : 1;
-      row.scrollBy({ left: Number(el.getAttribute("data-dir")) * step * rtl, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
-    },
     gallery: function (el) {
       var i = el.getAttribute("data-index"), set = el.closest(".gallery__set");
       set.querySelectorAll(".gallery__slide").forEach(function (s) { s.hidden = s.getAttribute("data-slide") !== i; });
@@ -167,6 +161,30 @@
     // mobile menu: close after choosing a link
     if (e.target.closest("#mobile-nav a")) setMenu(false);
   });
+
+  // product row: with a mouse, hovering the outer fifth of the row (the products at either edge) scrolls it that way;
+  // the closer the pointer is to the edge, the faster. Touch keeps native swiping; reduced-motion users get no auto-scroll.
+  (function () {
+    var fine = matchMedia("(hover: hover) and (pointer: fine)"), calm = matchMedia("(prefers-reduced-motion: reduce)");
+    var row = null, speed = 0, raf = 0;
+    function tick() {
+      if (!row || !speed) { raf = 0; return; }
+      row.scrollLeft += speed;                       // negative = visually left, also in right-to-left pages
+      raf = requestAnimationFrame(tick);
+    }
+    function stop() { speed = 0; if (row) row.style.scrollSnapType = ""; row = null; }
+    document.addEventListener("mousemove", function (e) {
+      var g = e.target.closest && e.target.closest(".grid");
+      if (!g || !fine.matches || calm.matches || g.scrollWidth <= g.clientWidth) { stop(); return; }
+      var r = g.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, zone = 0.2;
+      var dir = x < zone ? -(zone - x) / zone : x > 1 - zone ? (x - (1 - zone)) / zone : 0;
+      if (row && row !== g) row.style.scrollSnapType = "";
+      row = g; speed = Math.round(dir * 14);
+      g.style.scrollSnapType = speed ? "none" : "";   // snapping would pull the row back while it glides
+      if (speed && !raf) raf = requestAnimationFrame(tick);
+    });
+    document.addEventListener("mouseout", function (e) { if (!e.relatedTarget || !e.relatedTarget.closest || !e.relatedTarget.closest(".grid")) stop(); });
+  })();
 
   // banner: moving the pointer over a product name, or focusing it, switches the product
   ["mouseover", "focusin"].forEach(function (type) {

@@ -330,7 +330,7 @@ KAYN.products = [
         ar: "سوار The Vector: خيط أسود مع قضيب رفيع من الذهب الأبيض مرصّع بالألماس، على المعصم"
       }
     }, {
-      src: "assets/vector-box.webp",
+      src: "assets/vector-bracelet-box.webp",
       alt: {
         en: "The Vector bracelet: black cord with a slim white gold bar paved with diamonds, beside the KAYN box and pouch",
         fr: "Bracelet The Vector : cordon noir avec une fine barre en or blanc pavée de diamants, à côté du coffret et de la pochette KAYN",
@@ -382,7 +382,7 @@ KAYN.spot = (function () {
       ]
     },
     "the-signature": {
-      photo: ["assets/essential-3.webp", 4], dim: false,
+      photo: ["assets/essential-three-colours.webp", 4], dim: false,
       copy: T("A geometric setting around a single diamond, on an adjustable double cord.", "Un sertissage géométrique autour d'un seul diamant, sur un double cordon ajustable.", "تصميم هندسي يحيط بألماسة واحدة، على خيط مزدوج قابل للتعديل."),
       rows: [
         [L.setting, T("Geometric setting, in 14K white gold.", "Sertissage géométrique, en or blanc 14 carats.", "تصميم هندسي من الذهب الأبيض عيار 14.")],
@@ -409,7 +409,7 @@ KAYN.spot = (function () {
       ]
     },
     "vector": {
-      photo: ["assets/vector-box.webp", 1], dim: true,
+      photo: ["assets/vector-bracelet-box.webp", 1], dim: true,
       copy: T("A slim bar paved end to end with diamonds, on an adjustable double cord.", "Une fine barre entièrement pavée de diamants, sur un double cordon ajustable.", "قضيب رفيع مرصّع بالألماس من طرفه إلى طرفه، على خيط مزدوج قابل للتعديل."),
       rows: [
         [L.setting, T("Pavé bar, in 14K white gold.", "Barre pavée, en or blanc 14 carats.", "قضيب مرصّع من الذهب الأبيض عيار 14.")],
