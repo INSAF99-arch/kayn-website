@@ -70,8 +70,7 @@ window.KAYN = window.KAYN || {};
       '<h3 class="card__listing"><a href="' + href + '">' + esc(K.L(p.name)) + "</a></h3>" +
       (p.listing ? '<p class="card__details">' + esc(K.L(p.listing.details)) + "</p>" : "") +
       '<p class="card__price">' + esc(K.formatPrice(p.priceMAD)) + "</p>" +
-      '<p class="card__stock"><span class="card__stock-dot" aria-hidden="true"></span>' + esc(t("oos.status")) + "</p>" +
-      "</div></article>";
+      "</div></article>";   // stock status is shown on the product page only
   };
 
   K.langSelector = function (cls) {
