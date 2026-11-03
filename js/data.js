@@ -174,7 +174,7 @@ KAYN.products = [
     ],
     metal: {
       setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" },
-      hardware: { en: "White-gold-tone loops and detailing", fr: "Anneaux et détails de ton or blanc", ar: "حلقات وتفاصيل بلون الذهب الأبيض" }
+      hardware: { en: "14K gold rings on the cord", fr: "Anneaux en or 14 carats sur le cordon", ar: "حلقات من الذهب عيار 14 على الخيط" }
     },
     diamond: { type: KAYN.labGrown, origin: null, carat: KAYN.carat03, clarity: "VVS2", certification: "IGI", count: "1" },
     extraSpecs: [   // shown after the standard rows
@@ -384,7 +384,7 @@ KAYN.spot = (function () {
       copy: T("A geometric setting around a single diamond, on an adjustable double cord.", "Un sertissage géométrique autour d'un seul diamant, sur un double cordon ajustable.", "تصميم هندسي يحيط بألماسة واحدة، على خيط مزدوج قابل للتعديل."),
       rows: [
         [L.setting, T("Geometric setting, in 14K white gold.", "Sertissage géométrique, en or blanc 14 carats.", "تصميم هندسي من الذهب الأبيض عيار 14.")],
-        [L.cord, T("Adjustable double cord, in olive, black or burgundy.", "Double cordon ajustable, en olive, noir ou bordeaux.", "خيط مزدوج قابل للتعديل، بالزيتوني أو الأسود أو العنابي.")],
+        [L.cord, T("Adjustable double cord with 14K gold rings, in olive, black or burgundy.", "Double cordon ajustable avec anneaux en or 14 carats, en olive, noir ou bordeaux.", "خيط مزدوج قابل للتعديل مع حلقات من الذهب عيار 14، بالزيتوني أو الأسود أو العنابي.")],
         [L.diamond, T("0.3 carat diamond, with an IGI certificate.", "Diamant de 0,3 carat, avec certificat IGI.", "ألماسة بوزن 0.3 قيراط، مع شهادة IGI.")]
       ]
     },
