@@ -125,7 +125,7 @@ KAYN.products = [
       fr: "Discret par nature. The Minimalist associe un cordon tressé fin ajustable à un diamant de 0,3 carat, serti clos rond dans de l'or blanc 14 carats poli. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
       ar: "أناقة هادئة. يجمع The Minimalist بين خيط منسوج رفيع قابل للتعديل وألماسة بوزن 0.3 قيراط مثبّتة في إطار دائري من الذهب الأبيض عيار 14 المصقول. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
-    priceMAD: 1790, pricePlaceholder: false,
+    priceMAD: 1800, pricePlaceholder: false,
     gallery: KAYN.oneGallery(),
     colors: KAYN.oneColors(),
     metal: { setting: { en: "14K white gold", fr: "Or blanc 14 carats", ar: "ذهب أبيض عيار 14" }, hardware: null },                // setting confirmed by brief; other hardware unconfirmed
@@ -158,7 +158,7 @@ KAYN.products = [
       fr: "Un détail qui s'affirme. The Signature associe un double cordon ajustable à un sertissage géométrique en or blanc 14 carats, qui accueille un diamant de 0,3 carat. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
       ar: "تفصيل يفرض حضوره بهدوء. يجمع The Signature بين خيط مزدوج قابل للتعديل وتصميم هندسي من الذهب الأبيض عيار 14 يحمل ألماسة بوزن 0.3 قيراط. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
-    priceMAD: 3190, pricePlaceholder: false,
+    priceMAD: 3200, pricePlaceholder: false,
     gallery: [{
       src: "assets/essential-main.webp",
       alt: {
@@ -205,7 +205,7 @@ KAYN.products = [
       fr: "Une déclaration discrète. SOLIS associe une chaîne fine à un seul diamant de 0,3 carat, serti clos rond dans de l'or blanc 14 carats. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
       ar: "لمسة هادئة. يجمع SOLIS بين سلسلة رفيعة وألماسة واحدة بوزن 0.3 قيراط مثبّتة في إطار دائري من الذهب الأبيض عيار 14. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
-    priceMAD: 4790, pricePlaceholder: false,
+    priceMAD: 4800, pricePlaceholder: false,
     gallery: [
       { src: "assets/solis-pocket-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn with the hand in a pocket", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté la main dans la poche", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة واحدة مثبّتة في إطار دائري، واليد في الجيب" } },
       { src: "assets/solis-wrist-main.webp", alt: { en: "SOLIS bracelet in 14K white gold: fine chain with a single bezel-set diamond, worn on the wrist", fr: "Bracelet SOLIS en or blanc 14 carats : chaîne fine avec un diamant serti clos, porté au poignet", ar: "سوار SOLIS من الذهب الأبيض عيار 14: سلسلة رفيعة مع ألماسة واحدة مثبّتة في إطار دائري، على المعصم" } },
@@ -248,7 +248,7 @@ KAYN.products = [
       fr: "Des lignes pures, d'une précision discrète. The Line associe un double cordon ajustable à une fine barre en or blanc 14 carats poli, ornée d'un diamant à chaque extrémité, 0,3 carat chacun. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
       ar: "خطوط نقية بدقة هادئة. يجمع The Line بين خيط مزدوج قابل للتعديل وقضيب رفيع من الذهب الأبيض عيار 14 المصقول، تزيّنه ألماسة عند كل طرف، بوزن 0.3 قيراط لكل منهما. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
-    priceMAD: 6590, pricePlaceholder: false,
+    priceMAD: 6600, pricePlaceholder: false,
     gallery: [{
       src: "assets/line-wrist-main.webp",
       alt: {
@@ -319,7 +319,7 @@ KAYN.products = [
       fr: "Une seule ligne, tracée en or blanc. The Vector associe un double cordon ajustable à une fine barre en or blanc 14 carats, pavée de 20 diamants totalisant 1 carat. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
       ar: "خط واحد يرسمه الذهب الأبيض. يجمع The Vector بين خيط مزدوج قابل للتعديل وقضيب رفيع من الذهب الأبيض عيار 14، مرصّع بـ 20 ألماسة بوزن إجمالي 1 قيراط. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
-    priceMAD: 9760, pricePlaceholder: false,
+    priceMAD: 9800, pricePlaceholder: false,
     gallery: [{
       src: "assets/vector-wrist-main.webp",
       alt: {
