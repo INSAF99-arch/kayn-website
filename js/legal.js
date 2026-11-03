@@ -104,9 +104,9 @@ window.KAYN = window.KAYN || {};
             "باستخدامك maison-kayn.com (\"الموقع\") فإنك توافق على هذه الشروط. إذا كنت لا توافق عليها، فيرجى عدم استخدام الموقع.")
         ]),
         S("About KAYN and our products", "À propos de KAYN et de nos produits", "عن KAYN ومنتجاتنا", [
-          P("KAYN designs men's diamond bracelets. We do our best to describe and photograph our products accurately. Colours may look slightly different on your screen, and small variations can occur between pieces.",
-            "KAYN crée des bracelets diamant pour homme. Nous faisons de notre mieux pour décrire et photographier nos produits avec exactitude. Les couleurs peuvent paraître légèrement différentes sur votre écran, et de petites variations peuvent exister d'une pièce à l'autre.",
-            "تصمم KAYN أساور ألماس للرجال. نبذل قصارى جهدنا لوصف منتجاتنا وتصويرها بدقة. قد تظهر الألوان مختلفة قليلاً على شاشتك، وقد توجد فروق طفيفة بين القطع.")
+          P("KAYN designs diamond bracelets. We do our best to describe and photograph our products accurately. Colours may look slightly different on your screen, and small variations can occur between pieces.",
+            "KAYN crée des bracelets diamant. Nous faisons de notre mieux pour décrire et photographier nos produits avec exactitude. Les couleurs peuvent paraître légèrement différentes sur votre écran, et de petites variations peuvent exister d'une pièce à l'autre.",
+            "تصمم KAYN أساور ألماس. نبذل قصارى جهدنا لوصف منتجاتنا وتصويرها بدقة. قد تظهر الألوان مختلفة قليلاً على شاشتك، وقد توجد فروق طفيفة بين القطع.")
         ]),
         S("Prices and availability", "Prix et disponibilité", "الأسعار والتوفر", [
           P("Prices are shown in Moroccan dirhams (MAD) and may change without notice. A product shown on the website is not guaranteed to be in stock. If a piece is unavailable, you can leave your details to be informed about it, but this does not reserve the product or guarantee its return.",
