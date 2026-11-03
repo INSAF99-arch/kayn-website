@@ -158,7 +158,7 @@ KAYN.products = [
       fr: "Un détail qui s'affirme. The Signature associe un double cordon ajustable à un sertissage géométrique en or blanc 14 carats, qui accueille un diamant de 0,3 carat. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
       ar: "تفصيل يفرض حضوره بهدوء. يجمع The Signature بين خيط مزدوج قابل للتعديل وتصميم هندسي من الذهب الأبيض عيار 14 يحمل ألماسة بوزن 0.3 قيراط. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
-    priceMAD: 3490, pricePlaceholder: false,
+    priceMAD: 3190, pricePlaceholder: false,
     gallery: [{
       src: "assets/essential-main.webp",
       alt: {
@@ -319,7 +319,7 @@ KAYN.products = [
       fr: "Une seule ligne, tracée en or blanc. The Vector associe un double cordon ajustable à une fine barre en or blanc 14 carats, pavée de 20 diamants totalisant 1 carat. Conçu pour le quotidien, il ajoute une touche discrète d'éclat sans chercher à attirer l'attention. Livré avec un certificat IGI.",
       ar: "خط واحد يرسمه الذهب الأبيض. يجمع The Vector بين خيط مزدوج قابل للتعديل وقضيب رفيع من الذهب الأبيض عيار 14، مرصّع بـ 20 ألماسة بوزن إجمالي 1 قيراط. صُمّم للاستخدام اليومي، ويضيف لمسة خفية من البريق دون أن يلفت الانتباه. يأتي مع شهادة IGI."
     },
-    priceMAD: 9490, pricePlaceholder: false,
+    priceMAD: 9760, pricePlaceholder: false,
     gallery: [{
       src: "assets/vector-wrist-main.webp",
       alt: {
